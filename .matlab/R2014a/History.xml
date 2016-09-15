@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<history>
+<session>
+<command>%-- Unknown date --%</command>
+<command>%%-- 03/01/2016 08:44:56 PM --%%</command>
+<command>run examples/mnist/prepare_mnist.m</command>
+<command>exit</command>
+<command error="true" execution_time="88">run examples/mnist/demo_vis_filter.m</command>
+<command execution_time="17">cd marvin</command>
+<command execution_time="1599">run examples/mnist/demo_vis_filter.m</command>
+</session>
+</history>

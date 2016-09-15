@@ -1,0 +1,757 @@
+=====================================================================================================================================
+>> Hello, World! This is Marvin. I am at a rough estimate thirty billion times more intelligent than you. Let me give you an example.
+=====================================================================================================================================
+MemoryDataLayer dataTrain loading data: 
+  149.069 MB
+  74.5346 MB
+  name:boards train 10000 dim[3]={601194,1,65}
+  2.29337 MB
+  1.14669 MB
+  name:labels train 10000 dim[3]={601194,1,1}
+MemoryDataLayer dataTest loading data: 
+  50.4331 MB
+  25.2166 MB
+  name:boards test 10000 dim[3]={203396,1,65}
+  0.775894 MB
+  397.258 KB
+  name:labels test 10000 dim[3]={203396,1,1}
+=====================================================================================================================================
+  Layers:                                                                        Responses:                                          
+=====================================================================================================================================
+  dataTest
+                                                                                 data[3]={300,1,65} RF[1] GP[1] OF[0]
+                                                                                 label[3]={300,1,1} RF[1] GP[1] OF[0]
+  ip0 weight[2]={1000,65} bias[1]={1000}
+                                                                                 ip0[3]={300,1000,1} RF[65] GP[0] OF[0]
+  ip1 weight[2]={200,1000} bias[1]={200}
+                                                                                 ip1[3]={300,200,1} RF[65] GP[0] OF[0]
+  ip2 weight[2]={100,200} bias[1]={100}
+                                                                                 ip2[3]={300,100,1} RF[65] GP[0] OF[0]
+  ip3 weight[2]={50,100} bias[1]={50}
+                                                                                 ip3[3]={300,50,1} RF[65] GP[0] OF[0]
+  ip4 weight[2]={40,50} bias[1]={40}
+                                                                                 ip4[3]={300,40,1} RF[65] GP[0] OF[0]
+  ip5 weight[2]={30,40} bias[1]={30}
+                                                                                 ip5[3]={300,30,1} RF[65] GP[0] OF[0]
+  ip6 weight[2]={20,30} bias[1]={20}
+                                                                                 ip6[3]={300,20,1} RF[65] GP[0] OF[0]
+  ip7 weight[2]={10,20} bias[1]={10}
+                                                                                 ip7[3]={300,10,1} RF[65] GP[0] OF[0]
+  loss
+                                                                                 loss[3]={300,10,1} RF[65] GP[0] OF[0]
+  loss_loss
+=====================================================================================================================================
+GPU 0: Total GPU memory: 1.44186 MB
+=====================================================================================================================================
+  126.953 KB
+  1.95312 KB
+  390.625 KB
+  400 Bytes
+  39.0625 KB
+  200 Bytes
+  9.76562 KB
+  100 Bytes
+  3.90625 KB
+  80 Bytes
+  2.34375 KB
+  60 Bytes
+  1.17188 KB
+  40 Bytes
+  400 Bytes
+  20 Bytes
+ ip0.weight[2]={1000,65} is set.
+ ip0.bias[1]={1000} is set.
+ ip1.weight[2]={200,1000} is set.
+ ip1.bias[1]={200} is set.
+ ip2.weight[2]={100,200} is set.
+ ip2.bias[1]={100} is set.
+ ip3.weight[2]={50,100} is set.
+ ip3.bias[1]={50} is set.
+ ip4.weight[2]={40,50} is set.
+ ip4.bias[1]={40} is set.
+ ip5.weight[2]={30,40} is set.
+ ip5.bias[1]={30} is set.
+ ip6.weight[2]={20,30} is set.
+ ip6.bias[1]={20} is set.
+ ip7.weight[2]={10,20} is set.
+ ip7.bias[1]={10} is set.
+=====================================================================================================================================
+Iteration 0   loss = 1.86636 * 1  eval = 0.426667   
+Iteration 1   loss = 2.06146 * 1  eval = 0.293333   
+Iteration 2   loss = 2.21415 * 1  eval = 0.286667   
+Iteration 3   loss = 2.05415 * 1  eval = 0.273333   
+Iteration 4   loss = 2.14436 * 1  eval = 0.296667   
+Iteration 5   loss = 1.85455 * 1  eval = 0.433333   
+Iteration 6   loss = 2.16652 * 1  eval = 0.296667   
+Iteration 7   loss = 2.14648 * 1  eval = 0.27   
+Iteration 8   loss = 1.6038 * 1  eval = 0.623333   
+Iteration 9   loss = 2.12581 * 1  eval = 0.313333   
+Iteration 10   loss = 2.07134 * 1  eval = 0.393333   
+Iteration 11   loss = 2.05716 * 1  eval = 0.283333   
+Iteration 12   loss = 2.15714 * 1  eval = 0.273333   
+Iteration 13   loss = 2.133 * 1  eval = 0.346667   
+Iteration 14   loss = 1.97347 * 1  eval = 0.48   
+Iteration 15   loss = 2.00338 * 1  eval = 0.23   
+Iteration 16   loss = 2.19549 * 1  eval = 0.27   
+Iteration 17   loss = 2.21653 * 1  eval = 0.393333   
+Iteration 18   loss = 2.10206 * 1  eval = 0.313333   
+Iteration 19   loss = 1.98557 * 1  eval = 0.246667   
+Iteration 20   loss = 1.93871 * 1  eval = 0.426667   
+Iteration 21   loss = 1.99492 * 1  eval = 0.47   
+Iteration 22   loss = 1.99293 * 1  eval = 0.18   
+Iteration 23   loss = 1.77507 * 1  eval = 0.406667   
+Iteration 24   loss = 2.11372 * 1  eval = 0.376667   
+Iteration 25   loss = 2.31133 * 1  eval = 0.26   
+Iteration 26   loss = 2.381 * 1  eval = 0.186667   
+Iteration 27   loss = 2.27229 * 1  eval = 0.193333   
+Iteration 28   loss = 2.19342 * 1  eval = 0.25   
+Iteration 29   loss = 1.74818 * 1  eval = 0.516667   
+Iteration 30   loss = 1.87399 * 1  eval = 0.433333   
+Iteration 31   loss = 2.39681 * 1  eval = 0.116667   
+Iteration 32   loss = 2.09792 * 1  eval = 0.316667   
+Iteration 33   loss = 1.87965 * 1  eval = 0.236667   
+Iteration 34   loss = 2.07592 * 1  eval = 0.266667   
+Iteration 35   loss = 2.04871 * 1  eval = 0.366667   
+Iteration 36   loss = 1.99189 * 1  eval = 0.443333   
+Iteration 37   loss = 1.75631 * 1  eval = 0.493333   
+Iteration 38   loss = 1.92802 * 1  eval = 0.48   
+Iteration 39   loss = 2.09358 * 1  eval = 0.326667   
+Iteration 40   loss = 1.93131 * 1  eval = 0.423333   
+Iteration 41   loss = 2.69266 * 1  eval = 0.126667   
+Iteration 42   loss = 2.07909 * 1  eval = 0.34   
+Iteration 43   loss = 2.15393 * 1  eval = 0.4   
+Iteration 44   loss = 2.23266 * 1  eval = 0.34   
+Iteration 45   loss = 2.05891 * 1  eval = 0.266667   
+Iteration 46   loss = 2.23681 * 1  eval = 0.283333   
+Iteration 47   loss = 1.69714 * 1  eval = 0.623333   
+Iteration 48   loss = 2.06546 * 1  eval = 0.313333   
+Iteration 49   loss = 2.42549 * 1  eval = 0.26   
+Iteration 50   loss = 2.00028 * 1  eval = 0.343333   
+Iteration 51   loss = 2.26989 * 1  eval = 0.253333   
+Iteration 52   loss = 1.95285 * 1  eval = 0.416667   
+Iteration 53   loss = 2.61912 * 1  eval = 0.16   
+Iteration 54   loss = 1.9979 * 1  eval = 0.4   
+Iteration 55   loss = 1.95432 * 1  eval = 0.403333   
+Iteration 56   loss = 1.97667 * 1  eval = 0.33   
+Iteration 57   loss = 1.9898 * 1  eval = 0.376667   
+Iteration 58   loss = 2.09085 * 1  eval = 0.31   
+Iteration 59   loss = 2.07877 * 1  eval = 0.32   
+Iteration 60   loss = 1.98152 * 1  eval = 0.313333   
+Iteration 61   loss = 2.23134 * 1  eval = 0.273333   
+Iteration 62   loss = 2.41826 * 1  eval = 0.236667   
+Iteration 63   loss = 2.118 * 1  eval = 0.246667   
+Iteration 64   loss = 2.22427 * 1  eval = 0.27   
+Iteration 65   loss = 2.00993 * 1  eval = 0.336667   
+Iteration 66   loss = 1.94967 * 1  eval = 0.293333   
+Iteration 67   loss = 2.01411 * 1  eval = 0.353333   
+Iteration 68   loss = 2.29067 * 1  eval = 0.226667   
+Iteration 69   loss = 1.99095 * 1  eval = 0.396667   
+Iteration 70   loss = 1.99913 * 1  eval = 0.313333   
+Iteration 71   loss = 1.87481 * 1  eval = 0.43   
+Iteration 72   loss = 1.91737 * 1  eval = 0.4   
+Iteration 73   loss = 1.9945 * 1  eval = 0.313333   
+Iteration 74   loss = 2.04047 * 1  eval = 0.293333   
+Iteration 75   loss = 2.16199 * 1  eval = 0.45   
+Iteration 76   loss = 1.78041 * 1  eval = 0.48   
+Iteration 77   loss = 2.27734 * 1  eval = 0.41   
+Iteration 78   loss = 1.96847 * 1  eval = 0.466667   
+Iteration 79   loss = 1.95108 * 1  eval = 0.363333   
+Iteration 80   loss = 2.04969 * 1  eval = 0.316667   
+Iteration 81   loss = 2.12423 * 1  eval = 0.293333   
+Iteration 82   loss = 1.97335 * 1  eval = 0.433333   
+Iteration 83   loss = 2.00375 * 1  eval = 0.33   
+Iteration 84   loss = 1.60121 * 1  eval = 0.5   
+Iteration 85   loss = 2.48891 * 1  eval = 0.226667   
+Iteration 86   loss = 2.08 * 1  eval = 0.26   
+Iteration 87   loss = 2.19952 * 1  eval = 0.336667   
+Iteration 88   loss = 2.02185 * 1  eval = 0.413333   
+Iteration 89   loss = 2.20375 * 1  eval = 0.303333   
+Iteration 90   loss = 2.21979 * 1  eval = 0.326667   
+Iteration 91   loss = 1.94156 * 1  eval = 0.41   
+Iteration 92   loss = 1.69467 * 1  eval = 0.516667   
+Iteration 93   loss = 2.10875 * 1  eval = 0.34   
+Iteration 94   loss = 2.13453 * 1  eval = 0.436667   
+Iteration 95   loss = 2.00225 * 1  eval = 0.343333   
+Iteration 96   loss = 2.35143 * 1  eval = 0.296667   
+Iteration 97   loss = 1.80854 * 1  eval = 0.483333   
+Iteration 98   loss = 2.07689 * 1  eval = 0.296667   
+Iteration 99   loss = 2.04764 * 1  eval = 0.32   
+Iteration 100   loss = 2.05782 * 1  eval = 0.346667   
+Iteration 101   loss = 2.09241 * 1  eval = 0.343333   
+Iteration 102   loss = 2.05735 * 1  eval = 0.37   
+Iteration 103   loss = 2.48965 * 1  eval = 0.213333   
+Iteration 104   loss = 1.94736 * 1  eval = 0.41   
+Iteration 105   loss = 2.29277 * 1  eval = 0.243333   
+Iteration 106   loss = 1.99482 * 1  eval = 0.353333   
+Iteration 107   loss = 2.26559 * 1  eval = 0.333333   
+Iteration 108   loss = 2.16393 * 1  eval = 0.366667   
+Iteration 109   loss = 2.09064 * 1  eval = 0.29   
+Iteration 110   loss = 1.97182 * 1  eval = 0.39   
+Iteration 111   loss = 2.0584 * 1  eval = 0.326667   
+Iteration 112   loss = 1.90724 * 1  eval = 0.46   
+Iteration 113   loss = 2.25781 * 1  eval = 0.23   
+Iteration 114   loss = 2.02081 * 1  eval = 0.49   
+Iteration 115   loss = 1.97297 * 1  eval = 0.296667   
+Iteration 116   loss = 1.58426 * 1  eval = 0.57   
+Iteration 117   loss = 2.04862 * 1  eval = 0.45   
+Iteration 118   loss = 2.04835 * 1  eval = 0.276667   
+Iteration 119   loss = 2.17619 * 1  eval = 0.266667   
+Iteration 120   loss = 2.0665 * 1  eval = 0.353333   
+Iteration 121   loss = 2.19314 * 1  eval = 0.29   
+Iteration 122   loss = 2.15834 * 1  eval = 0.466667   
+Iteration 123   loss = 1.92989 * 1  eval = 0.456667   
+Iteration 124   loss = 1.75029 * 1  eval = 0.493333   
+Iteration 125   loss = 2.22666 * 1  eval = 0.27   
+Iteration 126   loss = 2.01907 * 1  eval = 0.316667   
+Iteration 127   loss = 2.08623 * 1  eval = 0.32   
+Iteration 128   loss = 2.1181 * 1  eval = 0.353333   
+Iteration 129   loss = 2.18742 * 1  eval = 0.243333   
+Iteration 130   loss = 2.34136 * 1  eval = 0.303333   
+Iteration 131   loss = 2.23701 * 1  eval = 0.383333   
+Iteration 132   loss = 1.96428 * 1  eval = 0.416667   
+Iteration 133   loss = 2.05867 * 1  eval = 0.32   
+Iteration 134   loss = 2.04606 * 1  eval = 0.283333   
+Iteration 135   loss = 2.24735 * 1  eval = 0.286667   
+Iteration 136   loss = 1.9193 * 1  eval = 0.39   
+Iteration 137   loss = 2.2908 * 1  eval = 0.266667   
+Iteration 138   loss = 2.18434 * 1  eval = 0.276667   
+Iteration 139   loss = 2.0153 * 1  eval = 0.35   
+Iteration 140   loss = 2.02155 * 1  eval = 0.426667   
+Iteration 141   loss = 2.12413 * 1  eval = 0.366667   
+Iteration 142   loss = 2.42916 * 1  eval = 0.223333   
+Iteration 143   loss = 1.79933 * 1  eval = 0.503333   
+Iteration 144   loss = 2.14085 * 1  eval = 0.326667   
+Iteration 145   loss = 1.82799 * 1  eval = 0.513333   
+Iteration 146   loss = 1.98363 * 1  eval = 0.383333   
+Iteration 147   loss = 2.03031 * 1  eval = 0.19   
+Iteration 148   loss = 2.20116 * 1  eval = 0.19   
+Iteration 149   loss = 2.10899 * 1  eval = 0.236667   
+Iteration 150   loss = 2.23419 * 1  eval = 0.403333   
+Iteration 151   loss = 2.1806 * 1  eval = 0.286667   
+Iteration 152   loss = 2.21481 * 1  eval = 0.296667   
+Iteration 153   loss = 2.19633 * 1  eval = 0.31   
+Iteration 154   loss = 2.19954 * 1  eval = 0.263333   
+Iteration 155   loss = 2.03209 * 1  eval = 0.413333   
+Iteration 156   loss = 1.94016 * 1  eval = 0.413333   
+Iteration 157   loss = 2.19168 * 1  eval = 0.303333   
+Iteration 158   loss = 2.10179 * 1  eval = 0.316667   
+Iteration 159   loss = 2.03049 * 1  eval = 0.313333   
+Iteration 160   loss = 2.13037 * 1  eval = 0.32   
+Iteration 161   loss = 2.11977 * 1  eval = 0.436667   
+Iteration 162   loss = 1.91574 * 1  eval = 0.406667   
+Iteration 163   loss = 2.29921 * 1  eval = 0.273333   
+Iteration 164   loss = 2.27119 * 1  eval = 0.243333   
+Iteration 165   loss = 2.46703 * 1  eval = 0.21   
+Iteration 166   loss = 1.8303 * 1  eval = 0.396667   
+Iteration 167   loss = 1.7156 * 1  eval = 0.533333   
+Iteration 168   loss = 1.85562 * 1  eval = 0.443333   
+Iteration 169   loss = 1.82875 * 1  eval = 0.42   
+Iteration 170   loss = 1.82899 * 1  eval = 0.436667   
+Iteration 171   loss = 1.93293 * 1  eval = 0.39   
+Iteration 172   loss = 2.11971 * 1  eval = 0.32   
+Iteration 173   loss = 2.1259 * 1  eval = 0.363333   
+Iteration 174   loss = 2.08997 * 1  eval = 0.37   
+Iteration 175   loss = 1.8529 * 1  eval = 0.486667   
+Iteration 176   loss = 2.37857 * 1  eval = 0.326667   
+Iteration 177   loss = 1.71164 * 1  eval = 0.586667   
+Iteration 178   loss = 2.01183 * 1  eval = 0.396667   
+Iteration 179   loss = 2.07338 * 1  eval = 0.38   
+Iteration 180   loss = 1.82223 * 1  eval = 0.466667   
+Iteration 181   loss = 2.05456 * 1  eval = 0.446667   
+Iteration 182   loss = 1.97589 * 1  eval = 0.4   
+Iteration 183   loss = 2.00794 * 1  eval = 0.293333   
+Iteration 184   loss = 1.7292 * 1  eval = 0.51   
+Iteration 185   loss = 2.12378 * 1  eval = 0.273333   
+Iteration 186   loss = 2.16047 * 1  eval = 0.286667   
+Iteration 187   loss = 2.04286 * 1  eval = 0.336667   
+Iteration 188   loss = 2.52756 * 1  eval = 0.136667   
+Iteration 189   loss = 2.03257 * 1  eval = 0.416667   
+Iteration 190   loss = 2.17884 * 1  eval = 0.276667   
+Iteration 191   loss = 2.07152 * 1  eval = 0.42   
+Iteration 192   loss = 2.12789 * 1  eval = 0.24   
+Iteration 193   loss = 2.12636 * 1  eval = 0.336667   
+Iteration 194   loss = 2.02655 * 1  eval = 0.3   
+Iteration 195   loss = 2.19657 * 1  eval = 0.303333   
+Iteration 196   loss = 2.03283 * 1  eval = 0.336667   
+Iteration 197   loss = 2.23572 * 1  eval = 0.286667   
+Iteration 198   loss = 1.93751 * 1  eval = 0.323333   
+Iteration 199   loss = 2.13521 * 1  eval = 0.313333   
+Iteration 200   loss = 2.00897 * 1  eval = 0.266667   
+Iteration 201   loss = 2.71348 * 1  eval = 0.213333   
+Iteration 202   loss = 2.3824 * 1  eval = 0.226667   
+Iteration 203   loss = 2.0988 * 1  eval = 0.24   
+Iteration 204   loss = 1.90246 * 1  eval = 0.303333   
+Iteration 205   loss = 2.18154 * 1  eval = 0.14   
+Iteration 206   loss = 2.07214 * 1  eval = 0.336667   
+Iteration 207   loss = 2.20037 * 1  eval = 0.326667   
+Iteration 208   loss = 1.75354 * 1  eval = 0.483333   
+Iteration 209   loss = 2.20024 * 1  eval = 0.32   
+Iteration 210   loss = 2.09102 * 1  eval = 0.343333   
+Iteration 211   loss = 1.54419 * 1  eval = 0.54   
+Iteration 212   loss = 2.07092 * 1  eval = 0.376667   
+Iteration 213   loss = 1.96482 * 1  eval = 0.273333   
+Iteration 214   loss = 2.02474 * 1  eval = 0.296667   
+Iteration 215   loss = 2.26584 * 1  eval = 0.223333   
+Iteration 216   loss = 2.20781 * 1  eval = 0.223333   
+Iteration 217   loss = 1.96328 * 1  eval = 0.283333   
+Iteration 218   loss = 1.87723 * 1  eval = 0.386667   
+Iteration 219   loss = 1.73834 * 1  eval = 0.53   
+Iteration 220   loss = 2.31209 * 1  eval = 0.27   
+Iteration 221   loss = 1.80688 * 1  eval = 0.41   
+Iteration 222   loss = 1.90285 * 1  eval = 0.51   
+Iteration 223   loss = 1.93545 * 1  eval = 0.38   
+Iteration 224   loss = 2.13827 * 1  eval = 0.246667   
+Iteration 225   loss = 2.27718 * 1  eval = 0.21   
+Iteration 226   loss = 1.8626 * 1  eval = 0.453333   
+Iteration 227   loss = 2.02695 * 1  eval = 0.356667   
+Iteration 228   loss = 2.13899 * 1  eval = 0.363333   
+Iteration 229   loss = 1.97232 * 1  eval = 0.34   
+Iteration 230   loss = 2.2421 * 1  eval = 0.303333   
+Iteration 231   loss = 2.29701 * 1  eval = 0.296667   
+Iteration 232   loss = 2.31371 * 1  eval = 0.3   
+Iteration 233   loss = 2.31971 * 1  eval = 0.37   
+Iteration 234   loss = 2.2137 * 1  eval = 0.206667   
+Iteration 235   loss = 2.214 * 1  eval = 0.246667   
+Iteration 236   loss = 1.9891 * 1  eval = 0.39   
+Iteration 237   loss = 2.00233 * 1  eval = 0.393333   
+Iteration 238   loss = 2.16431 * 1  eval = 0.24   
+Iteration 239   loss = 2.13396 * 1  eval = 0.23   
+Iteration 240   loss = 2.03656 * 1  eval = 0.346667   
+Iteration 241   loss = 1.98916 * 1  eval = 0.483333   
+Iteration 242   loss = 2.02404 * 1  eval = 0.356667   
+Iteration 243   loss = 2.07468 * 1  eval = 0.4   
+Iteration 244   loss = 2.06037 * 1  eval = 0.25   
+Iteration 245   loss = 2.04191 * 1  eval = 0.313333   
+Iteration 246   loss = 1.93775 * 1  eval = 0.253333   
+Iteration 247   loss = 2.26654 * 1  eval = 0.286667   
+Iteration 248   loss = 2.03243 * 1  eval = 0.33   
+Iteration 249   loss = 1.81313 * 1  eval = 0.443333   
+Iteration 250   loss = 2.21204 * 1  eval = 0.286667   
+Iteration 251   loss = 1.93501 * 1  eval = 0.46   
+Iteration 252   loss = 1.98182 * 1  eval = 0.343333   
+Iteration 253   loss = 2.03336 * 1  eval = 0.333333   
+Iteration 254   loss = 2.05889 * 1  eval = 0.186667   
+Iteration 255   loss = 2.13287 * 1  eval = 0.28   
+Iteration 256   loss = 1.96363 * 1  eval = 0.22   
+Iteration 257   loss = 2.10856 * 1  eval = 0.343333   
+Iteration 258   loss = 2.17866 * 1  eval = 0.296667   
+Iteration 259   loss = 2.01577 * 1  eval = 0.346667   
+Iteration 260   loss = 1.91446 * 1  eval = 0.216667   
+Iteration 261   loss = 1.81972 * 1  eval = 0.42   
+Iteration 262   loss = 2.17194 * 1  eval = 0.326667   
+Iteration 263   loss = 2.02419 * 1  eval = 0.286667   
+Iteration 264   loss = 2.20656 * 1  eval = 0.4   
+Iteration 265   loss = 2.04129 * 1  eval = 0.396667   
+Iteration 266   loss = 1.67143 * 1  eval = 0.486667   
+Iteration 267   loss = 2.11672 * 1  eval = 0.33   
+Iteration 268   loss = 1.96717 * 1  eval = 0.463333   
+Iteration 269   loss = 1.85836 * 1  eval = 0.413333   
+Iteration 270   loss = 1.97777 * 1  eval = 0.393333   
+Iteration 271   loss = 2.02666 * 1  eval = 0.343333   
+Iteration 272   loss = 2.02134 * 1  eval = 0.476667   
+Iteration 273   loss = 1.81883 * 1  eval = 0.43   
+Iteration 274   loss = 2.14971 * 1  eval = 0.346667   
+Iteration 275   loss = 2.27184 * 1  eval = 0.366667   
+Iteration 276   loss = 2.13839 * 1  eval = 0.366667   
+Iteration 277   loss = 1.6802 * 1  eval = 0.56   
+Iteration 278   loss = 1.67373 * 1  eval = 0.476667   
+Iteration 279   loss = 1.77249 * 1  eval = 0.403333   
+Iteration 280   loss = 1.99665 * 1  eval = 0.363333   
+Iteration 281   loss = 2.26505 * 1  eval = 0.226667   
+Iteration 282   loss = 1.98573 * 1  eval = 0.463333   
+Iteration 283   loss = 2.03439 * 1  eval = 0.343333   
+Iteration 284   loss = 1.99646 * 1  eval = 0.34   
+Iteration 285   loss = 2.02956 * 1  eval = 0.4   
+Iteration 286   loss = 1.84407 * 1  eval = 0.476667   
+Iteration 287   loss = 2.1489 * 1  eval = 0.283333   
+Iteration 288   loss = 1.99689 * 1  eval = 0.366667   
+Iteration 289   loss = 1.58752 * 1  eval = 0.583333   
+Iteration 290   loss = 1.71278 * 1  eval = 0.553333   
+Iteration 291   loss = 2.05925 * 1  eval = 0.356667   
+Iteration 292   loss = 1.825 * 1  eval = 0.433333   
+Iteration 293   loss = 1.82292 * 1  eval = 0.446667   
+Iteration 294   loss = 2.02176 * 1  eval = 0.353333   
+Iteration 295   loss = 2.05137 * 1  eval = 0.396667   
+Iteration 296   loss = 2.24188 * 1  eval = 0.433333   
+Iteration 297   loss = 1.92583 * 1  eval = 0.486667   
+Iteration 298   loss = 2.37865 * 1  eval = 0.276667   
+Iteration 299   loss = 1.83762 * 1  eval = 0.41   
+Iteration 300   loss = 2.30023 * 1  eval = 0.233333   
+Iteration 301   loss = 2.1225 * 1  eval = 0.303333   
+Iteration 302   loss = 2.27929 * 1  eval = 0.26   
+Iteration 303   loss = 2.19444 * 1  eval = 0.363333   
+Iteration 304   loss = 2.23121 * 1  eval = 0.246667   
+Iteration 305   loss = 2.08335 * 1  eval = 0.306667   
+Iteration 306   loss = 2.10787 * 1  eval = 0.27   
+Iteration 307   loss = 2.21136 * 1  eval = 0.196667   
+Iteration 308   loss = 2.17483 * 1  eval = 0.3   
+Iteration 309   loss = 2.10977 * 1  eval = 0.326667   
+Iteration 310   loss = 2.01188 * 1  eval = 0.34   
+Iteration 311   loss = 2.08726 * 1  eval = 0.26   
+Iteration 312   loss = 1.82414 * 1  eval = 0.47   
+Iteration 313   loss = 2.25711 * 1  eval = 0.31   
+Iteration 314   loss = 2.14787 * 1  eval = 0.273333   
+Iteration 315   loss = 2.10938 * 1  eval = 0.323333   
+Iteration 316   loss = 2.08421 * 1  eval = 0.34   
+Iteration 317   loss = 1.81488 * 1  eval = 0.536667   
+Iteration 318   loss = 2.00814 * 1  eval = 0.353333   
+Iteration 319   loss = 1.99069 * 1  eval = 0.41   
+Iteration 320   loss = 2.17901 * 1  eval = 0.403333   
+Iteration 321   loss = 2.30406 * 1  eval = 0.173333   
+Iteration 322   loss = 2.05023 * 1  eval = 0.396667   
+Iteration 323   loss = 2.35568 * 1  eval = 0.29   
+Iteration 324   loss = 2.32965 * 1  eval = 0.27   
+Iteration 325   loss = 2.14768 * 1  eval = 0.313333   
+Iteration 326   loss = 1.84195 * 1  eval = 0.42   
+Iteration 327   loss = 2.07464 * 1  eval = 0.346667   
+Iteration 328   loss = 1.902 * 1  eval = 0.37   
+Iteration 329   loss = 2.13148 * 1  eval = 0.266667   
+Iteration 330   loss = 1.98242 * 1  eval = 0.37   
+Iteration 331   loss = 2.17292 * 1  eval = 0.32   
+Iteration 332   loss = 2.23338 * 1  eval = 0.353333   
+Iteration 333   loss = 1.85854 * 1  eval = 0.386667   
+Iteration 334   loss = 2.03072 * 1  eval = 0.383333   
+Iteration 335   loss = 2.24245 * 1  eval = 0.283333   
+Iteration 336   loss = 2.07036 * 1  eval = 0.32   
+Iteration 337   loss = 2.27122 * 1  eval = 0.306667   
+Iteration 338   loss = 2.13091 * 1  eval = 0.323333   
+Iteration 339   loss = 2.1031 * 1  eval = 0.256667   
+Iteration 340   loss = 1.89461 * 1  eval = 0.53   
+Iteration 341   loss = 2.00614 * 1  eval = 0.433333   
+Iteration 342   loss = 1.89834 * 1  eval = 0.406667   
+Iteration 343   loss = 2.1005 * 1  eval = 0.343333   
+Iteration 344   loss = 1.6898 * 1  eval = 0.45   
+Iteration 345   loss = 1.93394 * 1  eval = 0.466667   
+Iteration 346   loss = 1.96426 * 1  eval = 0.333333   
+Iteration 347   loss = 2.13928 * 1  eval = 0.343333   
+Iteration 348   loss = 2.1767 * 1  eval = 0.253333   
+Iteration 349   loss = 2.09163 * 1  eval = 0.32   
+Iteration 350   loss = 2.00764 * 1  eval = 0.2   
+Iteration 351   loss = 1.9376 * 1  eval = 0.41   
+Iteration 352   loss = 2.23728 * 1  eval = 0.21   
+Iteration 353   loss = 2.20864 * 1  eval = 0.21   
+Iteration 354   loss = 2.37236 * 1  eval = 0.223333   
+Iteration 355   loss = 2.0858 * 1  eval = 0.3   
+Iteration 356   loss = 2.80762 * 1  eval = 0.213333   
+Iteration 357   loss = 2.34506 * 1  eval = 0.363333   
+Iteration 358   loss = 2.05152 * 1  eval = 0.29   
+Iteration 359   loss = 1.72313 * 1  eval = 0.573333   
+Iteration 360   loss = 1.92251 * 1  eval = 0.436667   
+Iteration 361   loss = 2.00202 * 1  eval = 0.353333   
+Iteration 362   loss = 2.03097 * 1  eval = 0.256667   
+Iteration 363   loss = 2.47512 * 1  eval = 0.146667   
+Iteration 364   loss = 1.99072 * 1  eval = 0.31   
+Iteration 365   loss = 1.95864 * 1  eval = 0.396667   
+Iteration 366   loss = 2.00809 * 1  eval = 0.333333   
+Iteration 367   loss = 1.85638 * 1  eval = 0.453333   
+Iteration 368   loss = 2.10038 * 1  eval = 0.32   
+Iteration 369   loss = 1.87673 * 1  eval = 0.503333   
+Iteration 370   loss = 1.89815 * 1  eval = 0.42   
+Iteration 371   loss = 2.13487 * 1  eval = 0.376667   
+Iteration 372   loss = 1.84585 * 1  eval = 0.433333   
+Iteration 373   loss = 2.5368 * 1  eval = 0.323333   
+Iteration 374   loss = 1.85001 * 1  eval = 0.296667   
+Iteration 375   loss = 2.14383 * 1  eval = 0.346667   
+Iteration 376   loss = 1.9727 * 1  eval = 0.333333   
+Iteration 377   loss = 2.00928 * 1  eval = 0.436667   
+Iteration 378   loss = 2.19006 * 1  eval = 0.263333   
+Iteration 379   loss = 2.34698 * 1  eval = 0.253333   
+Iteration 380   loss = 2.07509 * 1  eval = 0.303333   
+Iteration 381   loss = 1.95319 * 1  eval = 0.403333   
+Iteration 382   loss = 1.99367 * 1  eval = 0.36   
+Iteration 383   loss = 2.09848 * 1  eval = 0.42   
+Iteration 384   loss = 2.30273 * 1  eval = 0.376667   
+Iteration 385   loss = 1.93021 * 1  eval = 0.43   
+Iteration 386   loss = 2.06834 * 1  eval = 0.4   
+Iteration 387   loss = 2.11333 * 1  eval = 0.306667   
+Iteration 388   loss = 1.99493 * 1  eval = 0.39   
+Iteration 389   loss = 2.13025 * 1  eval = 0.263333   
+Iteration 390   loss = 3.27393 * 1  eval = 0.353333   
+Iteration 391   loss = 2.07083 * 1  eval = 0.286667   
+Iteration 392   loss = 1.45135 * 1  eval = 0.526667   
+Iteration 393   loss = 2.33563 * 1  eval = 0.25   
+Iteration 394   loss = 2.16594 * 1  eval = 0.296667   
+Iteration 395   loss = 1.82829 * 1  eval = 0.526667   
+Iteration 396   loss = 1.76683 * 1  eval = 0.45   
+Iteration 397   loss = 1.72214 * 1  eval = 0.453333   
+Iteration 398   loss = 2.16381 * 1  eval = 0.356667   
+Iteration 399   loss = 2.27041 * 1  eval = 0.3   
+Iteration 400   loss = 2.24902 * 1  eval = 0.213333   
+Iteration 401   loss = 2.26923 * 1  eval = 0.326667   
+Iteration 402   loss = 2.28862 * 1  eval = 0.126667   
+Iteration 403   loss = 1.85944 * 1  eval = 0.426667   
+Iteration 404   loss = 2.03225 * 1  eval = 0.316667   
+Iteration 405   loss = 1.79941 * 1  eval = 0.463333   
+Iteration 406   loss = 2.13593 * 1  eval = 0.12   
+Iteration 407   loss = 2.29391 * 1  eval = 0.206667   
+Iteration 408   loss = 1.73615 * 1  eval = 0.433333   
+Iteration 409   loss = 1.73717 * 1  eval = 0.483333   
+Iteration 410   loss = 2.10237 * 1  eval = 0.316667   
+Iteration 411   loss = 1.86242 * 1  eval = 0.46   
+Iteration 412   loss = 2.0789 * 1  eval = 0.34   
+Iteration 413   loss = 1.55696 * 1  eval = 0.536667   
+Iteration 414   loss = 2.05936 * 1  eval = 0.273333   
+Iteration 415   loss = 2.04882 * 1  eval = 0.296667   
+Iteration 416   loss = 1.99779 * 1  eval = 0.28   
+Iteration 417   loss = 1.84078 * 1  eval = 0.4   
+Iteration 418   loss = 2.4151 * 1  eval = 0.306667   
+Iteration 419   loss = 2.29377 * 1  eval = 0.336667   
+Iteration 420   loss = 1.87844 * 1  eval = 0.32   
+Iteration 421   loss = 2.22057 * 1  eval = 0.22   
+Iteration 422   loss = 1.73862 * 1  eval = 0.416667   
+Iteration 423   loss = 1.66403 * 1  eval = 0.51   
+Iteration 424   loss = 1.82761 * 1  eval = 0.443333   
+Iteration 425   loss = 3.00597 * 1  eval = 0.46   
+Iteration 426   loss = 2.00646 * 1  eval = 0.363333   
+Iteration 427   loss = 2.69985 * 1  eval = 0.363333   
+Iteration 428   loss = 1.8309 * 1  eval = 0.303333   
+Iteration 429   loss = 2.14169 * 1  eval = 0.296667   
+Iteration 430   loss = 2.257 * 1  eval = 0.34   
+Iteration 431   loss = 2.18608 * 1  eval = 0.353333   
+Iteration 432   loss = 2.12963 * 1  eval = 0.36   
+Iteration 433   loss = 1.92407 * 1  eval = 0.39   
+Iteration 434   loss = 2.09228 * 1  eval = 0.163333   
+Iteration 435   loss = 2.04568 * 1  eval = 0.35   
+Iteration 436   loss = 1.62055 * 1  eval = 0.45   
+Iteration 437   loss = 2.27541 * 1  eval = 0.356667   
+Iteration 438   loss = 2.16703 * 1  eval = 0.283333   
+Iteration 439   loss = 2.19321 * 1  eval = 0.266667   
+Iteration 440   loss = 1.98025 * 1  eval = 0.323333   
+Iteration 441   loss = 2.29529 * 1  eval = 0.263333   
+Iteration 442   loss = 2.44309 * 1  eval = 0.326667   
+Iteration 443   loss = 1.78232 * 1  eval = 0.386667   
+Iteration 444   loss = 1.85129 * 1  eval = 0.383333   
+Iteration 445   loss = 2.07722 * 1  eval = 0.403333   
+Iteration 446   loss = 1.94324 * 1  eval = 0.49   
+Iteration 447   loss = 2.10957 * 1  eval = 0.36   
+Iteration 448   loss = 2.06228 * 1  eval = 0.31   
+Iteration 449   loss = 2.12917 * 1  eval = 0.283333   
+Iteration 450   loss = 2.17342 * 1  eval = 0.326667   
+Iteration 451   loss = 2.18833 * 1  eval = 0.24   
+Iteration 452   loss = 1.99717 * 1  eval = 0.353333   
+Iteration 453   loss = 2.00799 * 1  eval = 0.346667   
+Iteration 454   loss = 2.09227 * 1  eval = 0.28   
+Iteration 455   loss = 2.2179 * 1  eval = 0.286667   
+Iteration 456   loss = 1.34966 * 1  eval = 0.496667   
+Iteration 457   loss = 2.34254 * 1  eval = 0.44   
+Iteration 458   loss = 2.10962 * 1  eval = 0.403333   
+Iteration 459   loss = 1.96671 * 1  eval = 0.37   
+Iteration 460   loss = 2.31911 * 1  eval = 0.356667   
+Iteration 461   loss = 2.41872 * 1  eval = 0.183333   
+Iteration 462   loss = 2.22477 * 1  eval = 0.26   
+Iteration 463   loss = 2.0384 * 1  eval = 0.356667   
+Iteration 464   loss = 2.27899 * 1  eval = 0.26   
+Iteration 465   loss = 2.27367 * 1  eval = 0.25   
+Iteration 466   loss = 2.15645 * 1  eval = 0.333333   
+Iteration 467   loss = 2.01345 * 1  eval = 0.326667   
+Iteration 468   loss = 2.31402 * 1  eval = 0.146667   
+Iteration 469   loss = 4.99695 * 1  eval = 0.206667   
+Iteration 470   loss = 2.04493 * 1  eval = 0.386667   
+Iteration 471   loss = 2.07835 * 1  eval = 0.303333   
+Iteration 472   loss = 2.05053 * 1  eval = 0.316667   
+Iteration 473   loss = 2.02024 * 1  eval = 0.376667   
+Iteration 474   loss = 1.83361 * 1  eval = 0.37   
+Iteration 475   loss = 2.18911 * 1  eval = 0.37   
+Iteration 476   loss = 2.32615 * 1  eval = 0.17   
+Iteration 477   loss = 2.0372 * 1  eval = 0.336667   
+Iteration 478   loss = 2.10311 * 1  eval = 0.19   
+Iteration 479   loss = 2.15217 * 1  eval = 0.423333   
+Iteration 480   loss = 2.02568 * 1  eval = 0.276667   
+Iteration 481   loss = 2.32099 * 1  eval = 0.183333   
+Iteration 482   loss = 2.04054 * 1  eval = 0.34   
+Iteration 483   loss = 2.06269 * 1  eval = 0.306667   
+Iteration 484   loss = 1.97097 * 1  eval = 0.43   
+Iteration 485   loss = 2.39338 * 1  eval = 0.26   
+Iteration 486   loss = 1.99329 * 1  eval = 0.266667   
+Iteration 487   loss = 1.67984 * 1  eval = 0.446667   
+Iteration 488   loss = 1.72901 * 1  eval = 0.48   
+Iteration 489   loss = 1.86479 * 1  eval = 0.506667   
+Iteration 490   loss = 2.07549 * 1  eval = 0.296667   
+Iteration 491   loss = 2.07588 * 1  eval = 0.363333   
+Iteration 492   loss = 2.27636 * 1  eval = 0.263333   
+Iteration 493   loss = 1.86826 * 1  eval = 0.45   
+Iteration 494   loss = 2.44839 * 1  eval = 0.226667   
+Iteration 495   loss = 1.95625 * 1  eval = 0.43   
+Iteration 496   loss = 2.19277 * 1  eval = 0.313333   
+Iteration 497   loss = 2.24158 * 1  eval = 0.23   
+Iteration 498   loss = 1.9759 * 1  eval = 0.38   
+Iteration 499   loss = 2.14397 * 1  eval = 0.243333   
+Iteration 500   loss = 1.85017 * 1  eval = 0.393333   
+Iteration 501   loss = 2.00778 * 1  eval = 0.336667   
+Iteration 502   loss = 2.30353 * 1  eval = 0.283333   
+Iteration 503   loss = 2.10865 * 1  eval = 0.233333   
+Iteration 504   loss = 2.25398 * 1  eval = 0.406667   
+Iteration 505   loss = 2.1181 * 1  eval = 0.243333   
+Iteration 506   loss = 2.16066 * 1  eval = 0.383333   
+Iteration 507   loss = 2.28122 * 1  eval = 0.296667   
+Iteration 508   loss = 1.98939 * 1  eval = 0.433333   
+Iteration 509   loss = 2.27902 * 1  eval = 0.26   
+Iteration 510   loss = 2.06303 * 1  eval = 0.336667   
+Iteration 511   loss = 1.89411 * 1  eval = 0.416667   
+Iteration 512   loss = 2.10999 * 1  eval = 0.316667   
+Iteration 513   loss = 2.0709 * 1  eval = 0.31   
+Iteration 514   loss = 1.97488 * 1  eval = 0.316667   
+Iteration 515   loss = 1.85913 * 1  eval = 0.456667   
+Iteration 516   loss = 2.23021 * 1  eval = 0.2   
+Iteration 517   loss = 1.86436 * 1  eval = 0.38   
+Iteration 518   loss = 2.18443 * 1  eval = 0.35   
+Iteration 519   loss = 2.01456 * 1  eval = 0.266667   
+Iteration 520   loss = 2.20724 * 1  eval = 0.296667   
+Iteration 521   loss = 2.12629 * 1  eval = 0.266667   
+Iteration 522   loss = 2.21372 * 1  eval = 0.24   
+Iteration 523   loss = 2.27367 * 1  eval = 0.28   
+Iteration 524   loss = 2.16016 * 1  eval = 0.34   
+Iteration 525   loss = 3.33309 * 1  eval = 0.293333   
+Iteration 526   loss = 2.40314 * 1  eval = 0.366667   
+Iteration 527   loss = 2.17436 * 1  eval = 0.303333   
+Iteration 528   loss = 2.1257 * 1  eval = 0.323333   
+Iteration 529   loss = 2.23155 * 1  eval = 0.316667   
+Iteration 530   loss = 1.83218 * 1  eval = 0.39   
+Iteration 531   loss = 2.00755 * 1  eval = 0.3   
+Iteration 532   loss = 2.13428 * 1  eval = 0.283333   
+Iteration 533   loss = 2.0269 * 1  eval = 0.306667   
+Iteration 534   loss = 2.05055 * 1  eval = 0.39   
+Iteration 535   loss = 2.00201 * 1  eval = 0.413333   
+Iteration 536   loss = 2.10793 * 1  eval = 0.286667   
+Iteration 537   loss = 1.97364 * 1  eval = 0.36   
+Iteration 538   loss = 2.02929 * 1  eval = 0.243333   
+Iteration 539   loss = 2.04779 * 1  eval = 0.276667   
+Iteration 540   loss = 2.027 * 1  eval = 0.266667   
+Iteration 541   loss = 2.16081 * 1  eval = 0.326667   
+Iteration 542   loss = 1.87885 * 1  eval = 0.4   
+Iteration 543   loss = 1.96614 * 1  eval = 0.29   
+Iteration 544   loss = 2.02469 * 1  eval = 0.333333   
+Iteration 545   loss = 1.81485 * 1  eval = 0.506667   
+Iteration 546   loss = 2.40079 * 1  eval = 0.32   
+Iteration 547   loss = 2.12081 * 1  eval = 0.31   
+Iteration 548   loss = 2.0154 * 1  eval = 0.4   
+Iteration 549   loss = 2.23925 * 1  eval = 0.43   
+Iteration 550   loss = 2.07441 * 1  eval = 0.34   
+Iteration 551   loss = 2.44985 * 1  eval = 0.34   
+Iteration 552   loss = 2.48072 * 1  eval = 0.176667   
+Iteration 553   loss = 1.94222 * 1  eval = 0.36   
+Iteration 554   loss = 2.26749 * 1  eval = 0.276667   
+Iteration 555   loss = 2.37921 * 1  eval = 0.233333   
+Iteration 556   loss = 1.98586 * 1  eval = 0.41   
+Iteration 557   loss = 1.72 * 1  eval = 0.59   
+Iteration 558   loss = 1.83633 * 1  eval = 0.483333   
+Iteration 559   loss = 1.87783 * 1  eval = 0.48   
+Iteration 560   loss = 2.31242 * 1  eval = 0.17   
+Iteration 561   loss = 2.16936 * 1  eval = 0.223333   
+Iteration 562   loss = 1.93812 * 1  eval = 0.326667   
+Iteration 563   loss = 1.7849 * 1  eval = 0.45   
+Iteration 564   loss = 1.8972 * 1  eval = 0.496667   
+Iteration 565   loss = 1.80379 * 1  eval = 0.383333   
+Iteration 566   loss = 2.25319 * 1  eval = 0.38   
+Iteration 567   loss = 2.01193 * 1  eval = 0.403333   
+Iteration 568   loss = 2.02086 * 1  eval = 0.303333   
+Iteration 569   loss = 2.24945 * 1  eval = 0.35   
+Iteration 570   loss = 2.05833 * 1  eval = 0.28   
+Iteration 571   loss = 2.37495 * 1  eval = 0.213333   
+Iteration 572   loss = 1.96105 * 1  eval = 0.243333   
+Iteration 573   loss = 1.91901 * 1  eval = 0.45   
+Iteration 574   loss = 2.64893 * 1  eval = 0.403333   
+Iteration 575   loss = 1.70948 * 1  eval = 0.51   
+Iteration 576   loss = 1.90532 * 1  eval = 0.556667   
+Iteration 577   loss = 2.32373 * 1  eval = 0.24   
+Iteration 578   loss = 2.10904 * 1  eval = 0.226667   
+Iteration 579   loss = 1.87027 * 1  eval = 0.426667   
+Iteration 580   loss = 2.25423 * 1  eval = 0.31   
+Iteration 581   loss = 2.10521 * 1  eval = 0.366667   
+Iteration 582   loss = 1.98082 * 1  eval = 0.29   
+Iteration 583   loss = 2.0851 * 1  eval = 0.236667   
+Iteration 584   loss = 2.26519 * 1  eval = 0.206667   
+Iteration 585   loss = 2.1134 * 1  eval = 0.423333   
+Iteration 586   loss = 1.72392 * 1  eval = 0.556667   
+Iteration 587   loss = 2.20956 * 1  eval = 0.196667   
+Iteration 588   loss = 2.10447 * 1  eval = 0.243333   
+Iteration 589   loss = 1.99888 * 1  eval = 0.246667   
+Iteration 590   loss = 2.22812 * 1  eval = 0.3   
+Iteration 591   loss = 2.18748 * 1  eval = 0.276667   
+Iteration 592   loss = 2.25127 * 1  eval = 0.246667   
+Iteration 593   loss = 2.10581 * 1  eval = 0.38   
+Iteration 594   loss = 1.96986 * 1  eval = 0.403333   
+Iteration 595   loss = 2.18026 * 1  eval = 0.343333   
+Iteration 596   loss = 2.3303 * 1  eval = 0.253333   
+Iteration 597   loss = 1.95827 * 1  eval = 0.38   
+Iteration 598   loss = 2.30002 * 1  eval = 0.146667   
+Iteration 599   loss = 1.93539 * 1  eval = 0.4   
+Iteration 600   loss = 1.80281 * 1  eval = 0.443333   
+Iteration 601   loss = 2.33066 * 1  eval = 0.14   
+Iteration 602   loss = 2.09433 * 1  eval = 0.29   
+Iteration 603   loss = 2.01789 * 1  eval = 0.293333   
+Iteration 604   loss = 2.19265 * 1  eval = 0.236667   
+Iteration 605   loss = 2.2829 * 1  eval = 0.13   
+Iteration 606   loss = 2.12609 * 1  eval = 0.206667   
+Iteration 607   loss = 2.19703 * 1  eval = 0.24   
+Iteration 608   loss = 2.00144 * 1  eval = 0.366667   
+Iteration 609   loss = 2.0247 * 1  eval = 0.263333   
+Iteration 610   loss = 2.20183 * 1  eval = 0.18   
+Iteration 611   loss = 2.0323 * 1  eval = 0.2   
+Iteration 612   loss = 2.08589 * 1  eval = 0.246667   
+Iteration 613   loss = 2.16544 * 1  eval = 0.336667   
+Iteration 614   loss = 2.08471 * 1  eval = 0.266667   
+Iteration 615   loss = 2.08543 * 1  eval = 0.303333   
+Iteration 616   loss = 2.18233 * 1  eval = 0.303333   
+Iteration 617   loss = 2.02392 * 1  eval = 0.276667   
+Iteration 618   loss = 2.03 * 1  eval = 0.31   
+Iteration 619   loss = 1.8967 * 1  eval = 0.52   
+Iteration 620   loss = 2.22179 * 1  eval = 0.403333   
+Iteration 621   loss = 2.2542 * 1  eval = 0.296667   
+Iteration 622   loss = 2.03094 * 1  eval = 0.29   
+Iteration 623   loss = 1.93046 * 1  eval = 0.46   
+Iteration 624   loss = 2.01895 * 1  eval = 0.35   
+Iteration 625   loss = 2.26953 * 1  eval = 0.246667   
+Iteration 626   loss = 2.20248 * 1  eval = 0.306667   
+Iteration 627   loss = 1.86725 * 1  eval = 0.533333   
+Iteration 628   loss = 1.93961 * 1  eval = 0.476667   
+Iteration 629   loss = 2.07732 * 1  eval = 0.316667   
+Iteration 630   loss = 2.12936 * 1  eval = 0.26   
+Iteration 631   loss = 2.32336 * 1  eval = 0.26   
+Iteration 632   loss = 2.43687 * 1  eval = 0.196667   
+Iteration 633   loss = 1.88965 * 1  eval = 0.423333   
+Iteration 634   loss = 1.96357 * 1  eval = 0.466667   
+Iteration 635   loss = 2.54122 * 1  eval = 0.213333   
+Iteration 636   loss = 2.097 * 1  eval = 0.273333   
+Iteration 637   loss = 2.18342 * 1  eval = 0.23   
+Iteration 638   loss = 1.96458 * 1  eval = 0.423333   
+Iteration 639   loss = 2.28303 * 1  eval = 0.286667   
+Iteration 640   loss = 2.14198 * 1  eval = 0.31   
+Iteration 641   loss = 1.93364 * 1  eval = 0.353333   
+Iteration 642   loss = 2.53747 * 1  eval = 0.283333   
+Iteration 643   loss = 2.6354 * 1  eval = 0.293333   
+Iteration 644   loss = 2.10915 * 1  eval = 0.26   
+Iteration 645   loss = 2.0107 * 1  eval = 0.426667   
+Iteration 646   loss = 2.20258 * 1  eval = 0.246667   
+Iteration 647   loss = 2.04169 * 1  eval = 0.3   
+Iteration 648   loss = 2.20346 * 1  eval = 0.41   
+Iteration 649   loss = 1.98915 * 1  eval = 0.34   
+Iteration 650   loss = 2.10845 * 1  eval = 0.306667   
+Iteration 651   loss = 1.66164 * 1  eval = 0.493333   
+Iteration 652   loss = 2.50388 * 1  eval = 0.273333   
+Iteration 653   loss = 1.6266 * 1  eval = 0.493333   
+Iteration 654   loss = 1.76482 * 1  eval = 0.536667   
+Iteration 655   loss = 1.88258 * 1  eval = 0.4   
+Iteration 656   loss = 2.19307 * 1  eval = 0.32   
+Iteration 657   loss = 1.92847 * 1  eval = 0.376667   
+Iteration 658   loss = 1.93127 * 1  eval = 0.4   
+Iteration 659   loss = 2.07363 * 1  eval = 0.323333   
+Iteration 660   loss = 2.2841 * 1  eval = 0.226667   
+Iteration 661   loss = 1.96863 * 1  eval = 0.363333   
+Iteration 662   loss = 2.24307 * 1  eval = 0.233333   
+Iteration 663   loss = 2.3128 * 1  eval = 0.236667   
+Iteration 664   loss = 2.24389 * 1  eval = 0.32   
+Iteration 665   loss = 2.12104 * 1  eval = 0.266667   
+Iteration 666   loss = 2.08354 * 1  eval = 0.303333   
+Iteration 667   loss = 2.05064 * 1  eval = 0.296667   
+Iteration 668   loss = 1.86728 * 1  eval = 0.496667   
+Iteration 669   loss = 1.77382 * 1  eval = 0.51   
+Iteration 670   loss = 2.18559 * 1  eval = 0.306667   
+Iteration 671   loss = 2.16396 * 1  eval = 0.24   
+Iteration 672   loss = 2.23508 * 1  eval = 0.313333   
+Iteration 673   loss = 2.26592 * 1  eval = 0.263333   
+Iteration 674   loss = 2.27277 * 1  eval = 0.203333   
+Iteration 675   loss = 2.18211 * 1  eval = 0.33   
+Iteration 676   loss = 1.91558 * 1  eval = 0.416667   
+Iteration 677   loss = 1.89592 * 1  eval = 0.393333   
+Average over 678 iterations   eval = 0.340315  

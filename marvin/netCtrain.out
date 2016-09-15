@@ -1,0 +1,1552 @@
+=====================================================================================================================================
+>> Hello, World! This is Marvin. I am at a rough estimate thirty billion times more intelligent than you. Let me give you an example.
+=====================================================================================================================================
+There are 4 NVIDIA GPUs available in this machine.
+MemoryDataLayer dataTrain loading data: 
+  14.7397 MB
+  7.36987 MB
+  name:boards train 1000 dim[4]={60374,1,8,8}
+  235.836 KB
+  117.918 KB
+  name:labels train 1000 dim[4]={60374,1,1,1}
+MemoryDataLayer dataTest loading data: 
+  4.44995 MB
+  2.22498 MB
+  name:boards test 1000 dim[4]={18227,1,8,8}
+  71.1992 KB
+  35.5996 KB
+  name:labels test 1000 dim[4]={18227,1,1,1}
+=====================================================================================================================================
+  Layers:                                                                        Responses:                                          
+=====================================================================================================================================
+  dataTrain
+                                                                                 data[4]={200,1,8,8} RF[1,1] GP[1,1] OF[0,0]
+                                                                                 label[4]={200,1,1,1} RF[1,1] GP[1,1] OF[0,0]
+  dataTest
+* ip1 weight[2]={100,64} bias[1]={100}
+                                                                               * ip1[4]={200,100,1,1} RF[8,8] GP[0,0] OF[0,0]
+* ip11 weight[2]={200,100} bias[1]={200}
+                                                                               * ip11[4]={200,200,1,1} RF[8,8] GP[0,0] OF[0,0]
+* ip2 weight[2]={100,200} bias[1]={100}
+                                                                               * ip2[4]={200,100,1,1} RF[8,8] GP[0,0] OF[0,0]
+* ip3 weight[2]={50,100} bias[1]={50}
+                                                                               * ip3[4]={200,50,1,1} RF[8,8] GP[0,0] OF[0,0]
+* ip4 weight[2]={50,50} bias[1]={50}
+                                                                               * ip4[4]={200,50,1,1} RF[8,8] GP[0,0] OF[0,0]
+* ip5 weight[2]={20,50} bias[1]={20}
+                                                                               * ip5[4]={200,20,1,1} RF[8,8] GP[0,0] OF[0,0]
+* ip6 weight[2]={10,20} bias[1]={10}
+                                                                               * ip6[4]={200,10,1,1} RF[8,8] GP[0,0] OF[0,0]
+  loss
+                                                                               * loss[4]={200,10,1,1} RF[8,8] GP[0,0] OF[0,0]
+  loss_loss
+=====================================================================================================================================
+GPU 0: Total GPU memory: 0.54594 MB
+=====================================================================================================================================
+GPU 0: Total GPU memory: 0.758152 MB
+All GPUs: Total GPU memory: 0.758152 MB
+=====================================================================================================================================
+  Training:                                                                      Testing:                                            
+=====================================================================================================================================
+                                                                                 Iteration 0 loss = 7.96284 * 1  eval = 0.0987   
+Iteration 0  learning_rate = 0.001 loss = 7.33709 * 1  eval = 0.075   
+Iteration 50  learning_rate = 0.001 loss = 2.34054 * 1  eval = 0.135   
+                                                                                 Iteration 100 loss = 2.194 * 1  eval = 0.17645   
+Iteration 100  learning_rate = 0.001 loss = 2.16474 * 1  eval = 0.205   
+Iteration 150  learning_rate = 0.001 loss = 2.23744 * 1  eval = 0.17   
+                                                                                 Iteration 200 loss = 2.20946 * 1  eval = 0.188   
+Iteration 200  learning_rate = 0.001 loss = 2.10984 * 1  eval = 0.185   
+Iteration 250  learning_rate = 0.001 loss = 2.26488 * 1  eval = 0.225   
+                                                                                 Iteration 300 loss = 3.25542 * 1  eval = 0.0982   
+Iteration 300  learning_rate = 0.001 loss = 3.11312 * 1  eval = 0.115   
+Iteration 350  learning_rate = 0.001 loss = 2.15201 * 1  eval = 0.185   
+                                                                                 Iteration 400 loss = 2.1667 * 1  eval = 0.19085   
+Iteration 400  learning_rate = 0.001 loss = 2.18471 * 1  eval = 0.22   
+Iteration 450  learning_rate = 0.001 loss = 2.16237 * 1  eval = 0.18   
+                                                                                 Iteration 500 loss = 2.28236 * 1  eval = 0.1679   
+Iteration 500  learning_rate = 0.001 loss = 2.27747 * 1  eval = 0.185   
+Iteration 550  learning_rate = 0.001 loss = 2.26902 * 1  eval = 0.15   
+                                                                                 Iteration 600 loss = 2.18407 * 1  eval = 0.1974   
+Iteration 600  learning_rate = 0.001 loss = 2.09344 * 1  eval = 0.22   
+Iteration 650  learning_rate = 0.001 loss = 3.97662 * 1  eval = 0.12   
+                                                                                 Iteration 700 loss = 2.41306 * 1  eval = 0.13775   
+Iteration 700  learning_rate = 0.001 loss = 2.36152 * 1  eval = 0.145   
+Iteration 750  learning_rate = 0.001 loss = 2.16954 * 1  eval = 0.2   
+                                                                                 Iteration 800 loss = 2.15367 * 1  eval = 0.1839   
+Iteration 800  learning_rate = 0.001 loss = 2.1246 * 1  eval = 0.22   
+Iteration 850  learning_rate = 0.001 loss = 2.13897 * 1  eval = 0.145   
+                                                                                 Iteration 900 loss = 3.0056 * 1  eval = 0.1213   
+Iteration 900  learning_rate = 0.001 loss = 2.5925 * 1  eval = 0.115   
+Iteration 950  learning_rate = 0.001 loss = 2.2018 * 1  eval = 0.205   
+                                                                                 Iteration 1000 loss = 2.1675 * 1  eval = 0.1931   
+Iteration 1000  learning_rate = 0.0005 loss = 2.15159 * 1  eval = 0.205   
+Iteration 1050  learning_rate = 0.0005 loss = 2.19664 * 1  eval = 0.21   
+                                                                                 Iteration 1100 loss = 2.1404 * 1  eval = 0.2079   
+Iteration 1100  learning_rate = 0.0005 loss = 2.08424 * 1  eval = 0.22   
+Iteration 1150  learning_rate = 0.0005 loss = 2.04897 * 1  eval = 0.26   
+                                                                                 Iteration 1200 loss = 2.15944 * 1  eval = 0.1987   
+Iteration 1200  learning_rate = 0.0005 loss = 2.08484 * 1  eval = 0.195   
+Iteration 1250  learning_rate = 0.0005 loss = 14.7155 * 1  eval = 0.125   
+                                                                                 Iteration 1300 loss = 2.58447 * 1  eval = 0.1598   
+Iteration 1300  learning_rate = 0.0005 loss = 2.53541 * 1  eval = 0.145   
+Iteration 1350  learning_rate = 0.0005 loss = 2.16769 * 1  eval = 0.195   
+                                                                                 Iteration 1400 loss = 2.17516 * 1  eval = 0.17725   
+Iteration 1400  learning_rate = 0.0005 loss = 2.08557 * 1  eval = 0.185   
+Iteration 1450  learning_rate = 0.0005 loss = 2.16824 * 1  eval = 0.25   
+                                                                                 Iteration 1500 loss = 2.17168 * 1  eval = 0.1836   
+Iteration 1500  learning_rate = 0.0005 loss = 2.14444 * 1  eval = 0.245   
+Iteration 1550  learning_rate = 0.0005 loss = 40.0539 * 1  eval = 0.125   
+                                                                                 Iteration 1600 loss = 2.33516 * 1  eval = 0.1502   
+Iteration 1600  learning_rate = 0.0005 loss = 2.33257 * 1  eval = 0.18   
+Iteration 1650  learning_rate = 0.0005 loss = 2.24181 * 1  eval = 0.205   
+                                                                                 Iteration 1700 loss = 2.15523 * 1  eval = 0.1928   
+Iteration 1700  learning_rate = 0.0005 loss = 2.11583 * 1  eval = 0.24   
+Iteration 1750  learning_rate = 0.0005 loss = 2.16457 * 1  eval = 0.17   
+                                                                                 Iteration 1800 loss = 2.13369 * 1  eval = 0.1927   
+Iteration 1800  learning_rate = 0.0005 loss = 2.12591 * 1  eval = 0.215   
+Iteration 1850  learning_rate = 0.0005 loss = 2.0909 * 1  eval = 0.195   
+                                                                                 Iteration 1900 loss = 2.1551 * 1  eval = 0.1983   
+Iteration 1900  learning_rate = 0.0005 loss = 2.202 * 1  eval = 0.2   
+Iteration 1950  learning_rate = 0.0005 loss = 2.58782 * 1  eval = 0.165   
+                                                                                 Iteration 2000 loss = 3.25633 * 1  eval = 0.1859   
+Iteration 2000  learning_rate = 0.00025 loss = 3.00663 * 1  eval = 0.185   
+Iteration 2050  learning_rate = 0.00025 loss = 2.27142 * 1  eval = 0.165   
+                                                                                 Iteration 2100 loss = 2.19691 * 1  eval = 0.17965   
+Iteration 2100  learning_rate = 0.00025 loss = 2.14833 * 1  eval = 0.195   
+Iteration 2150  learning_rate = 0.00025 loss = 2.18319 * 1  eval = 0.195   
+                                                                                 Iteration 2200 loss = 2.22048 * 1  eval = 0.1731   
+Iteration 2200  learning_rate = 0.00025 loss = 2.18721 * 1  eval = 0.205   
+Iteration 2250  learning_rate = 0.00025 loss = 4.38002 * 1  eval = 0.105   
+                                                                                 Iteration 2300 loss = 2.55883 * 1  eval = 0.1219   
+Iteration 2300  learning_rate = 0.00025 loss = 2.4859 * 1  eval = 0.145   
+Iteration 2350  learning_rate = 0.00025 loss = 2.17156 * 1  eval = 0.235   
+                                                                                 Iteration 2400 loss = 2.17511 * 1  eval = 0.17285   
+Iteration 2400  learning_rate = 0.00025 loss = 2.23178 * 1  eval = 0.195   
+Iteration 2450  learning_rate = 0.00025 loss = 2.14091 * 1  eval = 0.195   
+                                                                                 Iteration 2500 loss = 2.15367 * 1  eval = 0.18885   
+Iteration 2500  learning_rate = 0.00025 loss = 2.25599 * 1  eval = 0.18   
+Iteration 2550  learning_rate = 0.00025 loss = 2.22934 * 1  eval = 0.165   
+                                                                                 Iteration 2600 loss = 2.16339 * 1  eval = 0.18835   
+Iteration 2600  learning_rate = 0.00025 loss = 2.21712 * 1  eval = 0.155   
+Iteration 2650  learning_rate = 0.00025 loss = 2.05422 * 1  eval = 0.285   
+                                                                                 Iteration 2700 loss = 2.17349 * 1  eval = 0.2014   
+Iteration 2700  learning_rate = 0.00025 loss = 2.16947 * 1  eval = 0.17   
+Iteration 2750  learning_rate = 0.00025 loss = 37.1983 * 1  eval = 0.145   
+                                                                                 Iteration 2800 loss = 3.56967 * 1  eval = 0.17305   
+Iteration 2800  learning_rate = 0.00025 loss = 3.67245 * 1  eval = 0.12   
+Iteration 2850  learning_rate = 0.00025 loss = 2.41387 * 1  eval = 0.14   
+                                                                                 Iteration 2900 loss = 2.29442 * 1  eval = 0.178   
+Iteration 2900  learning_rate = 0.00025 loss = 2.29774 * 1  eval = 0.17   
+Iteration 2950  learning_rate = 0.00025 loss = 47.3592 * 1  eval = 0.09   
+                                                                                 Iteration 3000 loss = 4.44621 * 1  eval = 0.12405   
+Iteration 3000  learning_rate = 0.000125 loss = 4.14763 * 1  eval = 0.155   
+Iteration 3050  learning_rate = 0.000125 loss = 3.02422 * 1  eval = 0.135   
+                                                                                 Iteration 3100 loss = 2.3144 * 1  eval = 0.1553   
+Iteration 3100  learning_rate = 0.000125 loss = 2.26515 * 1  eval = 0.175   
+Iteration 3150  learning_rate = 0.000125 loss = 2.19576 * 1  eval = 0.165   
+                                                                                 Iteration 3200 loss = 2.21817 * 1  eval = 0.15815   
+Iteration 3200  learning_rate = 0.000125 loss = 2.1756 * 1  eval = 0.195   
+Iteration 3250  learning_rate = 0.000125 loss = 2.16498 * 1  eval = 0.195   
+                                                                                 Iteration 3300 loss = 2.20594 * 1  eval = 0.16745   
+Iteration 3300  learning_rate = 0.000125 loss = 2.17836 * 1  eval = 0.16   
+Iteration 3350  learning_rate = 0.000125 loss = 2.15475 * 1  eval = 0.155   
+                                                                                 Iteration 3400 loss = 2.19283 * 1  eval = 0.16665   
+Iteration 3400  learning_rate = 0.000125 loss = 2.13393 * 1  eval = 0.185   
+Iteration 3450  learning_rate = 0.000125 loss = 2.20523 * 1  eval = 0.155   
+                                                                                 Iteration 3500 loss = 2.19684 * 1  eval = 0.1633   
+Iteration 3500  learning_rate = 0.000125 loss = 2.12847 * 1  eval = 0.22   
+Iteration 3550  learning_rate = 0.000125 loss = 2.06282 * 1  eval = 0.225   
+                                                                                 Iteration 3600 loss = 2.18196 * 1  eval = 0.1708   
+Iteration 3600  learning_rate = 0.000125 loss = 2.16949 * 1  eval = 0.155   
+Iteration 3650  learning_rate = 0.000125 loss = 2.11586 * 1  eval = 0.24   
+                                                                                 Iteration 3700 loss = 2.19404 * 1  eval = 0.1851   
+Iteration 3700  learning_rate = 0.000125 loss = 2.19401 * 1  eval = 0.17   
+Iteration 3750  learning_rate = 0.000125 loss = 2.16144 * 1  eval = 0.165   
+                                                                                 Iteration 3800 loss = 2.18474 * 1  eval = 0.17585   
+Iteration 3800  learning_rate = 0.000125 loss = 2.1304 * 1  eval = 0.17   
+Iteration 3850  learning_rate = 0.000125 loss = 2.17394 * 1  eval = 0.185   
+                                                                                 Iteration 3900 loss = 2.17501 * 1  eval = 0.1846   
+Iteration 3900  learning_rate = 0.000125 loss = 2.16308 * 1  eval = 0.17   
+Iteration 3950  learning_rate = 0.000125 loss = 2.16458 * 1  eval = 0.195   
+                                                                                 Iteration 4000 loss = 2.17366 * 1  eval = 0.18065   
+Iteration 4000  learning_rate = 6.25e-05 loss = 2.08988 * 1  eval = 0.205   
+Iteration 4050  learning_rate = 6.25e-05 loss = 2.14235 * 1  eval = 0.135   
+                                                                                 Iteration 4100 loss = 2.16666 * 1  eval = 0.1912   
+Iteration 4100  learning_rate = 6.25e-05 loss = 2.12129 * 1  eval = 0.195   
+Iteration 4150  learning_rate = 6.25e-05 loss = 2.14848 * 1  eval = 0.21   
+                                                                                 Iteration 4200 loss = 2.1747 * 1  eval = 0.17945   
+Iteration 4200  learning_rate = 6.25e-05 loss = 2.15564 * 1  eval = 0.185   
+Iteration 4250  learning_rate = 6.25e-05 loss = 2.21572 * 1  eval = 0.21   
+                                                                                 Iteration 4300 loss = 2.16326 * 1  eval = 0.18825   
+Iteration 4300  learning_rate = 6.25e-05 loss = 2.11693 * 1  eval = 0.17   
+Iteration 4350  learning_rate = 6.25e-05 loss = 2.1473 * 1  eval = 0.195   
+                                                                                 Iteration 4400 loss = 2.16515 * 1  eval = 0.19225   
+Iteration 4400  learning_rate = 6.25e-05 loss = 2.11864 * 1  eval = 0.195   
+Iteration 4450  learning_rate = 6.25e-05 loss = 2.12377 * 1  eval = 0.21   
+                                                                                 Iteration 4500 loss = 2.15631 * 1  eval = 0.1998   
+Iteration 4500  learning_rate = 6.25e-05 loss = 2.13451 * 1  eval = 0.23   
+Iteration 4550  learning_rate = 6.25e-05 loss = 2.59714 * 1  eval = 0.155   
+                                                                                 Iteration 4600 loss = 2.16752 * 1  eval = 0.19075   
+Iteration 4600  learning_rate = 6.25e-05 loss = 2.11596 * 1  eval = 0.225   
+Iteration 4650  learning_rate = 6.25e-05 loss = 2.1547 * 1  eval = 0.18   
+                                                                                 Iteration 4700 loss = 2.17121 * 1  eval = 0.18095   
+Iteration 4700  learning_rate = 6.25e-05 loss = 2.14323 * 1  eval = 0.17   
+Iteration 4750  learning_rate = 6.25e-05 loss = 2.1463 * 1  eval = 0.185   
+                                                                                 Iteration 4800 loss = 2.17341 * 1  eval = 0.189   
+Iteration 4800  learning_rate = 6.25e-05 loss = 2.10348 * 1  eval = 0.22   
+Iteration 4850  learning_rate = 6.25e-05 loss = 2.1595 * 1  eval = 0.155   
+                                                                                 Iteration 4900 loss = 2.16727 * 1  eval = 0.1935   
+Iteration 4900  learning_rate = 6.25e-05 loss = 2.10562 * 1  eval = 0.2   
+Iteration 4950  learning_rate = 6.25e-05 loss = 2.14901 * 1  eval = 0.205   
+                                                                                 Iteration 5000 loss = 2.16885 * 1  eval = 0.1827   
+Iteration 5000  learning_rate = 3.125e-05 loss = 2.2003 * 1  eval = 0.205   
+Iteration 5050  learning_rate = 3.125e-05 loss = 2.12219 * 1  eval = 0.22   
+                                                                                 Iteration 5100 loss = 2.16739 * 1  eval = 0.19425   
+Iteration 5100  learning_rate = 3.125e-05 loss = 2.14023 * 1  eval = 0.2   
+Iteration 5150  learning_rate = 3.125e-05 loss = 2.1658 * 1  eval = 0.15   
+                                                                                 Iteration 5200 loss = 2.16083 * 1  eval = 0.19065   
+Iteration 5200  learning_rate = 3.125e-05 loss = 2.12626 * 1  eval = 0.195   
+Iteration 5250  learning_rate = 3.125e-05 loss = 2.06935 * 1  eval = 0.23   
+                                                                                 Iteration 5300 loss = 2.16092 * 1  eval = 0.1948   
+Iteration 5300  learning_rate = 3.125e-05 loss = 2.09503 * 1  eval = 0.205   
+Iteration 5350  learning_rate = 3.125e-05 loss = 2.17776 * 1  eval = 0.215   
+                                                                                 Iteration 5400 loss = 2.16857 * 1  eval = 0.19435   
+Iteration 5400  learning_rate = 3.125e-05 loss = 2.07087 * 1  eval = 0.235   
+Iteration 5450  learning_rate = 3.125e-05 loss = 2.13237 * 1  eval = 0.18   
+                                                                                 Iteration 5500 loss = 2.15483 * 1  eval = 0.19645   
+Iteration 5500  learning_rate = 3.125e-05 loss = 2.21885 * 1  eval = 0.125   
+Iteration 5550  learning_rate = 3.125e-05 loss = 2.05597 * 1  eval = 0.22   
+                                                                                 Iteration 5600 loss = 2.15949 * 1  eval = 0.19745   
+Iteration 5600  learning_rate = 3.125e-05 loss = 2.07483 * 1  eval = 0.29   
+Iteration 5650  learning_rate = 3.125e-05 loss = 2.14437 * 1  eval = 0.2   
+                                                                                 Iteration 5700 loss = 2.15765 * 1  eval = 0.2022   
+Iteration 5700  learning_rate = 3.125e-05 loss = 2.14181 * 1  eval = 0.225   
+Iteration 5750  learning_rate = 3.125e-05 loss = 2.16809 * 1  eval = 0.16   
+                                                                                 Iteration 5800 loss = 2.16746 * 1  eval = 0.1934   
+Iteration 5800  learning_rate = 3.125e-05 loss = 2.1795 * 1  eval = 0.165   
+Iteration 5850  learning_rate = 3.125e-05 loss = 2.13589 * 1  eval = 0.24   
+                                                                                 Iteration 5900 loss = 2.15907 * 1  eval = 0.19415   
+Iteration 5900  learning_rate = 3.125e-05 loss = 2.06871 * 1  eval = 0.235   
+Iteration 5950  learning_rate = 3.125e-05 loss = 2.18627 * 1  eval = 0.18   
+                                                                                 Iteration 6000 loss = 2.17191 * 1  eval = 0.19065   
+Iteration 6000  learning_rate = 1.5625e-05 loss = 2.09129 * 1  eval = 0.22   
+Iteration 6050  learning_rate = 1.5625e-05 loss = 2.16274 * 1  eval = 0.165   
+                                                                                 Iteration 6100 loss = 2.17097 * 1  eval = 0.1892   
+Iteration 6100  learning_rate = 1.5625e-05 loss = 2.17953 * 1  eval = 0.2   
+Iteration 6150  learning_rate = 1.5625e-05 loss = 2.10723 * 1  eval = 0.215   
+                                                                                 Iteration 6200 loss = 2.16224 * 1  eval = 0.1946   
+Iteration 6200  learning_rate = 1.5625e-05 loss = 2.11157 * 1  eval = 0.205   
+Iteration 6250  learning_rate = 1.5625e-05 loss = 2.1059 * 1  eval = 0.205   
+                                                                                 Iteration 6300 loss = 2.16422 * 1  eval = 0.19475   
+Iteration 6300  learning_rate = 1.5625e-05 loss = 2.14104 * 1  eval = 0.17   
+Iteration 6350  learning_rate = 1.5625e-05 loss = 2.12817 * 1  eval = 0.205   
+                                                                                 Iteration 6400 loss = 2.15803 * 1  eval = 0.196   
+Iteration 6400  learning_rate = 1.5625e-05 loss = 2.07258 * 1  eval = 0.225   
+Iteration 6450  learning_rate = 1.5625e-05 loss = 2.14739 * 1  eval = 0.21   
+                                                                                 Iteration 6500 loss = 2.16702 * 1  eval = 0.19135   
+Iteration 6500  learning_rate = 1.5625e-05 loss = 2.12734 * 1  eval = 0.19   
+Iteration 6550  learning_rate = 1.5625e-05 loss = 2.16241 * 1  eval = 0.22   
+                                                                                 Iteration 6600 loss = 2.15656 * 1  eval = 0.2007   
+Iteration 6600  learning_rate = 1.5625e-05 loss = 2.09846 * 1  eval = 0.255   
+Iteration 6650  learning_rate = 1.5625e-05 loss = 2.05383 * 1  eval = 0.21   
+                                                                                 Iteration 6700 loss = 2.15941 * 1  eval = 0.1953   
+Iteration 6700  learning_rate = 1.5625e-05 loss = 2.10553 * 1  eval = 0.21   
+Iteration 6750  learning_rate = 1.5625e-05 loss = 2.15384 * 1  eval = 0.19   
+                                                                                 Iteration 6800 loss = 2.15079 * 1  eval = 0.2031   
+Iteration 6800  learning_rate = 1.5625e-05 loss = 2.15225 * 1  eval = 0.225   
+Iteration 6850  learning_rate = 1.5625e-05 loss = 2.02912 * 1  eval = 0.25   
+                                                                                 Iteration 6900 loss = 2.16222 * 1  eval = 0.19475   
+Iteration 6900  learning_rate = 1.5625e-05 loss = 2.07987 * 1  eval = 0.215   
+Iteration 6950  learning_rate = 1.5625e-05 loss = 2.16862 * 1  eval = 0.19   
+                                                                                 Iteration 7000 loss = 2.16723 * 1  eval = 0.19235   
+Iteration 7000  learning_rate = 7.8125e-06 loss = 2.1063 * 1  eval = 0.22   
+Iteration 7050  learning_rate = 7.8125e-06 loss = 2.05296 * 1  eval = 0.24   
+                                                                                 Iteration 7100 loss = 2.16858 * 1  eval = 0.1932   
+Iteration 7100  learning_rate = 7.8125e-06 loss = 2.11312 * 1  eval = 0.22   
+Iteration 7150  learning_rate = 7.8125e-06 loss = 2.15037 * 1  eval = 0.175   
+                                                                                 Iteration 7200 loss = 2.16519 * 1  eval = 0.19425   
+Iteration 7200  learning_rate = 7.8125e-06 loss = 2.17401 * 1  eval = 0.17   
+Iteration 7250  learning_rate = 7.8125e-06 loss = 2.13598 * 1  eval = 0.145   
+                                                                                 Iteration 7300 loss = 2.16718 * 1  eval = 0.1918   
+Iteration 7300  learning_rate = 7.8125e-06 loss = 2.14737 * 1  eval = 0.22   
+Iteration 7350  learning_rate = 7.8125e-06 loss = 2.14879 * 1  eval = 0.15   
+                                                                                 Iteration 7400 loss = 2.1654 * 1  eval = 0.19635   
+Iteration 7400  learning_rate = 7.8125e-06 loss = 2.16851 * 1  eval = 0.165   
+Iteration 7450  learning_rate = 7.8125e-06 loss = 2.13015 * 1  eval = 0.16   
+                                                                                 Iteration 7500 loss = 2.15904 * 1  eval = 0.19195   
+Iteration 7500  learning_rate = 7.8125e-06 loss = 2.12095 * 1  eval = 0.185   
+Iteration 7550  learning_rate = 7.8125e-06 loss = 2.11248 * 1  eval = 0.235   
+                                                                                 Iteration 7600 loss = 2.15885 * 1  eval = 0.198   
+Iteration 7600  learning_rate = 7.8125e-06 loss = 2.15701 * 1  eval = 0.21   
+Iteration 7650  learning_rate = 7.8125e-06 loss = 2.11675 * 1  eval = 0.16   
+                                                                                 Iteration 7700 loss = 2.16689 * 1  eval = 0.19475   
+Iteration 7700  learning_rate = 7.8125e-06 loss = 2.10877 * 1  eval = 0.24   
+Iteration 7750  learning_rate = 7.8125e-06 loss = 2.12545 * 1  eval = 0.215   
+                                                                                 Iteration 7800 loss = 2.15345 * 1  eval = 0.19765   
+Iteration 7800  learning_rate = 7.8125e-06 loss = 2.13479 * 1  eval = 0.255   
+Iteration 7850  learning_rate = 7.8125e-06 loss = 2.13374 * 1  eval = 0.15   
+                                                                                 Iteration 7900 loss = 2.15801 * 1  eval = 0.1991   
+Iteration 7900  learning_rate = 7.8125e-06 loss = 2.13458 * 1  eval = 0.185   
+Iteration 7950  learning_rate = 7.8125e-06 loss = 2.06783 * 1  eval = 0.21   
+                                                                                 Iteration 8000 loss = 2.15651 * 1  eval = 0.20025   
+Iteration 8000  learning_rate = 3.90625e-06 loss = 2.09157 * 1  eval = 0.215   
+Iteration 8050  learning_rate = 3.90625e-06 loss = 2.11767 * 1  eval = 0.21   
+                                                                                 Iteration 8100 loss = 2.16622 * 1  eval = 0.1919   
+Iteration 8100  learning_rate = 3.90625e-06 loss = 2.10591 * 1  eval = 0.205   
+Iteration 8150  learning_rate = 3.90625e-06 loss = 2.15848 * 1  eval = 0.22   
+                                                                                 Iteration 8200 loss = 2.15805 * 1  eval = 0.194   
+Iteration 8200  learning_rate = 3.90625e-06 loss = 2.14105 * 1  eval = 0.185   
+Iteration 8250  learning_rate = 3.90625e-06 loss = 2.09894 * 1  eval = 0.255   
+                                                                                 Iteration 8300 loss = 2.17149 * 1  eval = 0.19605   
+Iteration 8300  learning_rate = 3.90625e-06 loss = 2.06894 * 1  eval = 0.19   
+Iteration 8350  learning_rate = 3.90625e-06 loss = 2.13528 * 1  eval = 0.195   
+                                                                                 Iteration 8400 loss = 2.1706 * 1  eval = 0.19345   
+Iteration 8400  learning_rate = 3.90625e-06 loss = 2.11524 * 1  eval = 0.19   
+Iteration 8450  learning_rate = 3.90625e-06 loss = 2.10917 * 1  eval = 0.165   
+                                                                                 Iteration 8500 loss = 2.16205 * 1  eval = 0.1923   
+Iteration 8500  learning_rate = 3.90625e-06 loss = 2.16787 * 1  eval = 0.24   
+Iteration 8550  learning_rate = 3.90625e-06 loss = 2.11915 * 1  eval = 0.21   
+                                                                                 Iteration 8600 loss = 2.1638 * 1  eval = 0.1927   
+Iteration 8600  learning_rate = 3.90625e-06 loss = 2.08962 * 1  eval = 0.235   
+Iteration 8650  learning_rate = 3.90625e-06 loss = 2.17638 * 1  eval = 0.16   
+                                                                                 Iteration 8700 loss = 2.15767 * 1  eval = 0.19835   
+Iteration 8700  learning_rate = 3.90625e-06 loss = 2.13968 * 1  eval = 0.2   
+Iteration 8750  learning_rate = 3.90625e-06 loss = 2.08233 * 1  eval = 0.23   
+                                                                                 Iteration 8800 loss = 2.16654 * 1  eval = 0.1931   
+Iteration 8800  learning_rate = 3.90625e-06 loss = 2.63228 * 1  eval = 0.17   
+Iteration 8850  learning_rate = 3.90625e-06 loss = 2.52354 * 1  eval = 0.225   
+                                                                                 Iteration 8900 loss = 2.15615 * 1  eval = 0.2017   
+Iteration 8900  learning_rate = 3.90625e-06 loss = 2.14853 * 1  eval = 0.22   
+Iteration 8950  learning_rate = 3.90625e-06 loss = 2.09784 * 1  eval = 0.205   
+                                                                                 Iteration 9000 loss = 2.15881 * 1  eval = 0.1969   
+Iteration 9000  learning_rate = 1.95313e-06 loss = 2.11684 * 1  eval = 0.215   
+Iteration 9050  learning_rate = 1.95313e-06 loss = 2.1364 * 1  eval = 0.215   
+                                                                                 Iteration 9100 loss = 2.15042 * 1  eval = 0.20495   
+Iteration 9100  learning_rate = 1.95313e-06 loss = 2.11288 * 1  eval = 0.22   
+Iteration 9150  learning_rate = 1.95313e-06 loss = 2.12412 * 1  eval = 0.21   
+                                                                                 Iteration 9200 loss = 2.16204 * 1  eval = 0.19205   
+Iteration 9200  learning_rate = 1.95313e-06 loss = 2.19048 * 1  eval = 0.175   
+Iteration 9250  learning_rate = 1.95313e-06 loss = 2.15979 * 1  eval = 0.25   
+                                                                                 Iteration 9300 loss = 2.167 * 1  eval = 0.1904   
+Iteration 9300  learning_rate = 1.95313e-06 loss = 2.09339 * 1  eval = 0.225   
+Iteration 9350  learning_rate = 1.95313e-06 loss = 2.18356 * 1  eval = 0.17   
+                                                                                 Iteration 9400 loss = 2.16834 * 1  eval = 0.19385   
+Iteration 9400  learning_rate = 1.95313e-06 loss = 2.13641 * 1  eval = 0.2   
+Iteration 9450  learning_rate = 1.95313e-06 loss = 2.02389 * 1  eval = 0.285   
+                                                                                 Iteration 9500 loss = 2.16509 * 1  eval = 0.19315   
+Iteration 9500  learning_rate = 1.95313e-06 loss = 2.20042 * 1  eval = 0.16   
+Iteration 9550  learning_rate = 1.95313e-06 loss = 2.16483 * 1  eval = 0.18   
+                                                                                 Iteration 9600 loss = 2.16708 * 1  eval = 0.1897   
+Iteration 9600  learning_rate = 1.95313e-06 loss = 2.15169 * 1  eval = 0.17   
+Iteration 9650  learning_rate = 1.95313e-06 loss = 2.1249 * 1  eval = 0.24   
+                                                                                 Iteration 9700 loss = 2.16532 * 1  eval = 0.1936   
+Iteration 9700  learning_rate = 1.95313e-06 loss = 2.17641 * 1  eval = 0.205   
+Iteration 9750  learning_rate = 1.95313e-06 loss = 2.15603 * 1  eval = 0.2   
+                                                                                 Iteration 9800 loss = 2.15895 * 1  eval = 0.1957   
+Iteration 9800  learning_rate = 1.95313e-06 loss = 2.1178 * 1  eval = 0.225   
+Iteration 9850  learning_rate = 1.95313e-06 loss = 2.09652 * 1  eval = 0.21   
+                                                                                 Iteration 9900 loss = 2.15874 * 1  eval = 0.19755   
+Iteration 9900  learning_rate = 1.95313e-06 loss = 2.11587 * 1  eval = 0.165   
+Iteration 9950  learning_rate = 1.95313e-06 loss = 2.14838 * 1  eval = 0.175   
+                                                                                 Iteration 10000 loss = 2.16665 * 1  eval = 0.19565   
+Iteration 10000  learning_rate = 9.76563e-07 loss = 2.12549 * 1  eval = 0.16   
+Iteration 10050  learning_rate = 9.76563e-07 loss = 2.11833 * 1  eval = 0.205   
+                                                                                 Iteration 10100 loss = 2.15328 * 1  eval = 0.2001   
+Iteration 10100  learning_rate = 9.76563e-07 loss = 2.14053 * 1  eval = 0.19   
+Iteration 10150  learning_rate = 9.76563e-07 loss = 2.15887 * 1  eval = 0.175   
+                                                                                 Iteration 10200 loss = 2.15792 * 1  eval = 0.20015   
+Iteration 10200  learning_rate = 9.76563e-07 loss = 2.10688 * 1  eval = 0.23   
+Iteration 10250  learning_rate = 9.76563e-07 loss = 2.19979 * 1  eval = 0.14   
+                                                                                 Iteration 10300 loss = 2.15649 * 1  eval = 0.20165   
+Iteration 10300  learning_rate = 9.76563e-07 loss = 2.17187 * 1  eval = 0.175   
+Iteration 10350  learning_rate = 9.76563e-07 loss = 2.1032 * 1  eval = 0.195   
+                                                                                 Iteration 10400 loss = 2.16621 * 1  eval = 0.1936   
+Iteration 10400  learning_rate = 9.76563e-07 loss = 2.10337 * 1  eval = 0.19   
+Iteration 10450  learning_rate = 9.76563e-07 loss = 2.13556 * 1  eval = 0.19   
+                                                                                 Iteration 10500 loss = 2.158 * 1  eval = 0.19545   
+Iteration 10500  learning_rate = 9.76563e-07 loss = 2.10687 * 1  eval = 0.17   
+Iteration 10550  learning_rate = 9.76563e-07 loss = 2.17905 * 1  eval = 0.165   
+                                                                                 Iteration 10600 loss = 2.17148 * 1  eval = 0.19465   
+Iteration 10600  learning_rate = 9.76563e-07 loss = 2.11133 * 1  eval = 0.23   
+Iteration 10650  learning_rate = 9.76563e-07 loss = 2.1325 * 1  eval = 0.2   
+                                                                                 Iteration 10700 loss = 2.17059 * 1  eval = 0.1914   
+Iteration 10700  learning_rate = 9.76563e-07 loss = 2.10451 * 1  eval = 0.17   
+Iteration 10750  learning_rate = 9.76563e-07 loss = 2.07976 * 1  eval = 0.215   
+                                                                                 Iteration 10800 loss = 2.16203 * 1  eval = 0.1949   
+Iteration 10800  learning_rate = 9.76563e-07 loss = 2.1183 * 1  eval = 0.21   
+Iteration 10850  learning_rate = 9.76563e-07 loss = 2.13589 * 1  eval = 0.175   
+                                                                                 Iteration 10900 loss = 2.16382 * 1  eval = 0.1948   
+Iteration 10900  learning_rate = 9.76563e-07 loss = 2.16207 * 1  eval = 0.18   
+Iteration 10950  learning_rate = 9.76563e-07 loss = 2.11228 * 1  eval = 0.23   
+                                                                                 Iteration 11000 loss = 2.15768 * 1  eval = 0.198   
+Iteration 11000  learning_rate = 4.88281e-07 loss = 2.07927 * 1  eval = 0.215   
+Iteration 11050  learning_rate = 4.88281e-07 loss = 2.09173 * 1  eval = 0.155   
+                                                                                 Iteration 11100 loss = 2.16655 * 1  eval = 0.1927   
+Iteration 11100  learning_rate = 4.88281e-07 loss = 2.13108 * 1  eval = 0.175   
+Iteration 11150  learning_rate = 4.88281e-07 loss = 2.12362 * 1  eval = 0.19   
+                                                                                 Iteration 11200 loss = 2.15617 * 1  eval = 0.20115   
+Iteration 11200  learning_rate = 4.88281e-07 loss = 2.11224 * 1  eval = 0.19   
+Iteration 11250  learning_rate = 4.88281e-07 loss = 2.12799 * 1  eval = 0.195   
+                                                                                 Iteration 11300 loss = 2.15884 * 1  eval = 0.19665   
+Iteration 11300  learning_rate = 4.88281e-07 loss = 2.17125 * 1  eval = 0.17   
+Iteration 11350  learning_rate = 4.88281e-07 loss = 2.10847 * 1  eval = 0.18   
+                                                                                 Iteration 11400 loss = 2.15042 * 1  eval = 0.20165   
+Iteration 11400  learning_rate = 4.88281e-07 loss = 2.15822 * 1  eval = 0.185   
+Iteration 11450  learning_rate = 4.88281e-07 loss = 2.15336 * 1  eval = 0.145   
+                                                                                 Iteration 11500 loss = 2.16204 * 1  eval = 0.1921   
+Iteration 11500  learning_rate = 4.88281e-07 loss = 2.14046 * 1  eval = 0.23   
+Iteration 11550  learning_rate = 4.88281e-07 loss = 2.14377 * 1  eval = 0.2   
+                                                                                 Iteration 11600 loss = 2.167 * 1  eval = 0.19035   
+Iteration 11600  learning_rate = 4.88281e-07 loss = 2.14576 * 1  eval = 0.225   
+Iteration 11650  learning_rate = 4.88281e-07 loss = 2.12952 * 1  eval = 0.185   
+                                                                                 Iteration 11700 loss = 2.16836 * 1  eval = 0.1909   
+Iteration 11700  learning_rate = 4.88281e-07 loss = 2.12889 * 1  eval = 0.245   
+Iteration 11750  learning_rate = 4.88281e-07 loss = 2.10205 * 1  eval = 0.24   
+                                                                                 Iteration 11800 loss = 2.16508 * 1  eval = 0.1926   
+Iteration 11800  learning_rate = 4.88281e-07 loss = 2.1372 * 1  eval = 0.16   
+Iteration 11850  learning_rate = 4.88281e-07 loss = 2.1098 * 1  eval = 0.185   
+                                                                                 Iteration 11900 loss = 2.16709 * 1  eval = 0.1892   
+Iteration 11900  learning_rate = 4.88281e-07 loss = 2.09003 * 1  eval = 0.185   
+Iteration 11950  learning_rate = 4.88281e-07 loss = 2.11518 * 1  eval = 0.21   
+                                                                                 Iteration 12000 loss = 2.16532 * 1  eval = 0.19345   
+Iteration 12000  learning_rate = 2.44141e-07 loss = 2.13527 * 1  eval = 0.16   
+Iteration 12050  learning_rate = 2.44141e-07 loss = 2.12293 * 1  eval = 0.21   
+                                                                                 Iteration 12100 loss = 2.15896 * 1  eval = 0.192   
+Iteration 12100  learning_rate = 2.44141e-07 loss = 2.17186 * 1  eval = 0.18   
+Iteration 12150  learning_rate = 2.44141e-07 loss = 2.05551 * 1  eval = 0.225   
+                                                                                 Iteration 12200 loss = 2.15875 * 1  eval = 0.1951   
+Iteration 12200  learning_rate = 2.44141e-07 loss = 2.12876 * 1  eval = 0.175   
+Iteration 12250  learning_rate = 2.44141e-07 loss = 2.11611 * 1  eval = 0.225   
+                                                                                 Iteration 12300 loss = 2.16666 * 1  eval = 0.1932   
+Iteration 12300  learning_rate = 2.44141e-07 loss = 2.06553 * 1  eval = 0.17   
+Iteration 12350  learning_rate = 2.44141e-07 loss = 2.07543 * 1  eval = 0.215   
+                                                                                 Iteration 12400 loss = 2.15328 * 1  eval = 0.1963   
+Iteration 12400  learning_rate = 2.44141e-07 loss = 2.12711 * 1  eval = 0.215   
+Iteration 12450  learning_rate = 2.44141e-07 loss = 2.14708 * 1  eval = 0.17   
+                                                                                 Iteration 12500 loss = 2.15791 * 1  eval = 0.19625   
+Iteration 12500  learning_rate = 2.44141e-07 loss = 2.12715 * 1  eval = 0.17   
+Iteration 12550  learning_rate = 2.44141e-07 loss = 2.09831 * 1  eval = 0.205   
+                                                                                 Iteration 12600 loss = 2.15649 * 1  eval = 0.19875   
+Iteration 12600  learning_rate = 2.44141e-07 loss = 2.19202 * 1  eval = 0.2   
+Iteration 12650  learning_rate = 2.44141e-07 loss = 2.1367 * 1  eval = 0.19   
+                                                                                 Iteration 12700 loss = 2.16619 * 1  eval = 0.1935   
+Iteration 12700  learning_rate = 2.44141e-07 loss = 2.14606 * 1  eval = 0.19   
+Iteration 12750  learning_rate = 2.44141e-07 loss = 2.12881 * 1  eval = 0.19   
+                                                                                 Iteration 12800 loss = 2.15802 * 1  eval = 0.1957   
+Iteration 12800  learning_rate = 2.44141e-07 loss = 2.08803 * 1  eval = 0.235   
+Iteration 12850  learning_rate = 2.44141e-07 loss = 2.0745 * 1  eval = 0.245   
+                                                                                 Iteration 12900 loss = 2.17148 * 1  eval = 0.19485   
+Iteration 12900  learning_rate = 2.44141e-07 loss = 2.08974 * 1  eval = 0.2   
+Iteration 12950  learning_rate = 2.44141e-07 loss = 2.11707 * 1  eval = 0.235   
+                                                                                 Iteration 13000 loss = 2.17062 * 1  eval = 0.1917   
+Iteration 13000  learning_rate = 1.2207e-07 loss = 2.14017 * 1  eval = 0.21   
+Iteration 13050  learning_rate = 1.2207e-07 loss = 2.09415 * 1  eval = 0.215   
+                                                                                 Iteration 13100 loss = 2.16205 * 1  eval = 0.195   
+Iteration 13100  learning_rate = 1.2207e-07 loss = 2.13788 * 1  eval = 0.235   
+Iteration 13150  learning_rate = 1.2207e-07 loss = 2.14265 * 1  eval = 0.175   
+                                                                                 Iteration 13200 loss = 2.16382 * 1  eval = 0.1952   
+Iteration 13200  learning_rate = 1.2207e-07 loss = 2.12543 * 1  eval = 0.17   
+Iteration 13250  learning_rate = 1.2207e-07 loss = 2.08996 * 1  eval = 0.22   
+                                                                                 Iteration 13300 loss = 2.15767 * 1  eval = 0.19805   
+Iteration 13300  learning_rate = 1.2207e-07 loss = 2.10121 * 1  eval = 0.22   
+Iteration 13350  learning_rate = 1.2207e-07 loss = 2.09567 * 1  eval = 0.18   
+                                                                                 Iteration 13400 loss = 2.16654 * 1  eval = 0.19285   
+Iteration 13400  learning_rate = 1.2207e-07 loss = 2.19277 * 1  eval = 0.215   
+Iteration 13450  learning_rate = 1.2207e-07 loss = 2.1335 * 1  eval = 0.195   
+                                                                                 Iteration 13500 loss = 2.15618 * 1  eval = 0.20115   
+Iteration 13500  learning_rate = 1.2207e-07 loss = 2.14628 * 1  eval = 0.205   
+Iteration 13550  learning_rate = 1.2207e-07 loss = 2.13514 * 1  eval = 0.17   
+                                                                                 Iteration 13600 loss = 2.15883 * 1  eval = 0.19655   
+Iteration 13600  learning_rate = 1.2207e-07 loss = 2.13552 * 1  eval = 0.21   
+Iteration 13650  learning_rate = 1.2207e-07 loss = 2.14379 * 1  eval = 0.235   
+                                                                                 Iteration 13700 loss = 2.15043 * 1  eval = 0.2046   
+Iteration 13700  learning_rate = 1.2207e-07 loss = 2.1504 * 1  eval = 0.185   
+Iteration 13750  learning_rate = 1.2207e-07 loss = 2.13993 * 1  eval = 0.16   
+                                                                                 Iteration 13800 loss = 2.16204 * 1  eval = 0.19485   
+Iteration 13800  learning_rate = 1.2207e-07 loss = 2.19074 * 1  eval = 0.21   
+Iteration 13850  learning_rate = 1.2207e-07 loss = 2.17759 * 1  eval = 0.13   
+                                                                                 Iteration 13900 loss = 2.16699 * 1  eval = 0.1931   
+Iteration 13900  learning_rate = 1.2207e-07 loss = 2.16664 * 1  eval = 0.215   
+Iteration 13950  learning_rate = 1.2207e-07 loss = 2.18797 * 1  eval = 0.175   
+                                                                                 Iteration 14000 loss = 2.16834 * 1  eval = 0.19385   
+Iteration 14000  learning_rate = 6.10352e-08 loss = 2.12911 * 1  eval = 0.225   
+Iteration 14050  learning_rate = 6.10352e-08 loss = 2.17319 * 1  eval = 0.225   
+                                                                                 Iteration 14100 loss = 2.16506 * 1  eval = 0.19555   
+Iteration 14100  learning_rate = 6.10352e-08 loss = 2.14156 * 1  eval = 0.18   
+Iteration 14150  learning_rate = 6.10352e-08 loss = 2.0932 * 1  eval = 0.185   
+                                                                                 Iteration 14200 loss = 2.16707 * 1  eval = 0.19215   
+Iteration 14200  learning_rate = 6.10352e-08 loss = 2.11614 * 1  eval = 0.185   
+Iteration 14250  learning_rate = 6.10352e-08 loss = 2.08384 * 1  eval = 0.19   
+                                                                                 Iteration 14300 loss = 2.16532 * 1  eval = 0.1963   
+Iteration 14300  learning_rate = 6.10352e-08 loss = 2.16632 * 1  eval = 0.2   
+Iteration 14350  learning_rate = 6.10352e-08 loss = 2.17417 * 1  eval = 0.16   
+                                                                                 Iteration 14400 loss = 2.15896 * 1  eval = 0.1948   
+Iteration 14400  learning_rate = 6.10352e-08 loss = 2.19846 * 1  eval = 0.185   
+Iteration 14450  learning_rate = 6.10352e-08 loss = 2.17564 * 1  eval = 0.175   
+                                                                                 Iteration 14500 loss = 2.15874 * 1  eval = 0.19765   
+Iteration 14500  learning_rate = 6.10352e-08 loss = 2.15057 * 1  eval = 0.2   
+Iteration 14550  learning_rate = 6.10352e-08 loss = 2.14331 * 1  eval = 0.22   
+                                                                                 Iteration 14600 loss = 2.16666 * 1  eval = 0.1957   
+Iteration 14600  learning_rate = 6.10352e-08 loss = 2.13806 * 1  eval = 0.175   
+Iteration 14650  learning_rate = 6.10352e-08 loss = 2.13917 * 1  eval = 0.19   
+                                                                                 Iteration 14700 loss = 2.15328 * 1  eval = 0.1988   
+Iteration 14700  learning_rate = 6.10352e-08 loss = 2.14398 * 1  eval = 0.18   
+Iteration 14750  learning_rate = 6.10352e-08 loss = 2.14742 * 1  eval = 0.15   
+                                                                                 Iteration 14800 loss = 2.15791 * 1  eval = 0.19895   
+Iteration 14800  learning_rate = 6.10352e-08 loss = 2.12003 * 1  eval = 0.185   
+Iteration 14850  learning_rate = 6.10352e-08 loss = 2.11955 * 1  eval = 0.23   
+                                                                                 Iteration 14900 loss = 2.15649 * 1  eval = 0.20155   
+Iteration 14900  learning_rate = 6.10352e-08 loss = 2.18767 * 1  eval = 0.19   
+Iteration 14950  learning_rate = 6.10352e-08 loss = 2.14109 * 1  eval = 0.225   
+                                                                                 Iteration 15000 loss = 2.16619 * 1  eval = 0.19345   
+Iteration 15000  learning_rate = 3.05176e-08 loss = 2.14443 * 1  eval = 0.205   
+Iteration 15050  learning_rate = 3.05176e-08 loss = 2.11421 * 1  eval = 0.145   
+                                                                                 Iteration 15100 loss = 2.15802 * 1  eval = 0.19555   
+Iteration 15100  learning_rate = 3.05176e-08 loss = 2.08173 * 1  eval = 0.2   
+Iteration 15150  learning_rate = 3.05176e-08 loss = 2.05753 * 1  eval = 0.265   
+                                                                                 Iteration 15200 loss = 2.17148 * 1  eval = 0.1947   
+Iteration 15200  learning_rate = 3.05176e-08 loss = 2.08766 * 1  eval = 0.19   
+Iteration 15250  learning_rate = 3.05176e-08 loss = 2.16953 * 1  eval = 0.19   
+                                                                                 Iteration 15300 loss = 2.17061 * 1  eval = 0.1915   
+Iteration 15300  learning_rate = 3.05176e-08 loss = 2.14288 * 1  eval = 0.21   
+Iteration 15350  learning_rate = 3.05176e-08 loss = 2.06035 * 1  eval = 0.205   
+                                                                                 Iteration 15400 loss = 2.16205 * 1  eval = 0.19495   
+Iteration 15400  learning_rate = 3.05176e-08 loss = 2.12885 * 1  eval = 0.21   
+Iteration 15450  learning_rate = 3.05176e-08 loss = 2.15922 * 1  eval = 0.185   
+                                                                                 Iteration 15500 loss = 2.16381 * 1  eval = 0.195   
+Iteration 15500  learning_rate = 3.05176e-08 loss = 2.15763 * 1  eval = 0.165   
+Iteration 15550  learning_rate = 3.05176e-08 loss = 2.15938 * 1  eval = 0.17   
+                                                                                 Iteration 15600 loss = 2.15767 * 1  eval = 0.19805   
+Iteration 15600  learning_rate = 3.05176e-08 loss = 2.11162 * 1  eval = 0.22   
+Iteration 15650  learning_rate = 3.05176e-08 loss = 2.19538 * 1  eval = 0.195   
+                                                                                 Iteration 15700 loss = 2.16653 * 1  eval = 0.19285   
+Iteration 15700  learning_rate = 3.05176e-08 loss = 2.07784 * 1  eval = 0.245   
+Iteration 15750  learning_rate = 3.05176e-08 loss = 2.14348 * 1  eval = 0.175   
+                                                                                 Iteration 15800 loss = 2.15617 * 1  eval = 0.20115   
+Iteration 15800  learning_rate = 3.05176e-08 loss = 2.12064 * 1  eval = 0.22   
+Iteration 15850  learning_rate = 3.05176e-08 loss = 2.1694 * 1  eval = 0.205   
+                                                                                 Iteration 15900 loss = 2.15882 * 1  eval = 0.19655   
+Iteration 15900  learning_rate = 3.05176e-08 loss = 2.17581 * 1  eval = 0.19   
+Iteration 15950  learning_rate = 3.05176e-08 loss = 2.12122 * 1  eval = 0.185   
+                                                                                 Iteration 16000 loss = 2.15042 * 1  eval = 0.2045   
+Iteration 16000  learning_rate = 1.52588e-08 loss = 2.10932 * 1  eval = 0.22   
+Iteration 16050  learning_rate = 1.52588e-08 loss = 2.10998 * 1  eval = 0.225   
+                                                                                 Iteration 16100 loss = 2.16204 * 1  eval = 0.19485   
+Iteration 16100  learning_rate = 1.52588e-08 loss = 2.09531 * 1  eval = 0.24   
+Iteration 16150  learning_rate = 1.52588e-08 loss = 2.19279 * 1  eval = 0.19   
+                                                                                 Iteration 16200 loss = 2.16699 * 1  eval = 0.1931   
+Iteration 16200  learning_rate = 1.52588e-08 loss = 2.05979 * 1  eval = 0.265   
+Iteration 16250  learning_rate = 1.52588e-08 loss = 2.02105 * 1  eval = 0.245   
+                                                                                 Iteration 16300 loss = 2.16835 * 1  eval = 0.1938   
+Iteration 16300  learning_rate = 1.52588e-08 loss = 2.16784 * 1  eval = 0.215   
+Iteration 16350  learning_rate = 1.52588e-08 loss = 2.07525 * 1  eval = 0.255   
+                                                                                 Iteration 16400 loss = 2.16506 * 1  eval = 0.1955   
+Iteration 16400  learning_rate = 1.52588e-08 loss = 2.0842 * 1  eval = 0.235   
+Iteration 16450  learning_rate = 1.52588e-08 loss = 2.14802 * 1  eval = 0.155   
+                                                                                 Iteration 16500 loss = 2.16707 * 1  eval = 0.1921   
+Iteration 16500  learning_rate = 1.52588e-08 loss = 2.1298 * 1  eval = 0.215   
+Iteration 16550  learning_rate = 1.52588e-08 loss = 2.18574 * 1  eval = 0.16   
+                                                                                 Iteration 16600 loss = 2.16531 * 1  eval = 0.19625   
+Iteration 16600  learning_rate = 1.52588e-08 loss = 2.11893 * 1  eval = 0.215   
+Iteration 16650  learning_rate = 1.52588e-08 loss = 2.1431 * 1  eval = 0.19   
+                                                                                 Iteration 16700 loss = 2.15896 * 1  eval = 0.19475   
+Iteration 16700  learning_rate = 1.52588e-08 loss = 2.14316 * 1  eval = 0.235   
+Iteration 16750  learning_rate = 1.52588e-08 loss = 2.13469 * 1  eval = 0.19   
+                                                                                 Iteration 16800 loss = 2.15874 * 1  eval = 0.19765   
+Iteration 16800  learning_rate = 1.52588e-08 loss = 2.13339 * 1  eval = 0.17   
+Iteration 16850  learning_rate = 1.52588e-08 loss = 2.1882 * 1  eval = 0.195   
+                                                                                 Iteration 16900 loss = 2.16666 * 1  eval = 0.1957   
+Iteration 16900  learning_rate = 1.52588e-08 loss = 2.1592 * 1  eval = 0.205   
+Iteration 16950  learning_rate = 1.52588e-08 loss = 2.10166 * 1  eval = 0.21   
+                                                                                 Iteration 17000 loss = 2.15328 * 1  eval = 0.1988   
+Iteration 17000  learning_rate = 7.62939e-09 loss = 2.1749 * 1  eval = 0.16   
+Iteration 17050  learning_rate = 7.62939e-09 loss = 2.15862 * 1  eval = 0.19   
+                                                                                 Iteration 17100 loss = 2.15791 * 1  eval = 0.19895   
+Iteration 17100  learning_rate = 7.62939e-09 loss = 2.14612 * 1  eval = 0.17   
+Iteration 17150  learning_rate = 7.62939e-09 loss = 2.14371 * 1  eval = 0.165   
+                                                                                 Iteration 17200 loss = 2.15649 * 1  eval = 0.20155   
+Iteration 17200  learning_rate = 7.62939e-09 loss = 2.11611 * 1  eval = 0.215   
+Iteration 17250  learning_rate = 7.62939e-09 loss = 2.16455 * 1  eval = 0.2   
+                                                                                 Iteration 17300 loss = 2.16619 * 1  eval = 0.19345   
+Iteration 17300  learning_rate = 7.62939e-09 loss = 2.12171 * 1  eval = 0.19   
+Iteration 17350  learning_rate = 7.62939e-09 loss = 2.1316 * 1  eval = 0.215   
+                                                                                 Iteration 17400 loss = 2.15802 * 1  eval = 0.19555   
+Iteration 17400  learning_rate = 7.62939e-09 loss = 2.17707 * 1  eval = 0.16   
+Iteration 17450  learning_rate = 7.62939e-09 loss = 2.18631 * 1  eval = 0.165   
+                                                                                 Iteration 17500 loss = 2.17148 * 1  eval = 0.1947   
+Iteration 17500  learning_rate = 7.62939e-09 loss = 2.18626 * 1  eval = 0.195   
+Iteration 17550  learning_rate = 7.62939e-09 loss = 2.0898 * 1  eval = 0.26   
+                                                                                 Iteration 17600 loss = 2.17061 * 1  eval = 0.1915   
+Iteration 17600  learning_rate = 7.62939e-09 loss = 2.16124 * 1  eval = 0.21   
+Iteration 17650  learning_rate = 7.62939e-09 loss = 2.17547 * 1  eval = 0.205   
+                                                                                 Iteration 17700 loss = 2.16205 * 1  eval = 0.19495   
+Iteration 17700  learning_rate = 7.62939e-09 loss = 2.13915 * 1  eval = 0.19   
+Iteration 17750  learning_rate = 7.62939e-09 loss = 2.09523 * 1  eval = 0.185   
+                                                                                 Iteration 17800 loss = 2.16381 * 1  eval = 0.195   
+Iteration 17800  learning_rate = 7.62939e-09 loss = 2.05658 * 1  eval = 0.24   
+Iteration 17850  learning_rate = 7.62939e-09 loss = 2.14604 * 1  eval = 0.18   
+                                                                                 Iteration 17900 loss = 2.15767 * 1  eval = 0.19805   
+Iteration 17900  learning_rate = 7.62939e-09 loss = 2.14384 * 1  eval = 0.19   
+Iteration 17950  learning_rate = 7.62939e-09 loss = 2.1166 * 1  eval = 0.185   
+                                                                                 Iteration 18000 loss = 2.16653 * 1  eval = 0.19285   
+Iteration 18000  learning_rate = 3.8147e-09 loss = 2.1382 * 1  eval = 0.195   
+Iteration 18050  learning_rate = 3.8147e-09 loss = 2.21996 * 1  eval = 0.165   
+                                                                                 Iteration 18100 loss = 2.15617 * 1  eval = 0.20115   
+Iteration 18100  learning_rate = 3.8147e-09 loss = 2.2125 * 1  eval = 0.17   
+Iteration 18150  learning_rate = 3.8147e-09 loss = 2.12243 * 1  eval = 0.2   
+                                                                                 Iteration 18200 loss = 2.15882 * 1  eval = 0.19655   
+Iteration 18200  learning_rate = 3.8147e-09 loss = 2.10879 * 1  eval = 0.21   
+Iteration 18250  learning_rate = 3.8147e-09 loss = 2.10705 * 1  eval = 0.2   
+                                                                                 Iteration 18300 loss = 2.15042 * 1  eval = 0.2045   
+Iteration 18300  learning_rate = 3.8147e-09 loss = 2.14776 * 1  eval = 0.175   
+Iteration 18350  learning_rate = 3.8147e-09 loss = 2.18145 * 1  eval = 0.215   
+                                                                                 Iteration 18400 loss = 2.16204 * 1  eval = 0.19485   
+Iteration 18400  learning_rate = 3.8147e-09 loss = 2.10592 * 1  eval = 0.2   
+Iteration 18450  learning_rate = 3.8147e-09 loss = 2.09568 * 1  eval = 0.23   
+                                                                                 Iteration 18500 loss = 2.16699 * 1  eval = 0.1931   
+Iteration 18500  learning_rate = 3.8147e-09 loss = 2.08895 * 1  eval = 0.175   
+Iteration 18550  learning_rate = 3.8147e-09 loss = 2.14418 * 1  eval = 0.195   
+                                                                                 Iteration 18600 loss = 2.16835 * 1  eval = 0.1938   
+Iteration 18600  learning_rate = 3.8147e-09 loss = 2.08733 * 1  eval = 0.23   
+Iteration 18650  learning_rate = 3.8147e-09 loss = 2.09861 * 1  eval = 0.215   
+                                                                                 Iteration 18700 loss = 2.16506 * 1  eval = 0.1955   
+Iteration 18700  learning_rate = 3.8147e-09 loss = 2.18189 * 1  eval = 0.145   
+Iteration 18750  learning_rate = 3.8147e-09 loss = 2.11289 * 1  eval = 0.195   
+                                                                                 Iteration 18800 loss = 2.16707 * 1  eval = 0.1921   
+Iteration 18800  learning_rate = 3.8147e-09 loss = 2.16656 * 1  eval = 0.17   
+Iteration 18850  learning_rate = 3.8147e-09 loss = 2.14367 * 1  eval = 0.25   
+                                                                                 Iteration 18900 loss = 2.16531 * 1  eval = 0.19625   
+Iteration 18900  learning_rate = 3.8147e-09 loss = 2.18125 * 1  eval = 0.185   
+Iteration 18950  learning_rate = 3.8147e-09 loss = 2.64073 * 1  eval = 0.17   
+                                                                                 Iteration 19000 loss = 2.15896 * 1  eval = 0.19475   
+Iteration 19000  learning_rate = 1.90735e-09 loss = 2.11409 * 1  eval = 0.22   
+Iteration 19050  learning_rate = 1.90735e-09 loss = 2.10408 * 1  eval = 0.24   
+                                                                                 Iteration 19100 loss = 2.15874 * 1  eval = 0.19765   
+Iteration 19100  learning_rate = 1.90735e-09 loss = 2.10595 * 1  eval = 0.215   
+Iteration 19150  learning_rate = 1.90735e-09 loss = 2.16657 * 1  eval = 0.19   
+                                                                                 Iteration 19200 loss = 2.16666 * 1  eval = 0.1957   
+Iteration 19200  learning_rate = 1.90735e-09 loss = 2.11306 * 1  eval = 0.21   
+Iteration 19250  learning_rate = 1.90735e-09 loss = 2.11318 * 1  eval = 0.195   
+                                                                                 Iteration 19300 loss = 2.15328 * 1  eval = 0.1988   
+Iteration 19300  learning_rate = 1.90735e-09 loss = 2.13803 * 1  eval = 0.21   
+Iteration 19350  learning_rate = 1.90735e-09 loss = 2.13394 * 1  eval = 0.2   
+                                                                                 Iteration 19400 loss = 2.15791 * 1  eval = 0.19895   
+Iteration 19400  learning_rate = 1.90735e-09 loss = 2.12959 * 1  eval = 0.24   
+Iteration 19450  learning_rate = 1.90735e-09 loss = 2.14517 * 1  eval = 0.175   
+                                                                                 Iteration 19500 loss = 2.15649 * 1  eval = 0.20155   
+Iteration 19500  learning_rate = 1.90735e-09 loss = 2.05804 * 1  eval = 0.255   
+Iteration 19550  learning_rate = 1.90735e-09 loss = 2.10203 * 1  eval = 0.195   
+                                                                                 Iteration 19600 loss = 2.16619 * 1  eval = 0.19345   
+Iteration 19600  learning_rate = 1.90735e-09 loss = 2.16938 * 1  eval = 0.17   
+Iteration 19650  learning_rate = 1.90735e-09 loss = 2.07488 * 1  eval = 0.215   
+                                                                                 Iteration 19700 loss = 2.15802 * 1  eval = 0.19555   
+Iteration 19700  learning_rate = 1.90735e-09 loss = 2.14883 * 1  eval = 0.205   
+Iteration 19750  learning_rate = 1.90735e-09 loss = 2.13149 * 1  eval = 0.235   
+                                                                                 Iteration 19800 loss = 2.17148 * 1  eval = 0.1947   
+Iteration 19800  learning_rate = 1.90735e-09 loss = 2.14252 * 1  eval = 0.235   
+Iteration 19850  learning_rate = 1.90735e-09 loss = 2.18516 * 1  eval = 0.175   
+                                                                                 Iteration 19900 loss = 2.17061 * 1  eval = 0.1915   
+Iteration 19900  learning_rate = 1.90735e-09 loss = 2.21804 * 1  eval = 0.185   
+Iteration 19950  learning_rate = 1.90735e-09 loss = 2.11357 * 1  eval = 0.2   
+                                                                                 Iteration 20000 loss = 2.16205 * 1  eval = 0.19495   
+Iteration 20000  learning_rate = 9.53674e-10 loss = 2.06951 * 1  eval = 0.23   
+Iteration 20050  learning_rate = 9.53674e-10 loss = 2.1121 * 1  eval = 0.175   
+                                                                                 Iteration 20100 loss = 2.16381 * 1  eval = 0.195   
+Iteration 20100  learning_rate = 9.53674e-10 loss = 2.10744 * 1  eval = 0.21   
+Iteration 20150  learning_rate = 9.53674e-10 loss = 2.17275 * 1  eval = 0.215   
+                                                                                 Iteration 20200 loss = 2.15767 * 1  eval = 0.19805   
+Iteration 20200  learning_rate = 9.53674e-10 loss = 2.13928 * 1  eval = 0.19   
+Iteration 20250  learning_rate = 9.53674e-10 loss = 2.14782 * 1  eval = 0.14   
+                                                                                 Iteration 20300 loss = 2.16653 * 1  eval = 0.19285   
+Iteration 20300  learning_rate = 9.53674e-10 loss = 2.16273 * 1  eval = 0.19   
+Iteration 20350  learning_rate = 9.53674e-10 loss = 2.20937 * 1  eval = 0.155   
+                                                                                 Iteration 20400 loss = 2.15617 * 1  eval = 0.20115   
+Iteration 20400  learning_rate = 9.53674e-10 loss = 2.06578 * 1  eval = 0.28   
+Iteration 20450  learning_rate = 9.53674e-10 loss = 2.17641 * 1  eval = 0.145   
+                                                                                 Iteration 20500 loss = 2.15882 * 1  eval = 0.19655   
+Iteration 20500  learning_rate = 9.53674e-10 loss = 2.12673 * 1  eval = 0.175   
+Iteration 20550  learning_rate = 9.53674e-10 loss = 2.14454 * 1  eval = 0.185   
+                                                                                 Iteration 20600 loss = 2.15042 * 1  eval = 0.2045   
+Iteration 20600  learning_rate = 9.53674e-10 loss = 2.05723 * 1  eval = 0.21   
+Iteration 20650  learning_rate = 9.53674e-10 loss = 2.12837 * 1  eval = 0.21   
+                                                                                 Iteration 20700 loss = 2.16204 * 1  eval = 0.19485   
+Iteration 20700  learning_rate = 9.53674e-10 loss = 2.13204 * 1  eval = 0.21   
+Iteration 20750  learning_rate = 9.53674e-10 loss = 2.02712 * 1  eval = 0.235   
+                                                                                 Iteration 20800 loss = 2.16699 * 1  eval = 0.1931   
+Iteration 20800  learning_rate = 9.53674e-10 loss = 2.13941 * 1  eval = 0.18   
+Iteration 20850  learning_rate = 9.53674e-10 loss = 2.06771 * 1  eval = 0.215   
+                                                                                 Iteration 20900 loss = 2.16835 * 1  eval = 0.1938   
+Iteration 20900  learning_rate = 9.53674e-10 loss = 2.14763 * 1  eval = 0.19   
+Iteration 20950  learning_rate = 9.53674e-10 loss = 2.10631 * 1  eval = 0.195   
+                                                                                 Iteration 21000 loss = 2.16506 * 1  eval = 0.1955   
+Iteration 21000  learning_rate = 4.76837e-10 loss = 2.16197 * 1  eval = 0.2   
+Iteration 21050  learning_rate = 4.76837e-10 loss = 2.12242 * 1  eval = 0.155   
+                                                                                 Iteration 21100 loss = 2.16707 * 1  eval = 0.1921   
+Iteration 21100  learning_rate = 4.76837e-10 loss = 2.12781 * 1  eval = 0.22   
+Iteration 21150  learning_rate = 4.76837e-10 loss = 2.08812 * 1  eval = 0.235   
+                                                                                 Iteration 21200 loss = 2.16531 * 1  eval = 0.19625   
+Iteration 21200  learning_rate = 4.76837e-10 loss = 2.20427 * 1  eval = 0.185   
+Iteration 21250  learning_rate = 4.76837e-10 loss = 2.1192 * 1  eval = 0.2   
+                                                                                 Iteration 21300 loss = 2.15896 * 1  eval = 0.19475   
+Iteration 21300  learning_rate = 4.76837e-10 loss = 2.1263 * 1  eval = 0.2   
+Iteration 21350  learning_rate = 4.76837e-10 loss = 2.10559 * 1  eval = 0.235   
+                                                                                 Iteration 21400 loss = 2.15874 * 1  eval = 0.19765   
+Iteration 21400  learning_rate = 4.76837e-10 loss = 2.1226 * 1  eval = 0.215   
+Iteration 21450  learning_rate = 4.76837e-10 loss = 2.13168 * 1  eval = 0.215   
+                                                                                 Iteration 21500 loss = 2.16666 * 1  eval = 0.1957   
+Iteration 21500  learning_rate = 4.76837e-10 loss = 2.16544 * 1  eval = 0.195   
+Iteration 21550  learning_rate = 4.76837e-10 loss = 2.05817 * 1  eval = 0.255   
+                                                                                 Iteration 21600 loss = 2.15328 * 1  eval = 0.1988   
+Iteration 21600  learning_rate = 4.76837e-10 loss = 2.14891 * 1  eval = 0.16   
+Iteration 21650  learning_rate = 4.76837e-10 loss = 2.16339 * 1  eval = 0.21   
+                                                                                 Iteration 21700 loss = 2.15791 * 1  eval = 0.19895   
+Iteration 21700  learning_rate = 4.76837e-10 loss = 2.14374 * 1  eval = 0.205   
+Iteration 21750  learning_rate = 4.76837e-10 loss = 2.13532 * 1  eval = 0.205   
+                                                                                 Iteration 21800 loss = 2.15649 * 1  eval = 0.20155   
+Iteration 21800  learning_rate = 4.76837e-10 loss = 2.10641 * 1  eval = 0.24   
+Iteration 21850  learning_rate = 4.76837e-10 loss = 2.08458 * 1  eval = 0.21   
+                                                                                 Iteration 21900 loss = 2.16619 * 1  eval = 0.19345   
+Iteration 21900  learning_rate = 4.76837e-10 loss = 2.13561 * 1  eval = 0.195   
+Iteration 21950  learning_rate = 4.76837e-10 loss = 2.1219 * 1  eval = 0.175   
+                                                                                 Iteration 22000 loss = 2.15802 * 1  eval = 0.19555   
+Iteration 22000  learning_rate = 2.38419e-10 loss = 2.13609 * 1  eval = 0.205   
+Iteration 22050  learning_rate = 2.38419e-10 loss = 2.12465 * 1  eval = 0.215   
+                                                                                 Iteration 22100 loss = 2.17148 * 1  eval = 0.1947   
+Iteration 22100  learning_rate = 2.38419e-10 loss = 2.09331 * 1  eval = 0.18   
+Iteration 22150  learning_rate = 2.38419e-10 loss = 2.17909 * 1  eval = 0.19   
+                                                                                 Iteration 22200 loss = 2.17061 * 1  eval = 0.1915   
+Iteration 22200  learning_rate = 2.38419e-10 loss = 2.11004 * 1  eval = 0.2   
+Iteration 22250  learning_rate = 2.38419e-10 loss = 2.12108 * 1  eval = 0.235   
+                                                                                 Iteration 22300 loss = 2.16205 * 1  eval = 0.19495   
+Iteration 22300  learning_rate = 2.38419e-10 loss = 2.09682 * 1  eval = 0.215   
+Iteration 22350  learning_rate = 2.38419e-10 loss = 2.11409 * 1  eval = 0.22   
+                                                                                 Iteration 22400 loss = 2.16381 * 1  eval = 0.195   
+Iteration 22400  learning_rate = 2.38419e-10 loss = 2.17506 * 1  eval = 0.215   
+Iteration 22450  learning_rate = 2.38419e-10 loss = 2.04989 * 1  eval = 0.255   
+                                                                                 Iteration 22500 loss = 2.15767 * 1  eval = 0.19805   
+Iteration 22500  learning_rate = 2.38419e-10 loss = 2.16701 * 1  eval = 0.22   
+Iteration 22550  learning_rate = 2.38419e-10 loss = 2.1093 * 1  eval = 0.195   
+                                                                                 Iteration 22600 loss = 2.16653 * 1  eval = 0.19285   
+Iteration 22600  learning_rate = 2.38419e-10 loss = 2.15725 * 1  eval = 0.195   
+Iteration 22650  learning_rate = 2.38419e-10 loss = 2.06916 * 1  eval = 0.225   
+                                                                                 Iteration 22700 loss = 2.15617 * 1  eval = 0.20115   
+Iteration 22700  learning_rate = 2.38419e-10 loss = 2.12213 * 1  eval = 0.17   
+Iteration 22750  learning_rate = 2.38419e-10 loss = 2.15485 * 1  eval = 0.235   
+                                                                                 Iteration 22800 loss = 2.15882 * 1  eval = 0.19655   
+Iteration 22800  learning_rate = 2.38419e-10 loss = 2.14538 * 1  eval = 0.185   
+Iteration 22850  learning_rate = 2.38419e-10 loss = 2.15537 * 1  eval = 0.215   
+                                                                                 Iteration 22900 loss = 2.15042 * 1  eval = 0.2045   
+Iteration 22900  learning_rate = 2.38419e-10 loss = 2.1282 * 1  eval = 0.21   
+Iteration 22950  learning_rate = 2.38419e-10 loss = 2.1269 * 1  eval = 0.22   
+                                                                                 Iteration 23000 loss = 2.16204 * 1  eval = 0.19485   
+Iteration 23000  learning_rate = 1.19209e-10 loss = 2.06076 * 1  eval = 0.215   
+Iteration 23050  learning_rate = 1.19209e-10 loss = 2.1461 * 1  eval = 0.2   
+                                                                                 Iteration 23100 loss = 2.16699 * 1  eval = 0.1931   
+Iteration 23100  learning_rate = 1.19209e-10 loss = 2.11487 * 1  eval = 0.15   
+Iteration 23150  learning_rate = 1.19209e-10 loss = 2.13427 * 1  eval = 0.185   
+                                                                                 Iteration 23200 loss = 2.16835 * 1  eval = 0.1938   
+Iteration 23200  learning_rate = 1.19209e-10 loss = 2.05199 * 1  eval = 0.255   
+Iteration 23250  learning_rate = 1.19209e-10 loss = 2.04142 * 1  eval = 0.225   
+                                                                                 Iteration 23300 loss = 2.16506 * 1  eval = 0.1955   
+Iteration 23300  learning_rate = 1.19209e-10 loss = 2.16049 * 1  eval = 0.17   
+Iteration 23350  learning_rate = 1.19209e-10 loss = 2.1605 * 1  eval = 0.18   
+                                                                                 Iteration 23400 loss = 2.16707 * 1  eval = 0.1921   
+Iteration 23400  learning_rate = 1.19209e-10 loss = 2.17229 * 1  eval = 0.17   
+Iteration 23450  learning_rate = 1.19209e-10 loss = 2.1011 * 1  eval = 0.175   
+                                                                                 Iteration 23500 loss = 2.16531 * 1  eval = 0.19625   
+Iteration 23500  learning_rate = 1.19209e-10 loss = 2.08514 * 1  eval = 0.235   
+Iteration 23550  learning_rate = 1.19209e-10 loss = 2.15965 * 1  eval = 0.175   
+                                                                                 Iteration 23600 loss = 2.15896 * 1  eval = 0.19475   
+Iteration 23600  learning_rate = 1.19209e-10 loss = 2.1125 * 1  eval = 0.235   
+Iteration 23650  learning_rate = 1.19209e-10 loss = 2.0991 * 1  eval = 0.195   
+                                                                                 Iteration 23700 loss = 2.15874 * 1  eval = 0.19765   
+Iteration 23700  learning_rate = 1.19209e-10 loss = 2.15481 * 1  eval = 0.215   
+Iteration 23750  learning_rate = 1.19209e-10 loss = 2.11278 * 1  eval = 0.175   
+                                                                                 Iteration 23800 loss = 2.16666 * 1  eval = 0.1957   
+Iteration 23800  learning_rate = 1.19209e-10 loss = 2.12876 * 1  eval = 0.185   
+Iteration 23850  learning_rate = 1.19209e-10 loss = 2.17629 * 1  eval = 0.175   
+                                                                                 Iteration 23900 loss = 2.15328 * 1  eval = 0.1988   
+Iteration 23900  learning_rate = 1.19209e-10 loss = 2.13878 * 1  eval = 0.165   
+Iteration 23950  learning_rate = 1.19209e-10 loss = 2.10167 * 1  eval = 0.23   
+                                                                                 Iteration 24000 loss = 2.15791 * 1  eval = 0.19895   
+Iteration 24000  learning_rate = 5.96046e-11 loss = 2.19511 * 1  eval = 0.2   
+Iteration 24050  learning_rate = 5.96046e-11 loss = 2.15009 * 1  eval = 0.195   
+                                                                                 Iteration 24100 loss = 2.15649 * 1  eval = 0.20155   
+Iteration 24100  learning_rate = 5.96046e-11 loss = 2.12874 * 1  eval = 0.195   
+Iteration 24150  learning_rate = 5.96046e-11 loss = 2.0923 * 1  eval = 0.185   
+                                                                                 Iteration 24200 loss = 2.16619 * 1  eval = 0.19345   
+Iteration 24200  learning_rate = 5.96046e-11 loss = 2.08717 * 1  eval = 0.245   
+Iteration 24250  learning_rate = 5.96046e-11 loss = 2.12035 * 1  eval = 0.135   
+                                                                                 Iteration 24300 loss = 2.15802 * 1  eval = 0.19555   
+Iteration 24300  learning_rate = 5.96046e-11 loss = 2.09969 * 1  eval = 0.21   
+Iteration 24350  learning_rate = 5.96046e-11 loss = 2.16457 * 1  eval = 0.195   
+                                                                                 Iteration 24400 loss = 2.17148 * 1  eval = 0.1947   
+Iteration 24400  learning_rate = 5.96046e-11 loss = 2.08405 * 1  eval = 0.205   
+Iteration 24450  learning_rate = 5.96046e-11 loss = 2.1134 * 1  eval = 0.15   
+                                                                                 Iteration 24500 loss = 2.17061 * 1  eval = 0.1915   
+Iteration 24500  learning_rate = 5.96046e-11 loss = 2.23116 * 1  eval = 0.15   
+Iteration 24550  learning_rate = 5.96046e-11 loss = 2.1119 * 1  eval = 0.21   
+                                                                                 Iteration 24600 loss = 2.16205 * 1  eval = 0.19495   
+Iteration 24600  learning_rate = 5.96046e-11 loss = 2.09973 * 1  eval = 0.235   
+Iteration 24650  learning_rate = 5.96046e-11 loss = 2.15317 * 1  eval = 0.155   
+                                                                                 Iteration 24700 loss = 2.16381 * 1  eval = 0.195   
+Iteration 24700  learning_rate = 5.96046e-11 loss = 2.15198 * 1  eval = 0.16   
+Iteration 24750  learning_rate = 5.96046e-11 loss = 2.15681 * 1  eval = 0.17   
+                                                                                 Iteration 24800 loss = 2.15767 * 1  eval = 0.19805   
+Iteration 24800  learning_rate = 5.96046e-11 loss = 2.13215 * 1  eval = 0.195   
+Iteration 24850  learning_rate = 5.96046e-11 loss = 2.08307 * 1  eval = 0.215   
+                                                                                 Iteration 24900 loss = 2.16653 * 1  eval = 0.19285   
+Iteration 24900  learning_rate = 5.96046e-11 loss = 2.13043 * 1  eval = 0.2   
+Iteration 24950  learning_rate = 5.96046e-11 loss = 2.1141 * 1  eval = 0.225   
+                                                                                 Iteration 25000 loss = 2.15617 * 1  eval = 0.20115   
+Iteration 25000  learning_rate = 2.98023e-11 loss = 2.19678 * 1  eval = 0.145   
+Iteration 25050  learning_rate = 2.98023e-11 loss = 2.1263 * 1  eval = 0.2   
+                                                                                 Iteration 25100 loss = 2.15882 * 1  eval = 0.19655   
+Iteration 25100  learning_rate = 2.98023e-11 loss = 2.10145 * 1  eval = 0.155   
+Iteration 25150  learning_rate = 2.98023e-11 loss = 2.15725 * 1  eval = 0.24   
+                                                                                 Iteration 25200 loss = 2.15042 * 1  eval = 0.2045   
+Iteration 25200  learning_rate = 2.98023e-11 loss = 2.10311 * 1  eval = 0.225   
+Iteration 25250  learning_rate = 2.98023e-11 loss = 2.10039 * 1  eval = 0.275   
+                                                                                 Iteration 25300 loss = 2.16204 * 1  eval = 0.19485   
+Iteration 25300  learning_rate = 2.98023e-11 loss = 2.1551 * 1  eval = 0.175   
+Iteration 25350  learning_rate = 2.98023e-11 loss = 2.14862 * 1  eval = 0.205   
+                                                                                 Iteration 25400 loss = 2.16699 * 1  eval = 0.1931   
+Iteration 25400  learning_rate = 2.98023e-11 loss = 2.07889 * 1  eval = 0.225   
+Iteration 25450  learning_rate = 2.98023e-11 loss = 2.14346 * 1  eval = 0.18   
+                                                                                 Iteration 25500 loss = 2.16835 * 1  eval = 0.1938   
+Iteration 25500  learning_rate = 2.98023e-11 loss = 2.1375 * 1  eval = 0.16   
+Iteration 25550  learning_rate = 2.98023e-11 loss = 2.10331 * 1  eval = 0.205   
+                                                                                 Iteration 25600 loss = 2.16506 * 1  eval = 0.1955   
+Iteration 25600  learning_rate = 2.98023e-11 loss = 2.16708 * 1  eval = 0.135   
+Iteration 25650  learning_rate = 2.98023e-11 loss = 2.12738 * 1  eval = 0.175   
+                                                                                 Iteration 25700 loss = 2.16707 * 1  eval = 0.1921   
+Iteration 25700  learning_rate = 2.98023e-11 loss = 2.12798 * 1  eval = 0.22   
+Iteration 25750  learning_rate = 2.98023e-11 loss = 2.07159 * 1  eval = 0.265   
+                                                                                 Iteration 25800 loss = 2.16531 * 1  eval = 0.19625   
+Iteration 25800  learning_rate = 2.98023e-11 loss = 2.16814 * 1  eval = 0.195   
+Iteration 25850  learning_rate = 2.98023e-11 loss = 2.07377 * 1  eval = 0.23   
+                                                                                 Iteration 25900 loss = 2.15896 * 1  eval = 0.19475   
+Iteration 25900  learning_rate = 2.98023e-11 loss = 2.11806 * 1  eval = 0.185   
+Iteration 25950  learning_rate = 2.98023e-11 loss = 2.05547 * 1  eval = 0.25   
+                                                                                 Iteration 26000 loss = 2.15874 * 1  eval = 0.19765   
+Iteration 26000  learning_rate = 1.49012e-11 loss = 2.14558 * 1  eval = 0.15   
+Iteration 26050  learning_rate = 1.49012e-11 loss = 2.09054 * 1  eval = 0.19   
+                                                                                 Iteration 26100 loss = 2.16666 * 1  eval = 0.1957   
+Iteration 26100  learning_rate = 1.49012e-11 loss = 2.1048 * 1  eval = 0.21   
+Iteration 26150  learning_rate = 1.49012e-11 loss = 2.09968 * 1  eval = 0.195   
+                                                                                 Iteration 26200 loss = 2.15328 * 1  eval = 0.1988   
+Iteration 26200  learning_rate = 1.49012e-11 loss = 2.14061 * 1  eval = 0.205   
+Iteration 26250  learning_rate = 1.49012e-11 loss = 2.05545 * 1  eval = 0.18   
+                                                                                 Iteration 26300 loss = 2.15791 * 1  eval = 0.19895   
+Iteration 26300  learning_rate = 1.49012e-11 loss = 2.22156 * 1  eval = 0.12   
+Iteration 26350  learning_rate = 1.49012e-11 loss = 2.15885 * 1  eval = 0.2   
+                                                                                 Iteration 26400 loss = 2.15649 * 1  eval = 0.20155   
+Iteration 26400  learning_rate = 1.49012e-11 loss = 2.12817 * 1  eval = 0.215   
+Iteration 26450  learning_rate = 1.49012e-11 loss = 2.10009 * 1  eval = 0.19   
+                                                                                 Iteration 26500 loss = 2.16619 * 1  eval = 0.19345   
+Iteration 26500  learning_rate = 1.49012e-11 loss = 2.12736 * 1  eval = 0.17   
+Iteration 26550  learning_rate = 1.49012e-11 loss = 2.12821 * 1  eval = 0.145   
+                                                                                 Iteration 26600 loss = 2.15802 * 1  eval = 0.19555   
+Iteration 26600  learning_rate = 1.49012e-11 loss = 2.14562 * 1  eval = 0.195   
+Iteration 26650  learning_rate = 1.49012e-11 loss = 2.15285 * 1  eval = 0.205   
+                                                                                 Iteration 26700 loss = 2.17148 * 1  eval = 0.1947   
+Iteration 26700  learning_rate = 1.49012e-11 loss = 2.10412 * 1  eval = 0.225   
+Iteration 26750  learning_rate = 1.49012e-11 loss = 2.17296 * 1  eval = 0.2   
+                                                                                 Iteration 26800 loss = 2.17061 * 1  eval = 0.1915   
+Iteration 26800  learning_rate = 1.49012e-11 loss = 2.13942 * 1  eval = 0.225   
+Iteration 26850  learning_rate = 1.49012e-11 loss = 2.13686 * 1  eval = 0.215   
+                                                                                 Iteration 26900 loss = 2.16205 * 1  eval = 0.19495   
+Iteration 26900  learning_rate = 1.49012e-11 loss = 2.07696 * 1  eval = 0.21   
+Iteration 26950  learning_rate = 1.49012e-11 loss = 2.17661 * 1  eval = 0.215   
+                                                                                 Iteration 27000 loss = 2.16381 * 1  eval = 0.195   
+Iteration 27000  learning_rate = 7.45058e-12 loss = 2.1533 * 1  eval = 0.175   
+Iteration 27050  learning_rate = 7.45058e-12 loss = 2.07235 * 1  eval = 0.21   
+                                                                                 Iteration 27100 loss = 2.15767 * 1  eval = 0.19805   
+Iteration 27100  learning_rate = 7.45058e-12 loss = 2.20756 * 1  eval = 0.17   
+Iteration 27150  learning_rate = 7.45058e-12 loss = 2.15903 * 1  eval = 0.19   
+                                                                                 Iteration 27200 loss = 2.16653 * 1  eval = 0.19285   
+Iteration 27200  learning_rate = 7.45058e-12 loss = 2.05097 * 1  eval = 0.235   
+Iteration 27250  learning_rate = 7.45058e-12 loss = 2.13265 * 1  eval = 0.185   
+                                                                                 Iteration 27300 loss = 2.15617 * 1  eval = 0.20115   
+Iteration 27300  learning_rate = 7.45058e-12 loss = 2.0776 * 1  eval = 0.23   
+Iteration 27350  learning_rate = 7.45058e-12 loss = 2.08698 * 1  eval = 0.185   
+                                                                                 Iteration 27400 loss = 2.15882 * 1  eval = 0.19655   
+Iteration 27400  learning_rate = 7.45058e-12 loss = 2.15131 * 1  eval = 0.19   
+Iteration 27450  learning_rate = 7.45058e-12 loss = 2.07184 * 1  eval = 0.22   
+                                                                                 Iteration 27500 loss = 2.15042 * 1  eval = 0.2045   
+Iteration 27500  learning_rate = 7.45058e-12 loss = 2.10511 * 1  eval = 0.205   
+Iteration 27550  learning_rate = 7.45058e-12 loss = 2.15053 * 1  eval = 0.19   
+                                                                                 Iteration 27600 loss = 2.16204 * 1  eval = 0.19485   
+Iteration 27600  learning_rate = 7.45058e-12 loss = 2.22481 * 1  eval = 0.125   
+Iteration 27650  learning_rate = 7.45058e-12 loss = 2.19981 * 1  eval = 0.2   
+                                                                                 Iteration 27700 loss = 2.16699 * 1  eval = 0.1931   
+Iteration 27700  learning_rate = 7.45058e-12 loss = 2.11444 * 1  eval = 0.22   
+Iteration 27750  learning_rate = 7.45058e-12 loss = 2.2049 * 1  eval = 0.15   
+                                                                                 Iteration 27800 loss = 2.16835 * 1  eval = 0.1938   
+Iteration 27800  learning_rate = 7.45058e-12 loss = 2.11284 * 1  eval = 0.225   
+Iteration 27850  learning_rate = 7.45058e-12 loss = 2.1862 * 1  eval = 0.175   
+                                                                                 Iteration 27900 loss = 2.16506 * 1  eval = 0.1955   
+Iteration 27900  learning_rate = 7.45058e-12 loss = 2.12121 * 1  eval = 0.175   
+Iteration 27950  learning_rate = 7.45058e-12 loss = 2.1186 * 1  eval = 0.2   
+                                                                                 Iteration 28000 loss = 2.16707 * 1  eval = 0.1921   
+Iteration 28000  learning_rate = 3.72529e-12 loss = 2.10052 * 1  eval = 0.235   
+Iteration 28050  learning_rate = 3.72529e-12 loss = 2.19828 * 1  eval = 0.185   
+                                                                                 Iteration 28100 loss = 2.16531 * 1  eval = 0.19625   
+Iteration 28100  learning_rate = 3.72529e-12 loss = 2.04592 * 1  eval = 0.205   
+Iteration 28150  learning_rate = 3.72529e-12 loss = 2.10184 * 1  eval = 0.19   
+                                                                                 Iteration 28200 loss = 2.15896 * 1  eval = 0.19475   
+Iteration 28200  learning_rate = 3.72529e-12 loss = 2.16805 * 1  eval = 0.22   
+Iteration 28250  learning_rate = 3.72529e-12 loss = 2.11762 * 1  eval = 0.22   
+                                                                                 Iteration 28300 loss = 2.15874 * 1  eval = 0.19765   
+Iteration 28300  learning_rate = 3.72529e-12 loss = 2.17867 * 1  eval = 0.215   
+Iteration 28350  learning_rate = 3.72529e-12 loss = 2.18572 * 1  eval = 0.195   
+                                                                                 Iteration 28400 loss = 2.16666 * 1  eval = 0.1957   
+Iteration 28400  learning_rate = 3.72529e-12 loss = 2.16469 * 1  eval = 0.15   
+Iteration 28450  learning_rate = 3.72529e-12 loss = 2.10697 * 1  eval = 0.245   
+                                                                                 Iteration 28500 loss = 2.15328 * 1  eval = 0.1988   
+Iteration 28500  learning_rate = 3.72529e-12 loss = 2.15217 * 1  eval = 0.165   
+Iteration 28550  learning_rate = 3.72529e-12 loss = 2.09594 * 1  eval = 0.255   
+                                                                                 Iteration 28600 loss = 2.15791 * 1  eval = 0.19895   
+Iteration 28600  learning_rate = 3.72529e-12 loss = 2.13055 * 1  eval = 0.19   
+Iteration 28650  learning_rate = 3.72529e-12 loss = 2.16273 * 1  eval = 0.18   
+                                                                                 Iteration 28700 loss = 2.15649 * 1  eval = 0.20155   
+Iteration 28700  learning_rate = 3.72529e-12 loss = 2.13023 * 1  eval = 0.155   
+Iteration 28750  learning_rate = 3.72529e-12 loss = 2.03486 * 1  eval = 0.25   
+                                                                                 Iteration 28800 loss = 2.16619 * 1  eval = 0.19345   
+Iteration 28800  learning_rate = 3.72529e-12 loss = 2.11112 * 1  eval = 0.185   
+Iteration 28850  learning_rate = 3.72529e-12 loss = 2.21508 * 1  eval = 0.205   
+                                                                                 Iteration 28900 loss = 2.15802 * 1  eval = 0.19555   
+Iteration 28900  learning_rate = 3.72529e-12 loss = 2.12061 * 1  eval = 0.25   
+Iteration 28950  learning_rate = 3.72529e-12 loss = 2.15437 * 1  eval = 0.14   
+                                                                                 Iteration 29000 loss = 2.17148 * 1  eval = 0.1947   
+Iteration 29000  learning_rate = 1.86265e-12 loss = 2.14659 * 1  eval = 0.19   
+Iteration 29050  learning_rate = 1.86265e-12 loss = 2.1187 * 1  eval = 0.2   
+                                                                                 Iteration 29100 loss = 2.17061 * 1  eval = 0.1915   
+Iteration 29100  learning_rate = 1.86265e-12 loss = 2.13593 * 1  eval = 0.235   
+Iteration 29150  learning_rate = 1.86265e-12 loss = 2.18296 * 1  eval = 0.175   
+                                                                                 Iteration 29200 loss = 2.16205 * 1  eval = 0.19495   
+Iteration 29200  learning_rate = 1.86265e-12 loss = 2.19729 * 1  eval = 0.195   
+Iteration 29250  learning_rate = 1.86265e-12 loss = 2.08466 * 1  eval = 0.195   
+                                                                                 Iteration 29300 loss = 2.16381 * 1  eval = 0.195   
+Iteration 29300  learning_rate = 1.86265e-12 loss = 2.07456 * 1  eval = 0.26   
+Iteration 29350  learning_rate = 1.86265e-12 loss = 2.08913 * 1  eval = 0.255   
+                                                                                 Iteration 29400 loss = 2.15767 * 1  eval = 0.19805   
+Iteration 29400  learning_rate = 1.86265e-12 loss = 2.13995 * 1  eval = 0.185   
+Iteration 29450  learning_rate = 1.86265e-12 loss = 2.15063 * 1  eval = 0.185   
+                                                                                 Iteration 29500 loss = 2.16653 * 1  eval = 0.19285   
+Iteration 29500  learning_rate = 1.86265e-12 loss = 2.13725 * 1  eval = 0.185   
+Iteration 29550  learning_rate = 1.86265e-12 loss = 2.17726 * 1  eval = 0.16   
+                                                                                 Iteration 29600 loss = 2.15617 * 1  eval = 0.20115   
+Iteration 29600  learning_rate = 1.86265e-12 loss = 2.14757 * 1  eval = 0.22   
+Iteration 29650  learning_rate = 1.86265e-12 loss = 2.1579 * 1  eval = 0.18   
+                                                                                 Iteration 29700 loss = 2.15882 * 1  eval = 0.19655   
+Iteration 29700  learning_rate = 1.86265e-12 loss = 2.13464 * 1  eval = 0.18   
+Iteration 29750  learning_rate = 1.86265e-12 loss = 2.12441 * 1  eval = 0.195   
+                                                                                 Iteration 29800 loss = 2.15042 * 1  eval = 0.2045   
+Iteration 29800  learning_rate = 1.86265e-12 loss = 2.13813 * 1  eval = 0.185   
+Iteration 29850  learning_rate = 1.86265e-12 loss = 2.18175 * 1  eval = 0.19   
+                                                                                 Iteration 29900 loss = 2.16204 * 1  eval = 0.19485   
+Iteration 29900  learning_rate = 1.86265e-12 loss = 2.11134 * 1  eval = 0.18   
+Iteration 29950  learning_rate = 1.86265e-12 loss = 2.08722 * 1  eval = 0.16   
+                                                                                 Iteration 30000 loss = 2.16699 * 1  eval = 0.1931   
+Iteration 30000  learning_rate = 9.31323e-13 loss = 2.09202 * 1  eval = 0.19   
+Iteration 30050  learning_rate = 9.31323e-13 loss = 2.15157 * 1  eval = 0.25   
+                                                                                 Iteration 30100 loss = 2.16835 * 1  eval = 0.1938   
+Iteration 30100  learning_rate = 9.31323e-13 loss = 2.09527 * 1  eval = 0.17   
+Iteration 30150  learning_rate = 9.31323e-13 loss = 2.05433 * 1  eval = 0.29   
+                                                                                 Iteration 30200 loss = 2.16506 * 1  eval = 0.1955   
+Iteration 30200  learning_rate = 9.31323e-13 loss = 2.08274 * 1  eval = 0.27   
+Iteration 30250  learning_rate = 9.31323e-13 loss = 2.10979 * 1  eval = 0.19   
+                                                                                 Iteration 30300 loss = 2.16707 * 1  eval = 0.1921   
+Iteration 30300  learning_rate = 9.31323e-13 loss = 2.20845 * 1  eval = 0.145   
+Iteration 30350  learning_rate = 9.31323e-13 loss = 2.12821 * 1  eval = 0.19   
+                                                                                 Iteration 30400 loss = 2.16531 * 1  eval = 0.19625   
+Iteration 30400  learning_rate = 9.31323e-13 loss = 2.15709 * 1  eval = 0.175   
+Iteration 30450  learning_rate = 9.31323e-13 loss = 2.09655 * 1  eval = 0.215   
+                                                                                 Iteration 30500 loss = 2.15896 * 1  eval = 0.19475   
+Iteration 30500  learning_rate = 9.31323e-13 loss = 2.14625 * 1  eval = 0.235   
+Iteration 30550  learning_rate = 9.31323e-13 loss = 2.10319 * 1  eval = 0.21   
+                                                                                 Iteration 30600 loss = 2.15874 * 1  eval = 0.19765   
+Iteration 30600  learning_rate = 9.31323e-13 loss = 2.15637 * 1  eval = 0.195   
+Iteration 30650  learning_rate = 9.31323e-13 loss = 2.13282 * 1  eval = 0.18   
+                                                                                 Iteration 30700 loss = 2.16666 * 1  eval = 0.1957   
+Iteration 30700  learning_rate = 9.31323e-13 loss = 2.123 * 1  eval = 0.195   
+Iteration 30750  learning_rate = 9.31323e-13 loss = 2.14522 * 1  eval = 0.205   
+                                                                                 Iteration 30800 loss = 2.15328 * 1  eval = 0.1988   
+Iteration 30800  learning_rate = 9.31323e-13 loss = 2.11671 * 1  eval = 0.185   
+Iteration 30850  learning_rate = 9.31323e-13 loss = 2.10823 * 1  eval = 0.27   
+                                                                                 Iteration 30900 loss = 2.15791 * 1  eval = 0.19895   
+Iteration 30900  learning_rate = 9.31323e-13 loss = 2.11333 * 1  eval = 0.205   
+Iteration 30950  learning_rate = 9.31323e-13 loss = 2.11263 * 1  eval = 0.205   
+                                                                                 Iteration 31000 loss = 2.15649 * 1  eval = 0.20155   
+Iteration 31000  learning_rate = 4.65661e-13 loss = 2.15008 * 1  eval = 0.19   
+Iteration 31050  learning_rate = 4.65661e-13 loss = 2.16322 * 1  eval = 0.145   
+                                                                                 Iteration 31100 loss = 2.16619 * 1  eval = 0.19345   
+Iteration 31100  learning_rate = 4.65661e-13 loss = 2.06502 * 1  eval = 0.24   
+Iteration 31150  learning_rate = 4.65661e-13 loss = 2.07429 * 1  eval = 0.245   
+                                                                                 Iteration 31200 loss = 2.15802 * 1  eval = 0.19555   
+Iteration 31200  learning_rate = 4.65661e-13 loss = 2.13952 * 1  eval = 0.215   
+Iteration 31250  learning_rate = 4.65661e-13 loss = 2.1212 * 1  eval = 0.2   
+                                                                                 Iteration 31300 loss = 2.17148 * 1  eval = 0.1947   
+Iteration 31300  learning_rate = 4.65661e-13 loss = 2.07517 * 1  eval = 0.235   
+Iteration 31350  learning_rate = 4.65661e-13 loss = 2.12315 * 1  eval = 0.18   
+                                                                                 Iteration 31400 loss = 2.17061 * 1  eval = 0.1915   
+Iteration 31400  learning_rate = 4.65661e-13 loss = 2.1025 * 1  eval = 0.195   
+Iteration 31450  learning_rate = 4.65661e-13 loss = 2.17664 * 1  eval = 0.16   
+                                                                                 Iteration 31500 loss = 2.16205 * 1  eval = 0.19495   
+Iteration 31500  learning_rate = 4.65661e-13 loss = 2.15179 * 1  eval = 0.135   
+Iteration 31550  learning_rate = 4.65661e-13 loss = 2.09172 * 1  eval = 0.195   
+                                                                                 Iteration 31600 loss = 2.16381 * 1  eval = 0.195   
+Iteration 31600  learning_rate = 4.65661e-13 loss = 2.17684 * 1  eval = 0.175   
+Iteration 31650  learning_rate = 4.65661e-13 loss = 2.12155 * 1  eval = 0.17   
+                                                                                 Iteration 31700 loss = 2.15767 * 1  eval = 0.19805   
+Iteration 31700  learning_rate = 4.65661e-13 loss = 2.1158 * 1  eval = 0.185   
+Iteration 31750  learning_rate = 4.65661e-13 loss = 2.11969 * 1  eval = 0.215   
+                                                                                 Iteration 31800 loss = 2.16653 * 1  eval = 0.19285   
+Iteration 31800  learning_rate = 4.65661e-13 loss = 2.11416 * 1  eval = 0.22   
+Iteration 31850  learning_rate = 4.65661e-13 loss = 2.12472 * 1  eval = 0.205   
+                                                                                 Iteration 31900 loss = 2.15617 * 1  eval = 0.20115   
+Iteration 31900  learning_rate = 4.65661e-13 loss = 2.13084 * 1  eval = 0.18   
+Iteration 31950  learning_rate = 4.65661e-13 loss = 2.10289 * 1  eval = 0.2   
+                                                                                 Iteration 32000 loss = 2.15882 * 1  eval = 0.19655   
+Iteration 32000  learning_rate = 2.32831e-13 loss = 2.18634 * 1  eval = 0.195   
+Iteration 32050  learning_rate = 2.32831e-13 loss = 2.16687 * 1  eval = 0.2   
+                                                                                 Iteration 32100 loss = 2.15042 * 1  eval = 0.2045   
+Iteration 32100  learning_rate = 2.32831e-13 loss = 2.17614 * 1  eval = 0.225   
+Iteration 32150  learning_rate = 2.32831e-13 loss = 2.14397 * 1  eval = 0.225   
+                                                                                 Iteration 32200 loss = 2.16204 * 1  eval = 0.19485   
+Iteration 32200  learning_rate = 2.32831e-13 loss = 2.09585 * 1  eval = 0.26   
+Iteration 32250  learning_rate = 2.32831e-13 loss = 2.11898 * 1  eval = 0.205   
+                                                                                 Iteration 32300 loss = 2.16699 * 1  eval = 0.1931   
+Iteration 32300  learning_rate = 2.32831e-13 loss = 2.09033 * 1  eval = 0.185   
+Iteration 32350  learning_rate = 2.32831e-13 loss = 2.1637 * 1  eval = 0.13   
+                                                                                 Iteration 32400 loss = 2.16835 * 1  eval = 0.1938   
+Iteration 32400  learning_rate = 2.32831e-13 loss = 2.14787 * 1  eval = 0.24   
+Iteration 32450  learning_rate = 2.32831e-13 loss = 2.08622 * 1  eval = 0.21   
+                                                                                 Iteration 32500 loss = 2.16506 * 1  eval = 0.1955   
+Iteration 32500  learning_rate = 2.32831e-13 loss = 2.14885 * 1  eval = 0.24   
+Iteration 32550  learning_rate = 2.32831e-13 loss = 2.12838 * 1  eval = 0.175   
+                                                                                 Iteration 32600 loss = 2.16707 * 1  eval = 0.1921   
+Iteration 32600  learning_rate = 2.32831e-13 loss = 2.14996 * 1  eval = 0.18   
+Iteration 32650  learning_rate = 2.32831e-13 loss = 2.1183 * 1  eval = 0.215   
+                                                                                 Iteration 32700 loss = 2.16531 * 1  eval = 0.19625   
+Iteration 32700  learning_rate = 2.32831e-13 loss = 2.07255 * 1  eval = 0.255   
+Iteration 32750  learning_rate = 2.32831e-13 loss = 2.14898 * 1  eval = 0.195   
+                                                                                 Iteration 32800 loss = 2.15896 * 1  eval = 0.19475   
+Iteration 32800  learning_rate = 2.32831e-13 loss = 2.10281 * 1  eval = 0.195   
+Iteration 32850  learning_rate = 2.32831e-13 loss = 2.15673 * 1  eval = 0.17   
+                                                                                 Iteration 32900 loss = 2.15874 * 1  eval = 0.19765   
+Iteration 32900  learning_rate = 2.32831e-13 loss = 2.20403 * 1  eval = 0.19   
+Iteration 32950  learning_rate = 2.32831e-13 loss = 2.15134 * 1  eval = 0.225   
+                                                                                 Iteration 33000 loss = 2.16666 * 1  eval = 0.1957   
+Iteration 33000  learning_rate = 1.16415e-13 loss = 2.14339 * 1  eval = 0.155   
+Iteration 33050  learning_rate = 1.16415e-13 loss = 2.11248 * 1  eval = 0.23   
+                                                                                 Iteration 33100 loss = 2.15328 * 1  eval = 0.1988   
+Iteration 33100  learning_rate = 1.16415e-13 loss = 2.10884 * 1  eval = 0.17   
+Iteration 33150  learning_rate = 1.16415e-13 loss = 2.12111 * 1  eval = 0.205   
+                                                                                 Iteration 33200 loss = 2.15791 * 1  eval = 0.19895   
+Iteration 33200  learning_rate = 1.16415e-13 loss = 2.13583 * 1  eval = 0.205   
+Iteration 33250  learning_rate = 1.16415e-13 loss = 2.10394 * 1  eval = 0.195   
+                                                                                 Iteration 33300 loss = 2.15649 * 1  eval = 0.20155   
+Iteration 33300  learning_rate = 1.16415e-13 loss = 2.17112 * 1  eval = 0.195   
+Iteration 33350  learning_rate = 1.16415e-13 loss = 2.12611 * 1  eval = 0.21   
+                                                                                 Iteration 33400 loss = 2.16619 * 1  eval = 0.19345   
+Iteration 33400  learning_rate = 1.16415e-13 loss = 2.19181 * 1  eval = 0.195   
+Iteration 33450  learning_rate = 1.16415e-13 loss = 2.17532 * 1  eval = 0.165   
+                                                                                 Iteration 33500 loss = 2.15802 * 1  eval = 0.19555   
+Iteration 33500  learning_rate = 1.16415e-13 loss = 2.08106 * 1  eval = 0.205   
+Iteration 33550  learning_rate = 1.16415e-13 loss = 2.05696 * 1  eval = 0.185   
+                                                                                 Iteration 33600 loss = 2.17148 * 1  eval = 0.1947   
+Iteration 33600  learning_rate = 1.16415e-13 loss = 2.13891 * 1  eval = 0.22   
+Iteration 33650  learning_rate = 1.16415e-13 loss = 2.12253 * 1  eval = 0.195   
+                                                                                 Iteration 33700 loss = 2.17061 * 1  eval = 0.1915   
+Iteration 33700  learning_rate = 1.16415e-13 loss = 2.12556 * 1  eval = 0.185   
+Iteration 33750  learning_rate = 1.16415e-13 loss = 2.13729 * 1  eval = 0.24   
+                                                                                 Iteration 33800 loss = 2.16205 * 1  eval = 0.19495   
+Iteration 33800  learning_rate = 1.16415e-13 loss = 2.14812 * 1  eval = 0.2   
+Iteration 33850  learning_rate = 1.16415e-13 loss = 2.16981 * 1  eval = 0.2   
+                                                                                 Iteration 33900 loss = 2.16381 * 1  eval = 0.195   
+Iteration 33900  learning_rate = 1.16415e-13 loss = 2.11589 * 1  eval = 0.24   
+Iteration 33950  learning_rate = 1.16415e-13 loss = 2.12322 * 1  eval = 0.21   
+                                                                                 Iteration 34000 loss = 2.15767 * 1  eval = 0.19805   
+Iteration 34000  learning_rate = 5.82077e-14 loss = 2.12452 * 1  eval = 0.23   
+Iteration 34050  learning_rate = 5.82077e-14 loss = 2.12847 * 1  eval = 0.235   
+                                                                                 Iteration 34100 loss = 2.16653 * 1  eval = 0.19285   
+Iteration 34100  learning_rate = 5.82077e-14 loss = 2.17413 * 1  eval = 0.23   
+Iteration 34150  learning_rate = 5.82077e-14 loss = 2.10494 * 1  eval = 0.215   
+                                                                                 Iteration 34200 loss = 2.15617 * 1  eval = 0.20115   
+Iteration 34200  learning_rate = 5.82077e-14 loss = 2.13324 * 1  eval = 0.225   
+Iteration 34250  learning_rate = 5.82077e-14 loss = 2.10526 * 1  eval = 0.165   
+                                                                                 Iteration 34300 loss = 2.15882 * 1  eval = 0.19655   
+Iteration 34300  learning_rate = 5.82077e-14 loss = 2.14737 * 1  eval = 0.16   
+Iteration 34350  learning_rate = 5.82077e-14 loss = 2.15527 * 1  eval = 0.175   
+                                                                                 Iteration 34400 loss = 2.15042 * 1  eval = 0.2045   
+Iteration 34400  learning_rate = 5.82077e-14 loss = 2.14642 * 1  eval = 0.15   
+Iteration 34450  learning_rate = 5.82077e-14 loss = 2.05767 * 1  eval = 0.225   
+                                                                                 Iteration 34500 loss = 2.16204 * 1  eval = 0.19485   
+Iteration 34500  learning_rate = 5.82077e-14 loss = 2.10117 * 1  eval = 0.185   
+Iteration 34550  learning_rate = 5.82077e-14 loss = 2.14843 * 1  eval = 0.205   
+                                                                                 Iteration 34600 loss = 2.16699 * 1  eval = 0.1931   
+Iteration 34600  learning_rate = 5.82077e-14 loss = 2.15537 * 1  eval = 0.19   
+Iteration 34650  learning_rate = 5.82077e-14 loss = 2.11147 * 1  eval = 0.21   
+                                                                                 Iteration 34700 loss = 2.16835 * 1  eval = 0.1938   
+Iteration 34700  learning_rate = 5.82077e-14 loss = 2.06334 * 1  eval = 0.25   
+Iteration 34750  learning_rate = 5.82077e-14 loss = 2.11578 * 1  eval = 0.15   
+                                                                                 Iteration 34800 loss = 2.16506 * 1  eval = 0.1955   
+Iteration 34800  learning_rate = 5.82077e-14 loss = 2.13581 * 1  eval = 0.18   
+Iteration 34850  learning_rate = 5.82077e-14 loss = 2.16322 * 1  eval = 0.16   
+                                                                                 Iteration 34900 loss = 2.16707 * 1  eval = 0.1921   
+Iteration 34900  learning_rate = 5.82077e-14 loss = 2.21173 * 1  eval = 0.195   
+Iteration 34950  learning_rate = 5.82077e-14 loss = 2.2106 * 1  eval = 0.165   
+                                                                                 Iteration 35000 loss = 2.16531 * 1  eval = 0.19625   
+Iteration 35000  learning_rate = 2.91038e-14 loss = 2.12368 * 1  eval = 0.215   
+Iteration 35050  learning_rate = 2.91038e-14 loss = 2.11278 * 1  eval = 0.225   
+                                                                                 Iteration 35100 loss = 2.15896 * 1  eval = 0.19475   
+Iteration 35100  learning_rate = 2.91038e-14 loss = 2.18899 * 1  eval = 0.17   
+Iteration 35150  learning_rate = 2.91038e-14 loss = 2.08984 * 1  eval = 0.2   
+                                                                                 Iteration 35200 loss = 2.15874 * 1  eval = 0.19765   
+Iteration 35200  learning_rate = 2.91038e-14 loss = 2.12171 * 1  eval = 0.165   
+Iteration 35250  learning_rate = 2.91038e-14 loss = 2.08874 * 1  eval = 0.28   
+                                                                                 Iteration 35300 loss = 2.16666 * 1  eval = 0.1957   
+Iteration 35300  learning_rate = 2.91038e-14 loss = 2.101 * 1  eval = 0.25   
+Iteration 35350  learning_rate = 2.91038e-14 loss = 2.18711 * 1  eval = 0.165   
+                                                                                 Iteration 35400 loss = 2.15328 * 1  eval = 0.1988   
+Iteration 35400  learning_rate = 2.91038e-14 loss = 2.1154 * 1  eval = 0.155   
+Iteration 35450  learning_rate = 2.91038e-14 loss = 2.15415 * 1  eval = 0.195   
+                                                                                 Iteration 35500 loss = 2.15791 * 1  eval = 0.19895   
+Iteration 35500  learning_rate = 2.91038e-14 loss = 2.0695 * 1  eval = 0.2   
+Iteration 35550  learning_rate = 2.91038e-14 loss = 2.19689 * 1  eval = 0.18   
+                                                                                 Iteration 35600 loss = 2.15649 * 1  eval = 0.20155   
+Iteration 35600  learning_rate = 2.91038e-14 loss = 2.09996 * 1  eval = 0.23   
+Iteration 35650  learning_rate = 2.91038e-14 loss = 2.13144 * 1  eval = 0.2   
+                                                                                 Iteration 35700 loss = 2.16619 * 1  eval = 0.19345   
+Iteration 35700  learning_rate = 2.91038e-14 loss = 2.08146 * 1  eval = 0.24   
+Iteration 35750  learning_rate = 2.91038e-14 loss = 2.15504 * 1  eval = 0.19   
+                                                                                 Iteration 35800 loss = 2.15802 * 1  eval = 0.19555   
+Iteration 35800  learning_rate = 2.91038e-14 loss = 2.08576 * 1  eval = 0.205   
+Iteration 35850  learning_rate = 2.91038e-14 loss = 2.13781 * 1  eval = 0.18   
+                                                                                 Iteration 35900 loss = 2.17148 * 1  eval = 0.1947   
+Iteration 35900  learning_rate = 2.91038e-14 loss = 2.08983 * 1  eval = 0.235   
+Iteration 35950  learning_rate = 2.91038e-14 loss = 2.04022 * 1  eval = 0.22   
+                                                                                 Iteration 36000 loss = 2.17061 * 1  eval = 0.1915   
+Iteration 36000  learning_rate = 1.45519e-14 loss = 2.13855 * 1  eval = 0.205   
+Iteration 36050  learning_rate = 1.45519e-14 loss = 2.11801 * 1  eval = 0.195   
+                                                                                 Iteration 36100 loss = 2.16205 * 1  eval = 0.19495   
+Iteration 36100  learning_rate = 1.45519e-14 loss = 2.07915 * 1  eval = 0.27   
+Iteration 36150  learning_rate = 1.45519e-14 loss = 2.1589 * 1  eval = 0.195   
+                                                                                 Iteration 36200 loss = 2.16381 * 1  eval = 0.195   
+Iteration 36200  learning_rate = 1.45519e-14 loss = 2.17402 * 1  eval = 0.2   
+Iteration 36250  learning_rate = 1.45519e-14 loss = 2.1581 * 1  eval = 0.215   
+                                                                                 Iteration 36300 loss = 2.15767 * 1  eval = 0.19805   
+Iteration 36300  learning_rate = 1.45519e-14 loss = 2.07874 * 1  eval = 0.145   
+Iteration 36350  learning_rate = 1.45519e-14 loss = 2.0748 * 1  eval = 0.215   
+                                                                                 Iteration 36400 loss = 2.16653 * 1  eval = 0.19285   
+Iteration 36400  learning_rate = 1.45519e-14 loss = 2.18485 * 1  eval = 0.14   
+Iteration 36450  learning_rate = 1.45519e-14 loss = 2.15944 * 1  eval = 0.205   
+                                                                                 Iteration 36500 loss = 2.15617 * 1  eval = 0.20115   
+Iteration 36500  learning_rate = 1.45519e-14 loss = 2.04209 * 1  eval = 0.28   
+Iteration 36550  learning_rate = 1.45519e-14 loss = 2.12687 * 1  eval = 0.185   
+                                                                                 Iteration 36600 loss = 2.15882 * 1  eval = 0.19655   
+Iteration 36600  learning_rate = 1.45519e-14 loss = 2.18761 * 1  eval = 0.2   
+Iteration 36650  learning_rate = 1.45519e-14 loss = 2.12318 * 1  eval = 0.145   
+                                                                                 Iteration 36700 loss = 2.15042 * 1  eval = 0.2045   
+Iteration 36700  learning_rate = 1.45519e-14 loss = 2.14394 * 1  eval = 0.16   
+Iteration 36750  learning_rate = 1.45519e-14 loss = 2.08712 * 1  eval = 0.18   
+                                                                                 Iteration 36800 loss = 2.16204 * 1  eval = 0.19485   
+Iteration 36800  learning_rate = 1.45519e-14 loss = 2.11792 * 1  eval = 0.27   
+Iteration 36850  learning_rate = 1.45519e-14 loss = 2.16179 * 1  eval = 0.195   
+                                                                                 Iteration 36900 loss = 2.16699 * 1  eval = 0.1931   
+Iteration 36900  learning_rate = 1.45519e-14 loss = 2.11731 * 1  eval = 0.23   
+Iteration 36950  learning_rate = 1.45519e-14 loss = 2.09124 * 1  eval = 0.195   
+                                                                                 Iteration 37000 loss = 2.16835 * 1  eval = 0.1938   
+Iteration 37000  learning_rate = 7.27596e-15 loss = 2.19842 * 1  eval = 0.175   
+Iteration 37050  learning_rate = 7.27596e-15 loss = 2.13533 * 1  eval = 0.175   
+                                                                                 Iteration 37100 loss = 2.16506 * 1  eval = 0.1955   
+Iteration 37100  learning_rate = 7.27596e-15 loss = 2.13451 * 1  eval = 0.18   
+Iteration 37150  learning_rate = 7.27596e-15 loss = 2.09933 * 1  eval = 0.26   
+                                                                                 Iteration 37200 loss = 2.16707 * 1  eval = 0.1921   
+Iteration 37200  learning_rate = 7.27596e-15 loss = 2.12401 * 1  eval = 0.195   
+Iteration 37250  learning_rate = 7.27596e-15 loss = 2.13547 * 1  eval = 0.2   
+                                                                                 Iteration 37300 loss = 2.16531 * 1  eval = 0.19625   
+Iteration 37300  learning_rate = 7.27596e-15 loss = 2.19407 * 1  eval = 0.16   
+Iteration 37350  learning_rate = 7.27596e-15 loss = 2.11141 * 1  eval = 0.225   
+                                                                                 Iteration 37400 loss = 2.15896 * 1  eval = 0.19475   
+Iteration 37400  learning_rate = 7.27596e-15 loss = 2.106 * 1  eval = 0.18   
+Iteration 37450  learning_rate = 7.27596e-15 loss = 2.23034 * 1  eval = 0.21   
+                                                                                 Iteration 37500 loss = 2.15874 * 1  eval = 0.19765   
+Iteration 37500  learning_rate = 7.27596e-15 loss = 2.18004 * 1  eval = 0.15   
+Iteration 37550  learning_rate = 7.27596e-15 loss = 2.06656 * 1  eval = 0.245   
+                                                                                 Iteration 37600 loss = 2.16666 * 1  eval = 0.1957   
+Iteration 37600  learning_rate = 7.27596e-15 loss = 2.10235 * 1  eval = 0.225   
+Iteration 37650  learning_rate = 7.27596e-15 loss = 2.17439 * 1  eval = 0.195   
+                                                                                 Iteration 37700 loss = 2.15328 * 1  eval = 0.1988   
+Iteration 37700  learning_rate = 7.27596e-15 loss = 2.08081 * 1  eval = 0.235   
+Iteration 37750  learning_rate = 7.27596e-15 loss = 2.14494 * 1  eval = 0.215   
+                                                                                 Iteration 37800 loss = 2.15791 * 1  eval = 0.19895   
+Iteration 37800  learning_rate = 7.27596e-15 loss = 2.12894 * 1  eval = 0.2   
+Iteration 37850  learning_rate = 7.27596e-15 loss = 2.1314 * 1  eval = 0.215   
+                                                                                 Iteration 37900 loss = 2.15649 * 1  eval = 0.20155   
+Iteration 37900  learning_rate = 7.27596e-15 loss = 2.11786 * 1  eval = 0.175   
+Iteration 37950  learning_rate = 7.27596e-15 loss = 2.10081 * 1  eval = 0.18   
+                                                                                 Iteration 38000 loss = 2.16619 * 1  eval = 0.19345   
+Iteration 38000  learning_rate = 3.63798e-15 loss = 2.06192 * 1  eval = 0.235   
+Iteration 38050  learning_rate = 3.63798e-15 loss = 2.15684 * 1  eval = 0.19   
+                                                                                 Iteration 38100 loss = 2.15802 * 1  eval = 0.19555   
+Iteration 38100  learning_rate = 3.63798e-15 loss = 2.12026 * 1  eval = 0.185   
+Iteration 38150  learning_rate = 3.63798e-15 loss = 2.15344 * 1  eval = 0.21   
+                                                                                 Iteration 38200 loss = 2.17148 * 1  eval = 0.1947   
+Iteration 38200  learning_rate = 3.63798e-15 loss = 2.18057 * 1  eval = 0.175   
+Iteration 38250  learning_rate = 3.63798e-15 loss = 2.16737 * 1  eval = 0.21   
+                                                                                 Iteration 38300 loss = 2.17061 * 1  eval = 0.1915   
+Iteration 38300  learning_rate = 3.63798e-15 loss = 2.09919 * 1  eval = 0.25   
+Iteration 38350  learning_rate = 3.63798e-15 loss = 2.09052 * 1  eval = 0.22   
+                                                                                 Iteration 38400 loss = 2.16205 * 1  eval = 0.19495   
+Iteration 38400  learning_rate = 3.63798e-15 loss = 2.1338 * 1  eval = 0.16   
+Iteration 38450  learning_rate = 3.63798e-15 loss = 2.15094 * 1  eval = 0.215   
+                                                                                 Iteration 38500 loss = 2.16381 * 1  eval = 0.195   
+Iteration 38500  learning_rate = 3.63798e-15 loss = 2.08916 * 1  eval = 0.225   
+Iteration 38550  learning_rate = 3.63798e-15 loss = 2.09034 * 1  eval = 0.195   
+                                                                                 Iteration 38600 loss = 2.15767 * 1  eval = 0.19805   
+Iteration 38600  learning_rate = 3.63798e-15 loss = 2.10523 * 1  eval = 0.21   
+Iteration 38650  learning_rate = 3.63798e-15 loss = 2.13954 * 1  eval = 0.21   
+                                                                                 Iteration 38700 loss = 2.16653 * 1  eval = 0.19285   
+Iteration 38700  learning_rate = 3.63798e-15 loss = 2.16626 * 1  eval = 0.185   
+Iteration 38750  learning_rate = 3.63798e-15 loss = 2.09435 * 1  eval = 0.24   
+                                                                                 Iteration 38800 loss = 2.15617 * 1  eval = 0.20115   
+Iteration 38800  learning_rate = 3.63798e-15 loss = 2.11796 * 1  eval = 0.175   
+Iteration 38850  learning_rate = 3.63798e-15 loss = 2.12393 * 1  eval = 0.215   
+                                                                                 Iteration 38900 loss = 2.15882 * 1  eval = 0.19655   
+Iteration 38900  learning_rate = 3.63798e-15 loss = 2.17835 * 1  eval = 0.18   
+Iteration 38950  learning_rate = 3.63798e-15 loss = 2.08518 * 1  eval = 0.205   
+                                                                                 Iteration 39000 loss = 2.15042 * 1  eval = 0.2045   
+Iteration 39000  learning_rate = 1.81899e-15 loss = 2.15729 * 1  eval = 0.225   
+Iteration 39050  learning_rate = 1.81899e-15 loss = 2.11425 * 1  eval = 0.215   
+                                                                                 Iteration 39100 loss = 2.16204 * 1  eval = 0.19485   
+Iteration 39100  learning_rate = 1.81899e-15 loss = 2.22164 * 1  eval = 0.175   
+Iteration 39150  learning_rate = 1.81899e-15 loss = 2.09895 * 1  eval = 0.22   
+                                                                                 Iteration 39200 loss = 2.16699 * 1  eval = 0.1931   
+Iteration 39200  learning_rate = 1.81899e-15 loss = 2.11282 * 1  eval = 0.225   
+Iteration 39250  learning_rate = 1.81899e-15 loss = 2.15467 * 1  eval = 0.19   
+                                                                                 Iteration 39300 loss = 2.16835 * 1  eval = 0.1938   
+Iteration 39300  learning_rate = 1.81899e-15 loss = 2.14086 * 1  eval = 0.17   
+Iteration 39350  learning_rate = 1.81899e-15 loss = 2.09881 * 1  eval = 0.19   
+                                                                                 Iteration 39400 loss = 2.16506 * 1  eval = 0.1955   
+Iteration 39400  learning_rate = 1.81899e-15 loss = 2.11592 * 1  eval = 0.2   
+Iteration 39450  learning_rate = 1.81899e-15 loss = 2.11013 * 1  eval = 0.205   
+                                                                                 Iteration 39500 loss = 2.16707 * 1  eval = 0.1921   
+Iteration 39500  learning_rate = 1.81899e-15 loss = 2.07649 * 1  eval = 0.19   
+Iteration 39550  learning_rate = 1.81899e-15 loss = 2.09347 * 1  eval = 0.185   
+                                                                                 Iteration 39600 loss = 2.16531 * 1  eval = 0.19625   
+Iteration 39600  learning_rate = 1.81899e-15 loss = 2.07523 * 1  eval = 0.17   
+Iteration 39650  learning_rate = 1.81899e-15 loss = 2.08327 * 1  eval = 0.27   
+                                                                                 Iteration 39700 loss = 2.15896 * 1  eval = 0.19475   
+Iteration 39700  learning_rate = 1.81899e-15 loss = 2.10389 * 1  eval = 0.22   
+Iteration 39750  learning_rate = 1.81899e-15 loss = 2.14534 * 1  eval = 0.185   
+                                                                                 Iteration 39800 loss = 2.15874 * 1  eval = 0.19765   
+Iteration 39800  learning_rate = 1.81899e-15 loss = 2.15178 * 1  eval = 0.185   
+Iteration 39850  learning_rate = 1.81899e-15 loss = 2.10118 * 1  eval = 0.175   
+                                                                                 Iteration 39900 loss = 2.16666 * 1  eval = 0.1957   
+Iteration 39900  learning_rate = 1.81899e-15 loss = 2.17449 * 1  eval = 0.165   
+Iteration 39950  learning_rate = 1.81899e-15 loss = 2.07946 * 1  eval = 0.215   
+                                                                                 Iteration 40000 loss = 2.15328 * 1  eval = 0.1988   
+Iteration 40000  learning_rate = 9.09495e-16 loss = 2.16713 * 1  eval = 0.195   
+Iteration 40050  learning_rate = 9.09495e-16 loss = 2.16952 * 1  eval = 0.225   
+                                                                                 Iteration 40100 loss = 2.15791 * 1  eval = 0.19895   
+Iteration 40100  learning_rate = 9.09495e-16 loss = 2.18005 * 1  eval = 0.185   
+Iteration 40150  learning_rate = 9.09495e-16 loss = 2.12281 * 1  eval = 0.24   
+                                                                                 Iteration 40200 loss = 2.15649 * 1  eval = 0.20155   
+Iteration 40200  learning_rate = 9.09495e-16 loss = 2.05764 * 1  eval = 0.21   
+Iteration 40250  learning_rate = 9.09495e-16 loss = 2.13695 * 1  eval = 0.225   
+                                                                                 Iteration 40300 loss = 2.16619 * 1  eval = 0.19345   
+Iteration 40300  learning_rate = 9.09495e-16 loss = 2.15655 * 1  eval = 0.205   
+Iteration 40350  learning_rate = 9.09495e-16 loss = 2.06083 * 1  eval = 0.265   
+                                                                                 Iteration 40400 loss = 2.15802 * 1  eval = 0.19555   
+Iteration 40400  learning_rate = 9.09495e-16 loss = 2.14295 * 1  eval = 0.215   
+Iteration 40450  learning_rate = 9.09495e-16 loss = 2.18154 * 1  eval = 0.175   
+                                                                                 Iteration 40500 loss = 2.17148 * 1  eval = 0.1947   
+Iteration 40500  learning_rate = 9.09495e-16 loss = 2.09907 * 1  eval = 0.17   
+Iteration 40550  learning_rate = 9.09495e-16 loss = 2.06245 * 1  eval = 0.205   
+                                                                                 Iteration 40600 loss = 2.17061 * 1  eval = 0.1915   
+Iteration 40600  learning_rate = 9.09495e-16 loss = 2.07648 * 1  eval = 0.255   
+Iteration 40650  learning_rate = 9.09495e-16 loss = 2.14953 * 1  eval = 0.17   
+                                                                                 Iteration 40700 loss = 2.16205 * 1  eval = 0.19495   
+Iteration 40700  learning_rate = 9.09495e-16 loss = 2.09719 * 1  eval = 0.17   
+Iteration 40750  learning_rate = 9.09495e-16 loss = 2.07801 * 1  eval = 0.2   
+                                                                                 Iteration 40800 loss = 2.16381 * 1  eval = 0.195   
+Iteration 40800  learning_rate = 9.09495e-16 loss = 2.07434 * 1  eval = 0.205   
+Iteration 40850  learning_rate = 9.09495e-16 loss = 2.0855 * 1  eval = 0.265   
+                                                                                 Iteration 40900 loss = 2.15767 * 1  eval = 0.19805   
+Iteration 40900  learning_rate = 9.09495e-16 loss = 2.08544 * 1  eval = 0.205   
+Iteration 40950  learning_rate = 9.09495e-16 loss = 2.05978 * 1  eval = 0.235   
+                                                                                 Iteration 41000 loss = 2.16653 * 1  eval = 0.19285   
+Iteration 41000  learning_rate = 4.54747e-16 loss = 2.0995 * 1  eval = 0.24   
+Iteration 41050  learning_rate = 4.54747e-16 loss = 2.14974 * 1  eval = 0.17   
+                                                                                 Iteration 41100 loss = 2.15617 * 1  eval = 0.20115   
+Iteration 41100  learning_rate = 4.54747e-16 loss = 2.18124 * 1  eval = 0.165   
+Iteration 41150  learning_rate = 4.54747e-16 loss = 2.15875 * 1  eval = 0.185   
+                                                                                 Iteration 41200 loss = 2.15882 * 1  eval = 0.19655   
+Iteration 41200  learning_rate = 4.54747e-16 loss = 2.10711 * 1  eval = 0.21   
+Iteration 41250  learning_rate = 4.54747e-16 loss = 2.16823 * 1  eval = 0.155   
+                                                                                 Iteration 41300 loss = 2.15042 * 1  eval = 0.2045   
+Iteration 41300  learning_rate = 4.54747e-16 loss = 2.13149 * 1  eval = 0.215   
+Iteration 41350  learning_rate = 4.54747e-16 loss = 2.036 * 1  eval = 0.22   
+                                                                                 Iteration 41400 loss = 2.16204 * 1  eval = 0.19485   
+Iteration 41400  learning_rate = 4.54747e-16 loss = 2.11214 * 1  eval = 0.225   
+Iteration 41450  learning_rate = 4.54747e-16 loss = 2.13625 * 1  eval = 0.24   
+                                                                                 Iteration 41500 loss = 2.16699 * 1  eval = 0.1931   
+Iteration 41500  learning_rate = 4.54747e-16 loss = 2.17123 * 1  eval = 0.2   
+Iteration 41550  learning_rate = 4.54747e-16 loss = 2.14266 * 1  eval = 0.215   
+                                                                                 Iteration 41600 loss = 2.16835 * 1  eval = 0.1938   
+Iteration 41600  learning_rate = 4.54747e-16 loss = 2.11882 * 1  eval = 0.185   
+Iteration 41650  learning_rate = 4.54747e-16 loss = 2.06607 * 1  eval = 0.215   
+                                                                                 Iteration 41700 loss = 2.16506 * 1  eval = 0.1955   
+Iteration 41700  learning_rate = 4.54747e-16 loss = 2.13155 * 1  eval = 0.25   
+Iteration 41750  learning_rate = 4.54747e-16 loss = 2.19665 * 1  eval = 0.18   
+                                                                                 Iteration 41800 loss = 2.16707 * 1  eval = 0.1921   
+Iteration 41800  learning_rate = 4.54747e-16 loss = 2.09978 * 1  eval = 0.2   
+Iteration 41850  learning_rate = 4.54747e-16 loss = 2.09398 * 1  eval = 0.24   
+                                                                                 Iteration 41900 loss = 2.16531 * 1  eval = 0.19625   
+Iteration 41900  learning_rate = 4.54747e-16 loss = 2.13965 * 1  eval = 0.18   
+Iteration 41950  learning_rate = 4.54747e-16 loss = 2.13609 * 1  eval = 0.18   
+                                                                                 Iteration 42000 loss = 2.15896 * 1  eval = 0.19475   
+Iteration 42000  learning_rate = 2.27374e-16 loss = 2.21901 * 1  eval = 0.195   
+Iteration 42050  learning_rate = 2.27374e-16 loss = 2.15072 * 1  eval = 0.16   
+                                                                                 Iteration 42100 loss = 2.15874 * 1  eval = 0.19765   
+Iteration 42100  learning_rate = 2.27374e-16 loss = 2.09967 * 1  eval = 0.23   
+Iteration 42150  learning_rate = 2.27374e-16 loss = 2.07647 * 1  eval = 0.225   
+                                                                                 Iteration 42200 loss = 2.16666 * 1  eval = 0.1957   
+Iteration 42200  learning_rate = 2.27374e-16 loss = 2.10313 * 1  eval = 0.225   
+Iteration 42250  learning_rate = 2.27374e-16 loss = 2.12853 * 1  eval = 0.185   
+                                                                                 Iteration 42300 loss = 2.15328 * 1  eval = 0.1988   
+Iteration 42300  learning_rate = 2.27374e-16 loss = 2.12242 * 1  eval = 0.205   
+Iteration 42350  learning_rate = 2.27374e-16 loss = 2.11093 * 1  eval = 0.195   
+                                                                                 Iteration 42400 loss = 2.15791 * 1  eval = 0.19895   
+Iteration 42400  learning_rate = 2.27374e-16 loss = 2.13671 * 1  eval = 0.175   
+Iteration 42450  learning_rate = 2.27374e-16 loss = 2.10857 * 1  eval = 0.195   
+                                                                                 Iteration 42500 loss = 2.15649 * 1  eval = 0.20155   
+Iteration 42500  learning_rate = 2.27374e-16 loss = 2.16609 * 1  eval = 0.19   
+Iteration 42550  learning_rate = 2.27374e-16 loss = 2.12488 * 1  eval = 0.165   
+                                                                                 Iteration 42600 loss = 2.16619 * 1  eval = 0.19345   
+Iteration 42600  learning_rate = 2.27374e-16 loss = 2.14391 * 1  eval = 0.24   
+Iteration 42650  learning_rate = 2.27374e-16 loss = 2.10684 * 1  eval = 0.235   
+                                                                                 Iteration 42700 loss = 2.15802 * 1  eval = 0.19555   
+Iteration 42700  learning_rate = 2.27374e-16 loss = 2.1685 * 1  eval = 0.22   
+Iteration 42750  learning_rate = 2.27374e-16 loss = 2.19123 * 1  eval = 0.14   
+                                                                                 Iteration 42800 loss = 2.17148 * 1  eval = 0.1947   
+Iteration 42800  learning_rate = 2.27374e-16 loss = 2.09081 * 1  eval = 0.235   
+Iteration 42850  learning_rate = 2.27374e-16 loss = 2.08201 * 1  eval = 0.225   
+                                                                                 Iteration 42900 loss = 2.17061 * 1  eval = 0.1915   
+Iteration 42900  learning_rate = 2.27374e-16 loss = 2.08253 * 1  eval = 0.22   
+Iteration 42950  learning_rate = 2.27374e-16 loss = 2.1264 * 1  eval = 0.195   
+                                                                                 Iteration 43000 loss = 2.16205 * 1  eval = 0.19495   
+Iteration 43000  learning_rate = 1.13687e-16 loss = 2.10837 * 1  eval = 0.235   
+Iteration 43050  learning_rate = 1.13687e-16 loss = 2.08503 * 1  eval = 0.195   
+                                                                                 Iteration 43100 loss = 2.16381 * 1  eval = 0.195   
+Iteration 43100  learning_rate = 1.13687e-16 loss = 2.09969 * 1  eval = 0.23   
+Iteration 43150  learning_rate = 1.13687e-16 loss = 2.12185 * 1  eval = 0.2   
+                                                                                 Iteration 43200 loss = 2.15767 * 1  eval = 0.19805   
+Iteration 43200  learning_rate = 1.13687e-16 loss = 2.07079 * 1  eval = 0.205   
+Iteration 43250  learning_rate = 1.13687e-16 loss = 2.16799 * 1  eval = 0.17   
+                                                                                 Iteration 43300 loss = 2.16653 * 1  eval = 0.19285   
+Iteration 43300  learning_rate = 1.13687e-16 loss = 2.06419 * 1  eval = 0.225   
+Iteration 43350  learning_rate = 1.13687e-16 loss = 2.10787 * 1  eval = 0.205   
+                                                                                 Iteration 43400 loss = 2.15617 * 1  eval = 0.20115   
+Iteration 43400  learning_rate = 1.13687e-16 loss = 2.16146 * 1  eval = 0.2   
+Iteration 43450  learning_rate = 1.13687e-16 loss = 2.09523 * 1  eval = 0.24   
+                                                                                 Iteration 43500 loss = 2.15882 * 1  eval = 0.19655   
+Iteration 43500  learning_rate = 1.13687e-16 loss = 2.16865 * 1  eval = 0.145   
+Iteration 43550  learning_rate = 1.13687e-16 loss = 2.09831 * 1  eval = 0.19   
+                                                                                 Iteration 43600 loss = 2.15042 * 1  eval = 0.2045   
+Iteration 43600  learning_rate = 1.13687e-16 loss = 2.12696 * 1  eval = 0.185   
+Iteration 43650  learning_rate = 1.13687e-16 loss = 2.14281 * 1  eval = 0.175   
+                                                                                 Iteration 43700 loss = 2.16204 * 1  eval = 0.19485   
+Iteration 43700  learning_rate = 1.13687e-16 loss = 2.11122 * 1  eval = 0.17   
+Iteration 43750  learning_rate = 1.13687e-16 loss = 2.17351 * 1  eval = 0.14   
+                                                                                 Iteration 43800 loss = 2.16699 * 1  eval = 0.1931   
+Iteration 43800  learning_rate = 1.13687e-16 loss = 2.10953 * 1  eval = 0.19   
+Iteration 43850  learning_rate = 1.13687e-16 loss = 2.10977 * 1  eval = 0.19   
+                                                                                 Iteration 43900 loss = 2.16835 * 1  eval = 0.1938   
+Iteration 43900  learning_rate = 1.13687e-16 loss = 2.1087 * 1  eval = 0.18   
+Iteration 43950  learning_rate = 1.13687e-16 loss = 2.07605 * 1  eval = 0.225   
+                                                                                 Iteration 44000 loss = 2.16506 * 1  eval = 0.1955   
+Iteration 44000  learning_rate = 5.68434e-17 loss = 2.16234 * 1  eval = 0.195   
+Iteration 44050  learning_rate = 5.68434e-17 loss = 2.19055 * 1  eval = 0.165   
+                                                                                 Iteration 44100 loss = 2.16707 * 1  eval = 0.1921   
+Iteration 44100  learning_rate = 5.68434e-17 loss = 2.18375 * 1  eval = 0.14   
+Iteration 44150  learning_rate = 5.68434e-17 loss = 2.09793 * 1  eval = 0.22   
+                                                                                 Iteration 44200 loss = 2.16531 * 1  eval = 0.19625   
+Iteration 44200  learning_rate = 5.68434e-17 loss = 2.09004 * 1  eval = 0.235   
+Iteration 44250  learning_rate = 5.68434e-17 loss = 2.14614 * 1  eval = 0.23   
+                                                                                 Iteration 44300 loss = 2.15896 * 1  eval = 0.19475   
+Iteration 44300  learning_rate = 5.68434e-17 loss = 2.0933 * 1  eval = 0.19   
+Iteration 44350  learning_rate = 5.68434e-17 loss = 2.07223 * 1  eval = 0.215   
+                                                                                 Iteration 44400 loss = 2.15874 * 1  eval = 0.19765   
+Iteration 44400  learning_rate = 5.68434e-17 loss = 2.12187 * 1  eval = 0.24   
+Iteration 44450  learning_rate = 5.68434e-17 loss = 2.13236 * 1  eval = 0.165   
+                                                                                 Iteration 44500 loss = 2.16666 * 1  eval = 0.1957   
+Iteration 44500  learning_rate = 5.68434e-17 loss = 2.15472 * 1  eval = 0.18   
+Iteration 44550  learning_rate = 5.68434e-17 loss = 2.08619 * 1  eval = 0.24   
+                                                                                 Iteration 44600 loss = 2.15328 * 1  eval = 0.1988   
+Iteration 44600  learning_rate = 5.68434e-17 loss = 2.16844 * 1  eval = 0.195   
+Iteration 44650  learning_rate = 5.68434e-17 loss = 2.10156 * 1  eval = 0.18   
+                                                                                 Iteration 44700 loss = 2.15791 * 1  eval = 0.19895   
+Iteration 44700  learning_rate = 5.68434e-17 loss = 2.08292 * 1  eval = 0.195   
+Iteration 44750  learning_rate = 5.68434e-17 loss = 2.09083 * 1  eval = 0.2   
+                                                                                 Iteration 44800 loss = 2.15649 * 1  eval = 0.20155   
+Iteration 44800  learning_rate = 5.68434e-17 loss = 2.11861 * 1  eval = 0.195   
+Iteration 44850  learning_rate = 5.68434e-17 loss = 2.13251 * 1  eval = 0.22   
+                                                                                 Iteration 44900 loss = 2.16619 * 1  eval = 0.19345   
+Iteration 44900  learning_rate = 5.68434e-17 loss = 2.11689 * 1  eval = 0.24   
+Iteration 44950  learning_rate = 5.68434e-17 loss = 2.15683 * 1  eval = 0.22   
+                                                                                 Iteration 45000 loss = 2.15802 * 1  eval = 0.19555   
+Iteration 45000  learning_rate = 2.84217e-17 loss = 2.09541 * 1  eval = 0.165   
+Iteration 45050  learning_rate = 2.84217e-17 loss = 2.06544 * 1  eval = 0.195   
+                                                                                 Iteration 45100 loss = 2.17148 * 1  eval = 0.1947   
+Iteration 45100  learning_rate = 2.84217e-17 loss = 2.16926 * 1  eval = 0.2   
+Iteration 45150  learning_rate = 2.84217e-17 loss = 2.15674 * 1  eval = 0.18   
+                                                                                 Iteration 45200 loss = 2.17061 * 1  eval = 0.1915   
+Iteration 45200  learning_rate = 2.84217e-17 loss = 2.09978 * 1  eval = 0.21   
+Iteration 45250  learning_rate = 2.84217e-17 loss = 2.19216 * 1  eval = 0.155   
+                                                                                 Iteration 45300 loss = 2.16205 * 1  eval = 0.19495   
+Iteration 45300  learning_rate = 2.84217e-17 loss = 2.1355 * 1  eval = 0.16   
+Iteration 45350  learning_rate = 2.84217e-17 loss = 2.10348 * 1  eval = 0.19   
+                                                                                 Iteration 45400 loss = 2.16381 * 1  eval = 0.195   
+Iteration 45400  learning_rate = 2.84217e-17 loss = 2.1094 * 1  eval = 0.215   
+Iteration 45450  learning_rate = 2.84217e-17 loss = 2.13105 * 1  eval = 0.19   
+                                                                                 Iteration 45500 loss = 2.15767 * 1  eval = 0.19805   
+Iteration 45500  learning_rate = 2.84217e-17 loss = 2.08868 * 1  eval = 0.215   
+Iteration 45550  learning_rate = 2.84217e-17 loss = 2.08834 * 1  eval = 0.235   
+                                                                                 Iteration 45600 loss = 2.16653 * 1  eval = 0.19285   
+Iteration 45600  learning_rate = 2.84217e-17 loss = 2.16506 * 1  eval = 0.175   
+Iteration 45650  learning_rate = 2.84217e-17 loss = 2.14893 * 1  eval = 0.15   
+                                                                                 Iteration 45700 loss = 2.15617 * 1  eval = 0.20115   
+Iteration 45700  learning_rate = 2.84217e-17 loss = 2.1542 * 1  eval = 0.165   
+Iteration 45750  learning_rate = 2.84217e-17 loss = 2.11855 * 1  eval = 0.19   
+                                                                                 Iteration 45800 loss = 2.15882 * 1  eval = 0.19655   
+Iteration 45800  learning_rate = 2.84217e-17 loss = 2.14151 * 1  eval = 0.175   
+Iteration 45850  learning_rate = 2.84217e-17 loss = 2.20961 * 1  eval = 0.17   
+                                                                                 Iteration 45900 loss = 2.15042 * 1  eval = 0.2045   
+Iteration 45900  learning_rate = 2.84217e-17 loss = 2.13166 * 1  eval = 0.2   
+Iteration 45950  learning_rate = 2.84217e-17 loss = 2.11604 * 1  eval = 0.24   
+                                                                                 Iteration 46000 loss = 2.16204 * 1  eval = 0.19485   
+Iteration 46000  learning_rate = 1.42109e-17 loss = 2.15399 * 1  eval = 0.18   
+Iteration 46050  learning_rate = 1.42109e-17 loss = 2.17023 * 1  eval = 0.17   
+                                                                                 Iteration 46100 loss = 2.16699 * 1  eval = 0.1931   
+Iteration 46100  learning_rate = 1.42109e-17 loss = 2.1088 * 1  eval = 0.185   
+Iteration 46150  learning_rate = 1.42109e-17 loss = 2.1351 * 1  eval = 0.225   
+                                                                                 Iteration 46200 loss = 2.16835 * 1  eval = 0.1938   
+Iteration 46200  learning_rate = 1.42109e-17 loss = 2.15166 * 1  eval = 0.185   
+Iteration 46250  learning_rate = 1.42109e-17 loss = 2.11678 * 1  eval = 0.205   
+                                                                                 Iteration 46300 loss = 2.16506 * 1  eval = 0.1955   
+Iteration 46300  learning_rate = 1.42109e-17 loss = 2.16208 * 1  eval = 0.21   
+Iteration 46350  learning_rate = 1.42109e-17 loss = 2.10233 * 1  eval = 0.165   
+                                                                                 Iteration 46400 loss = 2.16707 * 1  eval = 0.1921   
+Iteration 46400  learning_rate = 1.42109e-17 loss = 2.1197 * 1  eval = 0.215   
+Iteration 46450  learning_rate = 1.42109e-17 loss = 2.1469 * 1  eval = 0.19   
+                                                                                 Iteration 46500 loss = 2.16531 * 1  eval = 0.19625   
+Iteration 46500  learning_rate = 1.42109e-17 loss = 2.16079 * 1  eval = 0.16   
+Iteration 46550  learning_rate = 1.42109e-17 loss = 2.05391 * 1  eval = 0.25   
+                                                                                 Iteration 46600 loss = 2.15896 * 1  eval = 0.19475   
+Iteration 46600  learning_rate = 1.42109e-17 loss = 2.13578 * 1  eval = 0.15   
+Iteration 46650  learning_rate = 1.42109e-17 loss = 2.02148 * 1  eval = 0.285   
+                                                                                 Iteration 46700 loss = 2.15874 * 1  eval = 0.19765   
+Iteration 46700  learning_rate = 1.42109e-17 loss = 2.16431 * 1  eval = 0.175   
+Iteration 46750  learning_rate = 1.42109e-17 loss = 2.16288 * 1  eval = 0.23   
+                                                                                 Iteration 46800 loss = 2.16666 * 1  eval = 0.1957   
+Iteration 46800  learning_rate = 1.42109e-17 loss = 2.15092 * 1  eval = 0.19   
+Iteration 46850  learning_rate = 1.42109e-17 loss = 2.13641 * 1  eval = 0.18   
+                                                                                 Iteration 46900 loss = 2.15328 * 1  eval = 0.1988   
+Iteration 46900  learning_rate = 1.42109e-17 loss = 2.13019 * 1  eval = 0.2   
+Iteration 46950  learning_rate = 1.42109e-17 loss = 2.15503 * 1  eval = 0.18   
+                                                                                 Iteration 47000 loss = 2.15791 * 1  eval = 0.19895   
+Iteration 47000  learning_rate = 7.10543e-18 loss = 2.10947 * 1  eval = 0.225   
+Iteration 47050  learning_rate = 7.10543e-18 loss = 2.09991 * 1  eval = 0.205   
+                                                                                 Iteration 47100 loss = 2.15649 * 1  eval = 0.20155   
+Iteration 47100  learning_rate = 7.10543e-18 loss = 2.17304 * 1  eval = 0.18   
+Iteration 47150  learning_rate = 7.10543e-18 loss = 2.14655 * 1  eval = 0.19   
+                                                                                 Iteration 47200 loss = 2.16619 * 1  eval = 0.19345   
+Iteration 47200  learning_rate = 7.10543e-18 loss = 2.18263 * 1  eval = 0.195   
+Iteration 47250  learning_rate = 7.10543e-18 loss = 2.17072 * 1  eval = 0.17   
+                                                                                 Iteration 47300 loss = 2.15802 * 1  eval = 0.19555   
+Iteration 47300  learning_rate = 7.10543e-18 loss = 2.14251 * 1  eval = 0.175   
+Iteration 47350  learning_rate = 7.10543e-18 loss = 2.11079 * 1  eval = 0.195   
+                                                                                 Iteration 47400 loss = 2.17148 * 1  eval = 0.1947   
+Iteration 47400  learning_rate = 7.10543e-18 loss = 2.08786 * 1  eval = 0.24   
+Iteration 47450  learning_rate = 7.10543e-18 loss = 2.10504 * 1  eval = 0.23   
+                                                                                 Iteration 47500 loss = 2.17061 * 1  eval = 0.1915   
+Iteration 47500  learning_rate = 7.10543e-18 loss = 2.18332 * 1  eval = 0.17   
+Iteration 47550  learning_rate = 7.10543e-18 loss = 2.07157 * 1  eval = 0.235   
+                                                                                 Iteration 47600 loss = 2.16205 * 1  eval = 0.19495   
+Iteration 47600  learning_rate = 7.10543e-18 loss = 2.12949 * 1  eval = 0.235   
+Iteration 47650  learning_rate = 7.10543e-18 loss = 2.12971 * 1  eval = 0.175   
+                                                                                 Iteration 47700 loss = 2.16381 * 1  eval = 0.195   
+Iteration 47700  learning_rate = 7.10543e-18 loss = 2.19357 * 1  eval = 0.18   
+Iteration 47750  learning_rate = 7.10543e-18 loss = 2.13171 * 1  eval = 0.215   
+                                                                                 Iteration 47800 loss = 2.15767 * 1  eval = 0.19805   
+Iteration 47800  learning_rate = 7.10543e-18 loss = 2.13133 * 1  eval = 0.225   
+Iteration 47850  learning_rate = 7.10543e-18 loss = 2.04243 * 1  eval = 0.235   
+                                                                                 Iteration 47900 loss = 2.16653 * 1  eval = 0.19285   
+Iteration 47900  learning_rate = 7.10543e-18 loss = 2.13275 * 1  eval = 0.23   
+Iteration 47950  learning_rate = 7.10543e-18 loss = 2.13587 * 1  eval = 0.185   
+                                                                                 Iteration 48000 loss = 2.15617 * 1  eval = 0.20115   
+Iteration 48000  learning_rate = 3.55271e-18 loss = 2.1825 * 1  eval = 0.19   
+Iteration 48050  learning_rate = 3.55271e-18 loss = 2.16651 * 1  eval = 0.205   
+                                                                                 Iteration 48100 loss = 2.15882 * 1  eval = 0.19655   
+Iteration 48100  learning_rate = 3.55271e-18 loss = 2.10732 * 1  eval = 0.185   
+Iteration 48150  learning_rate = 3.55271e-18 loss = 2.08114 * 1  eval = 0.225   
+                                                                                 Iteration 48200 loss = 2.15042 * 1  eval = 0.2045   
+Iteration 48200  learning_rate = 3.55271e-18 loss = 2.06243 * 1  eval = 0.27   
+Iteration 48250  learning_rate = 3.55271e-18 loss = 2.1371 * 1  eval = 0.25   
+                                                                                 Iteration 48300 loss = 2.16204 * 1  eval = 0.19485   
+Iteration 48300  learning_rate = 3.55271e-18 loss = 2.14452 * 1  eval = 0.19   
+Iteration 48350  learning_rate = 3.55271e-18 loss = 2.12901 * 1  eval = 0.22   
+                                                                                 Iteration 48400 loss = 2.16699 * 1  eval = 0.1931   
+Iteration 48400  learning_rate = 3.55271e-18 loss = 2.1174 * 1  eval = 0.245   
+Iteration 48450  learning_rate = 3.55271e-18 loss = 2.18002 * 1  eval = 0.195   
+                                                                                 Iteration 48500 loss = 2.16835 * 1  eval = 0.1938   
+Iteration 48500  learning_rate = 3.55271e-18 loss = 2.1812 * 1  eval = 0.185   
+Iteration 48550  learning_rate = 3.55271e-18 loss = 2.15829 * 1  eval = 0.16   
+                                                                                 Iteration 48600 loss = 2.16506 * 1  eval = 0.1955   
+Iteration 48600  learning_rate = 3.55271e-18 loss = 2.19312 * 1  eval = 0.165   
+Iteration 48650  learning_rate = 3.55271e-18 loss = 2.11643 * 1  eval = 0.24   
+                                                                                 Iteration 48700 loss = 2.16707 * 1  eval = 0.1921   
+Iteration 48700  learning_rate = 3.55271e-18 loss = 2.17036 * 1  eval = 0.245   
+Iteration 48750  learning_rate = 3.55271e-18 loss = 2.08097 * 1  eval = 0.26   
+                                                                                 Iteration 48800 loss = 2.16531 * 1  eval = 0.19625   
+Iteration 48800  learning_rate = 3.55271e-18 loss = 2.1554 * 1  eval = 0.185   
+Iteration 48850  learning_rate = 3.55271e-18 loss = 2.15337 * 1  eval = 0.185   
+                                                                                 Iteration 48900 loss = 2.15896 * 1  eval = 0.19475   
+Iteration 48900  learning_rate = 3.55271e-18 loss = 2.1766 * 1  eval = 0.185   
+Iteration 48950  learning_rate = 3.55271e-18 loss = 2.19991 * 1  eval = 0.17   
+                                                                                 Iteration 49000 loss = 2.15874 * 1  eval = 0.19765   
+Iteration 49000  learning_rate = 1.77636e-18 loss = 2.17527 * 1  eval = 0.19   
+Iteration 49050  learning_rate = 1.77636e-18 loss = 2.04449 * 1  eval = 0.23   
+                                                                                 Iteration 49100 loss = 2.16666 * 1  eval = 0.1957   
+Iteration 49100  learning_rate = 1.77636e-18 loss = 2.06143 * 1  eval = 0.245   
+Iteration 49150  learning_rate = 1.77636e-18 loss = 2.11978 * 1  eval = 0.19   
+                                                                                 Iteration 49200 loss = 2.15328 * 1  eval = 0.1988   
+Iteration 49200  learning_rate = 1.77636e-18 loss = 2.05588 * 1  eval = 0.23   
+Iteration 49250  learning_rate = 1.77636e-18 loss = 2.08001 * 1  eval = 0.2   
+                                                                                 Iteration 49300 loss = 2.15791 * 1  eval = 0.19895   
+Iteration 49300  learning_rate = 1.77636e-18 loss = 2.10239 * 1  eval = 0.185   
+Iteration 49350  learning_rate = 1.77636e-18 loss = 2.06068 * 1  eval = 0.225   
+                                                                                 Iteration 49400 loss = 2.15649 * 1  eval = 0.20155   
+Iteration 49400  learning_rate = 1.77636e-18 loss = 2.13205 * 1  eval = 0.17   
+Iteration 49450  learning_rate = 1.77636e-18 loss = 2.11904 * 1  eval = 0.225   
+                                                                                 Iteration 49500 loss = 2.16619 * 1  eval = 0.19345   
+Iteration 49500  learning_rate = 1.77636e-18 loss = 2.19103 * 1  eval = 0.19   
+Iteration 49550  learning_rate = 1.77636e-18 loss = 2.14431 * 1  eval = 0.175   
+                                                                                 Iteration 49600 loss = 2.15802 * 1  eval = 0.19555   
+Iteration 49600  learning_rate = 1.77636e-18 loss = 2.10814 * 1  eval = 0.21   
+Iteration 49650  learning_rate = 1.77636e-18 loss = 2.08748 * 1  eval = 0.24   
+                                                                                 Iteration 49700 loss = 2.17148 * 1  eval = 0.1947   
+Iteration 49700  learning_rate = 1.77636e-18 loss = 2.15022 * 1  eval = 0.195   
+Iteration 49750  learning_rate = 1.77636e-18 loss = 2.08766 * 1  eval = 0.245   
+                                                                                 Iteration 49800 loss = 2.17061 * 1  eval = 0.1915   
+Iteration 49800  learning_rate = 1.77636e-18 loss = 2.12363 * 1  eval = 0.235   
+Iteration 49850  learning_rate = 1.77636e-18 loss = 2.07508 * 1  eval = 0.24   
+                                                                                 Iteration 49900 loss = 2.16205 * 1  eval = 0.19495   
+Iteration 49900  learning_rate = 1.77636e-18 loss = 2.12608 * 1  eval = 0.18   
+Iteration 49950  learning_rate = 1.77636e-18 loss = 2.11338 * 1  eval = 0.195   
+                                                                                 Iteration 50000 loss = 2.16381 * 1  eval = 0.195   
+Iteration 50000  learning_rate = 8.88178e-19 loss = 2.15297 * 1  eval = 0.23   

@@ -1,0 +1,114 @@
+
+    "train":{
+        "path":"weights/eriknet_easy",
+        "solver":"SGD",
+        "regularizer":"L2",
+        "momentum":0.9,
+        "weight_decay":0.0005,
+        "base_lr":0.01,
+        "lr_policy":"LR_step",
+        "lr_gamma":0.95,
+        "lr_stepsize":10000,
+        "max_iter":50000,
+        "snapshot_iter":10000,
+        "display_iter":10,
+        "test_iter":100,
+        "test_interval":100,
+        "GPU":[0],
+        "debug_mode":false
+    },
+    "test":{
+        "GPU":0,
+        "debug_mode":false
+    },
+    "layers":[
+        {
+
+            "type": "MemoryData",
+            "name": "dataTrain",
+            "phase": "Training",
+            "mirror":false,
+            "file_data": ["me/b1_100_10t.tensor","me/l1_100_10t.tensor"],
+            "batch_size": 100,
+            "out": ["data","label"]
+        },
+        {
+            "type": "MemoryData",
+            "name": "dataTest",
+            "phase": "Testing",
+            "mirror":false,
+            "file_data": ["me/b2_100100_10t.tensor","me/l2_100_10t.tensor"],
+            "batch_size": 100,
+            "out": ["data","label"]
+        },
+        {
+            "in": ["data"],
+            "type": "InnerProduct",
+            "name": "ip1",
+            "num_output": 2048,
+            "weight_lr_mult": 1.0,
+            "weight_filler": "Gaussian",
+            "bias_lr_mult": 2.0,
+            "bias_filler": "Constant",
+            "bias_filler_param": 0.0,
+            "out": ["ip1"]
+        },
+        {
+            "in": ["ip1"],
+            "type": "InnerProduct",
+            "name": "ip2",
+            "num_output": 2048,
+            "weight_lr_mult": 1.0,
+            "weight_filler": "Xavier",
+            "bias_lr_mult": 2.0,
+            "bias_filler": "Constant",
+            "bias_filler_param": 0.0,
+            "out": ["ip2"]
+        },
+        {
+            "in": ["ip2"],
+            "type": "InnerProduct",
+            "name": "ip3",
+            "num_output": 2048,
+            "weight_lr_mult": 1.0,
+            "weight_filler": "Gaussian",
+            "bias_lr_mult": 2.0,
+            "bias_filler": "Constant",
+            "bias_filler_param": 0.0,
+            "out": ["ip3"]
+        },
+        {
+            "in": ["ip3"],
+            "type": "InnerProduct",
+            "name": "ip4",
+            "num_output": 10,
+            "weight_lr_mult": 1.0,
+            "weight_filler": "Gaussian",
+            "bias_lr_mult": 2.0,
+            "bias_filler": "Constant",
+            "bias_filler_param": 0.0,
+            "out": ["ip4"]
+        },
+        {
+            "in":[
+                "ip4"
+            ],
+            "name":"loss",
+            "out":[
+                "loss"
+            ],
+            "stable_gradient":true,
+            "type":"Softmax"
+        },
+        {
+            "in":[
+                "loss",
+                "label"
+            ],
+            "out":["final"],
+            "mode":"MultinomialLogistic_StableSoftmax",
+            "name":"loss_loss",
+            "stable_gradient":true,
+            "type":"Loss"
+        }
+    ]

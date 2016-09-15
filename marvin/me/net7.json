@@ -1,0 +1,161 @@
+
+    "train":{
+        "path":"testnet",
+        "solver":"SGD",
+        "regularizer":"L2",
+        "momentum":0.9,
+        "weight_decay":0.0005,
+        "base_lr":0.01,
+        "lr_policy":"LR_step",
+        "lr_gamma":0.1,
+        "lr_stepsize":100000,
+        "max_iter":50000,
+        "snapshot_iter":10000,
+        "display_iter":20,
+        "test_iter":100,
+        "test_interval":100,
+        "GPU":[0],
+        "debug_mode":false
+    },
+    "test":{
+        "GPU":0,
+        "debug_mode":false
+    },
+    "layers":[
+        {
+            "type": "MemoryData",
+            "name": "dataTest",
+            "phase": "Testing",
+            "mirror":false,
+            "file_data": ["me/b1_999_100.tensor"],
+            "batch_size": 256,
+            "out": ["data"]
+        },
+        {
+            "in": ["data"],
+            "type": "InnerProduct",
+            "name": "ip1",
+            "num_output": 10,
+            "weight_lr_mult": 1.0,
+            "weight_filler": "Xavier",
+            "bias_lr_mult": 2.0,
+            "bias_filler": "Constant",
+            "bias_filler_param": 0.0,
+            "out": ["ip1"]
+        },
+        {
+            "in": ["ip1"],
+            "type": "Activation",
+            "name": "relu1",
+            "mode": "ReLU",
+            "out": ["ip1"]
+        },
+        {
+            "in": ["ip1"],
+            "type": "InnerProduct",
+            "name": "ip11",
+            "num_output": 2,
+            "weight_lr_mult": 1.0,
+            "weight_filler": "Xavier",
+            "bias_lr_mult": 2.0,
+            "bias_filler": "Constant",
+            "bias_filler_param": 0.0,
+            "out": ["ip11"]
+        },
+        {
+            "in": ["ip11"],
+            "type": "InnerProduct",
+            "name": "ip2",
+            "num_output": 2,
+            "weight_lr_mult": 1.0,
+            "weight_filler": "Xavier",
+            "bias_lr_mult": 2.0,
+            "bias_filler": "Constant",
+            "bias_filler_param": 0.0,
+            "out": ["ip2"]
+        },
+                {
+            "in": ["ip2"],
+            "type": "Activation",
+            "name": "relu2",
+            "mode": "ReLU",
+            "out": ["ip2"]
+        },
+        {
+            "in": ["ip2"],
+            "type": "InnerProduct",
+            "name": "ip3",
+            "num_output": 2,
+            "weight_lr_mult": 1.0,
+            "weight_filler": "Xavier",
+            "bias_lr_mult": 2.0,
+            "bias_filler": "Constant",
+            "bias_filler_param": 0.0,
+            "out": ["ip3"]
+        },
+        {
+            "in": ["ip3"],
+            "type": "InnerProduct",
+            "name": "ip4",
+            "num_output": 2,
+            "weight_lr_mult": 1.0,
+            "weight_filler": "Xavier",
+            "bias_lr_mult": 2.0,
+            "bias_filler": "Constant",
+            "bias_filler_param": 0.0,
+            "out": ["ip4"]
+        },
+        {
+            "in": ["ip4"],
+            "type": "InnerProduct",
+            "name": "ip5",
+            "num_output": 2,
+            "weight_lr_mult": 1.0,
+            "weight_filler": "Xavier",
+            "bias_lr_mult": 2.0,
+            "bias_filler": "Constant",
+            "bias_filler_param": 0.0,
+            "out": ["ip5"]
+        },
+                        {
+            "in": ["ip5"],
+            "type": "Activation",
+            "name": "relu3",
+            "mode": "ReLU",
+            "out": ["ip5"]
+        },
+        {
+            "in": ["ip5"],
+            "type": "InnerProduct",
+            "name": "ip6",
+            "num_output": 2,
+            "weight_lr_mult": 1.0,
+            "weight_filler": "Xavier",
+            "bias_lr_mult": 2.0,
+            "bias_filler": "Constant",
+            "bias_filler_param": 0.0,
+            "out": ["ip6"]
+        },
+
+        {
+            "in":[
+                "ip6"
+            ],
+            "name":"loss",
+            "out":[
+                "loss"
+            ],
+            "stable_gradient":true,
+            "type":"Softmax"
+        },
+        {
+            "in":[
+                "loss",
+                "label"
+            ],
+            "mode":"MultinomialLogistic_StableSoftmax",
+            "name":"loss_loss",
+            "stable_gradient":true,
+            "type":"Loss"
+        }
+    ]
